@@ -223,7 +223,6 @@
 #define g_assertion_message_cmpstrv _frida_g_assertion_message_cmpstrv
 #define g_assertion_message_error _frida_g_assertion_message_error
 #define g_assertion_message_expr _frida_g_assertion_message_expr
-#define g_assertion_set_handler _frida_g_assertion_set_handler
 #define g_async_initable_get_type _frida_g_async_initable_get_type
 #define g_async_initable_init_async _frida_g_async_initable_init_async
 #define g_async_initable_init_finish _frida_g_async_initable_init_finish
@@ -300,6 +299,8 @@
 #define g_base64_encode_close _frida_g_base64_encode_close
 #define g_base64_encode_step _frida_g_base64_encode_step
 #define g_basename _frida_g_basename
+#define g_binding_dup_source _frida_g_binding_dup_source
+#define g_binding_dup_target _frida_g_binding_dup_target
 #define g_binding_flags_get_type _frida_g_binding_flags_get_type
 #define g_binding_get_flags _frida_g_binding_get_flags
 #define g_binding_get_source _frida_g_binding_get_source
@@ -426,6 +427,7 @@
 #define g_bytes_compare _frida_g_bytes_compare
 #define g_bytes_equal _frida_g_bytes_equal
 #define g_bytes_get_data _frida_g_bytes_get_data
+#define g_bytes_get_region _frida_g_bytes_get_region
 #define g_bytes_get_size _frida_g_bytes_get_size
 #define g_bytes_get_type _frida_g_bytes_get_type
 #define g_bytes_hash _frida_g_bytes_hash
@@ -869,6 +871,8 @@
 #define g_dbus_error_set_dbus_error_valist _frida_g_dbus_error_set_dbus_error_valist
 #define g_dbus_error_strip_remote_error _frida_g_dbus_error_strip_remote_error
 #define g_dbus_error_unregister_error _frida_g_dbus_error_unregister_error
+#define g_dbus_escape_object_path _frida_g_dbus_escape_object_path
+#define g_dbus_escape_object_path_bytestring _frida_g_dbus_escape_object_path_bytestring
 #define g_dbus_generate_guid _frida_g_dbus_generate_guid
 #define g_dbus_gvalue_to_gvariant _frida_g_dbus_gvalue_to_gvariant
 #define g_dbus_gvariant_to_gvalue _frida_g_dbus_gvariant_to_gvalue
@@ -902,6 +906,7 @@
 #define g_dbus_interface_skeleton_unexport _frida_g_dbus_interface_skeleton_unexport
 #define g_dbus_interface_skeleton_unexport_from_connection _frida_g_dbus_interface_skeleton_unexport_from_connection
 #define g_dbus_is_address _frida_g_dbus_is_address
+#define g_dbus_is_error_name _frida_g_dbus_is_error_name
 #define g_dbus_is_guid _frida_g_dbus_is_guid
 #define g_dbus_is_interface_name _frida_g_dbus_is_interface_name
 #define g_dbus_is_member_name _frida_g_dbus_is_member_name
@@ -1077,6 +1082,7 @@
 #define g_dbus_signal_info_ref _frida_g_dbus_signal_info_ref
 #define g_dbus_signal_info_unref _frida_g_dbus_signal_info_unref
 #define g_dbus_subtree_flags_get_type _frida_g_dbus_subtree_flags_get_type
+#define g_dbus_unescape_object_path _frida_g_dbus_unescape_object_path
 #define g_dcgettext _frida_g_dcgettext
 #define g_delayed_settings_backend_apply _frida_g_delayed_settings_backend_apply
 #define g_delayed_settings_backend_get_has_unapplied _frida_g_delayed_settings_backend_get_has_unapplied
@@ -1170,11 +1176,13 @@
 #define g_dtls_connection_emit_accept_certificate _frida_g_dtls_connection_emit_accept_certificate
 #define g_dtls_connection_get_certificate _frida_g_dtls_connection_get_certificate
 #define g_dtls_connection_get_channel_binding_data _frida_g_dtls_connection_get_channel_binding_data
+#define g_dtls_connection_get_ciphersuite_name _frida_g_dtls_connection_get_ciphersuite_name
 #define g_dtls_connection_get_database _frida_g_dtls_connection_get_database
 #define g_dtls_connection_get_interaction _frida_g_dtls_connection_get_interaction
 #define g_dtls_connection_get_negotiated_protocol _frida_g_dtls_connection_get_negotiated_protocol
 #define g_dtls_connection_get_peer_certificate _frida_g_dtls_connection_get_peer_certificate
 #define g_dtls_connection_get_peer_certificate_errors _frida_g_dtls_connection_get_peer_certificate_errors
+#define g_dtls_connection_get_protocol_version _frida_g_dtls_connection_get_protocol_version
 #define g_dtls_connection_get_rehandshake_mode _frida_g_dtls_connection_get_rehandshake_mode
 #define g_dtls_connection_get_require_close_notify _frida_g_dtls_connection_get_require_close_notify
 #define g_dtls_connection_get_type _frida_g_dtls_connection_get_type
@@ -1214,6 +1222,8 @@
 #define g_environ_setenv _frida_g_environ_setenv
 #define g_environ_unsetenv _frida_g_environ_unsetenv
 #define g_error_copy _frida_g_error_copy
+#define g_error_domain_register _frida_g_error_domain_register
+#define g_error_domain_register_static _frida_g_error_domain_register_static
 #define g_error_free _frida_g_error_free
 #define g_error_get_type _frida_g_error_get_type
 #define g_error_matches _frida_g_error_matches
@@ -1310,6 +1320,7 @@
 #define g_file_info_clear_status _frida_g_file_info_clear_status
 #define g_file_info_copy_into _frida_g_file_info_copy_into
 #define g_file_info_dup _frida_g_file_info_dup
+#define g_file_info_get_access_date_time _frida_g_file_info_get_access_date_time
 #define g_file_info_get_attribute_as_string _frida_g_file_info_get_attribute_as_string
 #define g_file_info_get_attribute_boolean _frida_g_file_info_get_attribute_boolean
 #define g_file_info_get_attribute_byte_string _frida_g_file_info_get_attribute_byte_string
@@ -1324,6 +1335,7 @@
 #define g_file_info_get_attribute_uint32 _frida_g_file_info_get_attribute_uint32
 #define g_file_info_get_attribute_uint64 _frida_g_file_info_get_attribute_uint64
 #define g_file_info_get_content_type _frida_g_file_info_get_content_type
+#define g_file_info_get_creation_date_time _frida_g_file_info_get_creation_date_time
 #define g_file_info_get_deletion_date _frida_g_file_info_get_deletion_date
 #define g_file_info_get_display_name _frida_g_file_info_get_display_name
 #define g_file_info_get_edit_name _frida_g_file_info_get_edit_name
@@ -1346,6 +1358,7 @@
 #define g_file_info_list_attributes _frida_g_file_info_list_attributes
 #define g_file_info_new _frida_g_file_info_new
 #define g_file_info_remove_attribute _frida_g_file_info_remove_attribute
+#define g_file_info_set_access_date_time _frida_g_file_info_set_access_date_time
 #define g_file_info_set_attribute _frida_g_file_info_set_attribute
 #define g_file_info_set_attribute_boolean _frida_g_file_info_set_attribute_boolean
 #define g_file_info_set_attribute_byte_string _frida_g_file_info_set_attribute_byte_string
@@ -1359,6 +1372,7 @@
 #define g_file_info_set_attribute_uint32 _frida_g_file_info_set_attribute_uint32
 #define g_file_info_set_attribute_uint64 _frida_g_file_info_set_attribute_uint64
 #define g_file_info_set_content_type _frida_g_file_info_set_content_type
+#define g_file_info_set_creation_date_time _frida_g_file_info_set_creation_date_time
 #define g_file_info_set_display_name _frida_g_file_info_set_display_name
 #define g_file_info_set_edit_name _frida_g_file_info_set_edit_name
 #define g_file_info_set_file_type _frida_g_file_info_set_file_type
@@ -1961,6 +1975,7 @@
 #define g_main_context_is_owner _frida_g_main_context_is_owner
 #define g_main_context_iteration _frida_g_main_context_iteration
 #define g_main_context_new _frida_g_main_context_new
+#define g_main_context_new_with_flags _frida_g_main_context_new_with_flags
 #define g_main_context_new_with_next_id _frida_g_main_context_new_with_next_id
 #define g_main_context_pending _frida_g_main_context_pending
 #define g_main_context_pop_thread_default _frida_g_main_context_pop_thread_default
@@ -2046,6 +2061,7 @@
 #define g_mem_profile _frida_g_mem_profile
 #define g_mem_set_vtable _frida_g_mem_set_vtable
 #define g_memdup _frida_g_memdup
+#define g_memdup2 _frida_g_memdup2
 #define g_memory_input_stream_add_bytes _frida_g_memory_input_stream_add_bytes
 #define g_memory_input_stream_add_data _frida_g_memory_input_stream_add_data
 #define g_memory_input_stream_get_type _frida_g_memory_input_stream_get_type
@@ -2130,9 +2146,11 @@
 #define g_module_build_path _frida_g_module_build_path
 #define g_module_close _frida_g_module_close
 #define g_module_error _frida_g_module_error
+#define g_module_error_quark _frida_g_module_error_quark
 #define g_module_make_resident _frida_g_module_make_resident
 #define g_module_name _frida_g_module_name
 #define g_module_open _frida_g_module_open
+#define g_module_open_full _frida_g_module_open_full
 #define g_module_supported _frida_g_module_supported
 #define g_module_symbol _frida_g_module_symbol
 #define g_mount_can_eject _frida_g_mount_can_eject
@@ -2266,6 +2284,7 @@
 #define g_notification_get_body _frida_g_notification_get_body
 #define g_notification_get_button _frida_g_notification_get_button
 #define g_notification_get_button_with_action _frida_g_notification_get_button_with_action
+#define g_notification_get_category _frida_g_notification_get_category
 #define g_notification_get_default_action _frida_g_notification_get_default_action
 #define g_notification_get_icon _frida_g_notification_get_icon
 #define g_notification_get_n_buttons _frida_g_notification_get_n_buttons
@@ -2276,6 +2295,7 @@
 #define g_notification_priority_get_type _frida_g_notification_priority_get_type
 #define g_notification_serialize _frida_g_notification_serialize
 #define g_notification_set_body _frida_g_notification_set_body
+#define g_notification_set_category _frida_g_notification_set_category
 #define g_notification_set_default_action _frida_g_notification_set_default_action
 #define g_notification_set_default_action_and_target _frida_g_notification_set_default_action_and_target
 #define g_notification_set_default_action_and_target_value _frida_g_notification_set_default_action_and_target_value
@@ -2338,6 +2358,7 @@
 #define g_object_setv _frida_g_object_setv
 #define g_object_steal_data _frida_g_object_steal_data
 #define g_object_steal_qdata _frida_g_object_steal_qdata
+#define g_object_take_ref _frida_g_object_take_ref
 #define g_object_thaw_notify _frida_g_object_thaw_notify
 #define g_object_unref _frida_g_object_unref
 #define g_object_watch_closure _frida_g_object_watch_closure
@@ -2482,8 +2503,12 @@
 #define g_pattern_match _frida_g_pattern_match
 #define g_pattern_match_simple _frida_g_pattern_match_simple
 #define g_pattern_match_string _frida_g_pattern_match_string
+#define g_pattern_spec_copy _frida_g_pattern_spec_copy
 #define g_pattern_spec_equal _frida_g_pattern_spec_equal
 #define g_pattern_spec_free _frida_g_pattern_spec_free
+#define g_pattern_spec_get_type _frida_g_pattern_spec_get_type
+#define g_pattern_spec_match _frida_g_pattern_spec_match
+#define g_pattern_spec_match_string _frida_g_pattern_spec_match_string
 #define g_pattern_spec_new _frida_g_pattern_spec_new
 #define g_permission_acquire _frida_g_permission_acquire
 #define g_permission_acquire_async _frida_g_permission_acquire_async
@@ -2521,7 +2546,13 @@
 #define g_pollable_stream_write_all _frida_g_pollable_stream_write_all
 #define g_pollfd_get_type _frida_g_pollfd_get_type
 #define g_portal_notification_backend_get_type _frida_g_portal_notification_backend_get_type
+#define g_power_profile_monitor_dbus_get_type _frida_g_power_profile_monitor_dbus_get_type
+#define g_power_profile_monitor_dup_default _frida_g_power_profile_monitor_dup_default
+#define g_power_profile_monitor_get_power_saver_enabled _frida_g_power_profile_monitor_get_power_saver_enabled
+#define g_power_profile_monitor_get_type _frida_g_power_profile_monitor_get_type
+#define g_power_profile_monitor_portal_get_type _frida_g_power_profile_monitor_portal_get_type
 #define g_prefix_error _frida_g_prefix_error
+#define g_prefix_error_literal _frida_g_prefix_error_literal
 #define g_print _frida_g_print
 #define g_printerr _frida_g_printerr
 #define g_printf _frida_g_printf
@@ -2909,6 +2940,7 @@
 #define g_settings_range_check _frida_g_settings_range_check
 #define g_settings_reset _frida_g_settings_reset
 #define g_settings_revert _frida_g_settings_revert
+#define g_settings_schema_get_child_schema _frida_g_settings_schema_get_child_schema
 #define g_settings_schema_get_gettext_domain _frida_g_settings_schema_get_gettext_domain
 #define g_settings_schema_get_id _frida_g_settings_schema_get_id
 #define g_settings_schema_get_key _frida_g_settings_schema_get_key
@@ -3280,12 +3312,15 @@
 #define g_source_set_name_by_id _frida_g_source_set_name_by_id
 #define g_source_set_priority _frida_g_source_set_priority
 #define g_source_set_ready_time _frida_g_source_set_ready_time
+#define g_source_set_static_name _frida_g_source_set_static_name
 #define g_source_unref _frida_g_source_unref
 #define g_spaced_primes_closest _frida_g_spaced_primes_closest
 #define g_spawn_async _frida_g_spawn_async
 #define g_spawn_async_with_fds _frida_g_spawn_async_with_fds
 #define g_spawn_async_with_pipes _frida_g_spawn_async_with_pipes
+#define g_spawn_async_with_pipes_and_fds _frida_g_spawn_async_with_pipes_and_fds
 #define g_spawn_check_exit_status _frida_g_spawn_check_exit_status
+#define g_spawn_check_wait_status _frida_g_spawn_check_wait_status
 #define g_spawn_close_pid _frida_g_spawn_close_pid
 #define g_spawn_command_line_async _frida_g_spawn_command_line_async
 #define g_spawn_command_line_sync _frida_g_spawn_command_line_sync
@@ -3389,6 +3424,7 @@
 #define g_string_prepend_len _frida_g_string_prepend_len
 #define g_string_prepend_unichar _frida_g_string_prepend_unichar
 #define g_string_printf _frida_g_string_printf
+#define g_string_replace _frida_g_string_replace
 #define g_string_set_size _frida_g_string_set_size
 #define g_string_sized_new _frida_g_string_sized_new
 #define g_string_truncate _frida_g_string_truncate
@@ -3412,6 +3448,8 @@
 #define g_strtod _frida_g_strtod
 #define g_strup _frida_g_strup
 #define g_strv_builder_add _frida_g_strv_builder_add
+#define g_strv_builder_add_many _frida_g_strv_builder_add_many
+#define g_strv_builder_addv _frida_g_strv_builder_addv
 #define g_strv_builder_end _frida_g_strv_builder_end
 #define g_strv_builder_new _frida_g_strv_builder_new
 #define g_strv_builder_ref _frida_g_strv_builder_ref
@@ -3524,6 +3562,7 @@
 #define g_test_bug _frida_g_test_bug
 #define g_test_bug_base _frida_g_test_bug_base
 #define g_test_build_filename _frida_g_test_build_filename
+#define g_test_case_free _frida_g_test_case_free
 #define g_test_config_vars _frida_g_test_config_vars
 #define g_test_create_case _frida_g_test_create_case
 #define g_test_create_suite _frida_g_test_create_suite
@@ -3539,11 +3578,14 @@
 #define g_test_dbus_up _frida_g_test_dbus_up
 #define g_test_expect_message _frida_g_test_expect_message
 #define g_test_fail _frida_g_test_fail
+#define g_test_fail_printf _frida_g_test_fail_printf
 #define g_test_failed _frida_g_test_failed
 #define g_test_get_dir _frida_g_test_get_dir
 #define g_test_get_filename _frida_g_test_get_filename
+#define g_test_get_path _frida_g_test_get_path
 #define g_test_get_root _frida_g_test_get_root
 #define g_test_incomplete _frida_g_test_incomplete
+#define g_test_incomplete_printf _frida_g_test_incomplete_printf
 #define g_test_init _frida_g_test_init
 #define g_test_log_buffer_free _frida_g_test_log_buffer_free
 #define g_test_log_buffer_new _frida_g_test_log_buffer_new
@@ -3565,9 +3607,11 @@
 #define g_test_run_suite _frida_g_test_run_suite
 #define g_test_set_nonfatal_assertions _frida_g_test_set_nonfatal_assertions
 #define g_test_skip _frida_g_test_skip
+#define g_test_skip_printf _frida_g_test_skip_printf
 #define g_test_subprocess _frida_g_test_subprocess
 #define g_test_suite_add _frida_g_test_suite_add
 #define g_test_suite_add_suite _frida_g_test_suite_add_suite
+#define g_test_suite_free _frida_g_test_suite_free
 #define g_test_summary _frida_g_test_summary
 #define g_test_timer_elapsed _frida_g_test_timer_elapsed
 #define g_test_timer_last _frida_g_test_timer_last
@@ -3612,6 +3656,7 @@
 #define g_thread_pool_get_num_unused_threads _frida_g_thread_pool_get_num_unused_threads
 #define g_thread_pool_move_to_front _frida_g_thread_pool_move_to_front
 #define g_thread_pool_new _frida_g_thread_pool_new
+#define g_thread_pool_new_full _frida_g_thread_pool_new_full
 #define g_thread_pool_push _frida_g_thread_pool_push
 #define g_thread_pool_set_max_idle_time _frida_g_thread_pool_set_max_idle_time
 #define g_thread_pool_set_max_threads _frida_g_thread_pool_set_max_threads
@@ -3646,6 +3691,7 @@
 #define g_time_zone_get_type _frida_g_time_zone_get_type
 #define g_time_zone_is_dst _frida_g_time_zone_is_dst
 #define g_time_zone_new _frida_g_time_zone_new
+#define g_time_zone_new_identifier _frida_g_time_zone_new_identifier
 #define g_time_zone_new_local _frida_g_time_zone_new_local
 #define g_time_zone_new_offset _frida_g_time_zone_new_offset
 #define g_time_zone_new_utc _frida_g_time_zone_new_utc
@@ -3684,7 +3730,13 @@
 #define g_tls_backend_supports_dtls _frida_g_tls_backend_supports_dtls
 #define g_tls_backend_supports_tls _frida_g_tls_backend_supports_tls
 #define g_tls_certificate_flags_get_type _frida_g_tls_certificate_flags_get_type
+#define g_tls_certificate_get_dns_names _frida_g_tls_certificate_get_dns_names
+#define g_tls_certificate_get_ip_addresses _frida_g_tls_certificate_get_ip_addresses
 #define g_tls_certificate_get_issuer _frida_g_tls_certificate_get_issuer
+#define g_tls_certificate_get_issuer_name _frida_g_tls_certificate_get_issuer_name
+#define g_tls_certificate_get_not_valid_after _frida_g_tls_certificate_get_not_valid_after
+#define g_tls_certificate_get_not_valid_before _frida_g_tls_certificate_get_not_valid_before
+#define g_tls_certificate_get_subject_name _frida_g_tls_certificate_get_subject_name
 #define g_tls_certificate_get_type _frida_g_tls_certificate_get_type
 #define g_tls_certificate_is_same _frida_g_tls_certificate_is_same
 #define g_tls_certificate_list_new_from_file _frida_g_tls_certificate_list_new_from_file
@@ -3710,11 +3762,13 @@
 #define g_tls_connection_emit_accept_certificate _frida_g_tls_connection_emit_accept_certificate
 #define g_tls_connection_get_certificate _frida_g_tls_connection_get_certificate
 #define g_tls_connection_get_channel_binding_data _frida_g_tls_connection_get_channel_binding_data
+#define g_tls_connection_get_ciphersuite_name _frida_g_tls_connection_get_ciphersuite_name
 #define g_tls_connection_get_database _frida_g_tls_connection_get_database
 #define g_tls_connection_get_interaction _frida_g_tls_connection_get_interaction
 #define g_tls_connection_get_negotiated_protocol _frida_g_tls_connection_get_negotiated_protocol
 #define g_tls_connection_get_peer_certificate _frida_g_tls_connection_get_peer_certificate
 #define g_tls_connection_get_peer_certificate_errors _frida_g_tls_connection_get_peer_certificate_errors
+#define g_tls_connection_get_protocol_version _frida_g_tls_connection_get_protocol_version
 #define g_tls_connection_get_rehandshake_mode _frida_g_tls_connection_get_rehandshake_mode
 #define g_tls_connection_get_require_close_notify _frida_g_tls_connection_get_require_close_notify
 #define g_tls_connection_get_type _frida_g_tls_connection_get_type
@@ -3771,6 +3825,7 @@
 #define g_tls_password_set_value _frida_g_tls_password_set_value
 #define g_tls_password_set_value_full _frida_g_tls_password_set_value_full
 #define g_tls_password_set_warning _frida_g_tls_password_set_warning
+#define g_tls_protocol_version_get_type _frida_g_tls_protocol_version_get_type
 #define g_tls_rehandshake_mode_get_type _frida_g_tls_rehandshake_mode_get_type
 #define g_tls_server_connection_get_type _frida_g_tls_server_connection_get_type
 #define g_tls_server_connection_new _frida_g_tls_server_connection_new
@@ -3805,6 +3860,7 @@
 #define g_tree_node_value _frida_g_tree_node_value
 #define g_tree_ref _frida_g_tree_ref
 #define g_tree_remove _frida_g_tree_remove
+#define g_tree_remove_all _frida_g_tree_remove_all
 #define g_tree_replace _frida_g_tree_replace
 #define g_tree_replace_node _frida_g_tree_replace_node
 #define g_tree_search _frida_g_tree_search
@@ -4458,6 +4514,7 @@
 #define glib_binary_age _frida_glib_binary_age
 #define glib_check_version _frida_glib_check_version
 #define glib_deinit _frida_glib_deinit
+#define glib_enable_io_features _frida_glib_enable_io_features
 #define glib_fd_callbacks _frida_glib_fd_callbacks
 #define glib_gettext _frida_glib_gettext
 #define glib_has_dconf_access_in_sandbox _frida_glib_has_dconf_access_in_sandbox
@@ -4482,7 +4539,7 @@
 #endif
 
 /*
- * Copyright (C) 2008-2019 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2008-2021 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  *
  * Licence: wxWindows Library Licence, Version 3.1
  */
@@ -4491,67 +4548,13 @@
 #define __GUM_H__
 
 /*
- * Copyright (C) 2008-2020 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2008-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  *
  * Licence: wxWindows Library Licence, Version 3.1
  */
 
 #ifndef __GUMDEFS_H__
 #define __GUMDEFS_H__
-
-
-/* This file is generated by glib-mkenums, do not modify it. This code is licensed under the same license as the containing project. Note that it links to GLib, so must comply with the LGPL linking clauses. */
-
-#ifndef __GUM_ENUM_TYPES_H__
-#define __GUM_ENUM_TYPES_H__
-
-/* GObject - GLib Type, Object, Parameter and Signal Library
- * Copyright (C) 1998, 1999, 2000 Tim Janik and Red Hat, Inc.
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * License as published by the Free Software Foundation; either
- * version 2.1 of the License, or (at your option) any later version.
- *
- * This library is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the GNU
- * Lesser General Public License for more details.
- *
- * You should have received a copy of the GNU Lesser General
- * Public License along with this library; if not, see <http://www.gnu.org/licenses/>.
- */
-#ifndef __GLIB_GOBJECT_H__
-#define __GLIB_GOBJECT_H__
-
-#define __GLIB_GOBJECT_H_INSIDE__
-
-/* gbinding.h: Binding for object properties
- *
- * Copyright (C) 2010  Intel Corp.
- *
- * This library is free software; you can redistribute it and/or
- * modify it under the terms of the GNU Lesser General Public
- * License as published by the Free Software Foundation; either
- * version 2.1 of the License, or (at your option) any later version.
- *
- * This library is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
- * Lesser General Public License for more details.
- *
- * You should have received a copy of the GNU Lesser General
- * Public License along with this library; if not, see <http://www.gnu.org/licenses/>.
- *
- * Author: Emmanuele Bassi <ebassi@linux.intel.com>
- */
-
-#ifndef __G_BINDING_H__
-#define __G_BINDING_H__
-
-#if !defined (__GLIB_GOBJECT_H_INSIDE__) && !defined (GOBJECT_COMPILATION)
-#error "Only <glib-object.h> can be included directly."
-#endif
 
 /* GLIB - Library of useful routines for C programming
  * Copyright (C) 1995-1997  Peter Mattis, Spencer Kimball and Josh MacDonald
@@ -4691,6 +4694,12 @@
  */
 #include <stddef.h>
 
+/*
+ * Note: Clang (but not clang-cl) defines __GNUC__ and __GNUC_MINOR__.
+ * Both Clang 11.1 on current Arch Linux and Apple's Clang 12.0 define
+ * __GNUC__ = 4 and __GNUC_MINOR__ = 2. So G_GNUC_CHECK_VERSION(4, 2) on
+ * current Clang will be 1.
+ */
 #ifdef __GNUC__
 #define G_GNUC_CHECK_VERSION(major, minor) \
     ((__GNUC__ > (major)) || \
@@ -4704,7 +4713,7 @@
  * where this is valid. This allows for warningless compilation of
  * "long long" types even in the presence of '-ansi -pedantic'. 
  */
-#if     __GNUC__ > 2 || (__GNUC__ == 2 && __GNUC_MINOR__ >= 8)
+#if G_GNUC_CHECK_VERSION(2, 8)
 #define G_GNUC_EXTENSION __extension__
 #else
 #define G_GNUC_EXTENSION
@@ -4759,6 +4768,39 @@
 #else
 #  define G_INLINE_FUNC static inline GLIB_DEPRECATED_MACRO_IN_2_48_FOR(static inline)
 #endif /* G_IMPLEMENT_INLINES */
+
+/*
+ * Attribute support detection. Works on clang and GCC >= 5
+ * https://clang.llvm.org/docs/LanguageExtensions.html#has-attribute
+ * https://gcc.gnu.org/onlinedocs/cpp/_005f_005fhas_005fattribute.html
+ */
+
+#ifdef __has_attribute
+#define g_macro__has_attribute __has_attribute
+#else
+
+/*
+ * Fallback for GCC < 5 and other compilers not supporting __has_attribute.
+ */
+#define g_macro__has_attribute(x) g_macro__has_attribute_##x
+
+#define g_macro__has_attribute___pure__ G_GNUC_CHECK_VERSION (2, 96)
+#define g_macro__has_attribute___malloc__ G_GNUC_CHECK_VERSION (2, 96)
+#define g_macro__has_attribute___noinline__ G_GNUC_CHECK_VERSION (2, 96)
+#define g_macro__has_attribute___sentinel__ G_GNUC_CHECK_VERSION (4, 0)
+#define g_macro__has_attribute___alloc_size__ G_GNUC_CHECK_VERSION (4, 3)
+#define g_macro__has_attribute___format__ G_GNUC_CHECK_VERSION (2, 4)
+#define g_macro__has_attribute___format_arg__ G_GNUC_CHECK_VERSION (2, 4)
+#define g_macro__has_attribute___noreturn__ (G_GNUC_CHECK_VERSION (2, 8) || (0x5110 <= __SUNPRO_C))
+#define g_macro__has_attribute___const__ G_GNUC_CHECK_VERSION (2, 4)
+#define g_macro__has_attribute___unused__ G_GNUC_CHECK_VERSION (2, 4)
+#define g_macro__has_attribute___no_instrument_function__ G_GNUC_CHECK_VERSION (2, 4)
+#define g_macro__has_attribute_fallthrough G_GNUC_CHECK_VERSION (6, 0)
+#define g_macro__has_attribute___deprecated__ G_GNUC_CHECK_VERSION (3, 1)
+#define g_macro__has_attribute_may_alias G_GNUC_CHECK_VERSION (3, 3)
+#define g_macro__has_attribute_warn_unused_result G_GNUC_CHECK_VERSION (3, 4)
+
+#endif
 
 /* Provide macros to feature the GCC function attribute.
  */
@@ -4842,14 +4884,27 @@
  *
  * Since: 2.58
  */
+/* Note: We can’t annotate this with GLIB_AVAILABLE_MACRO_IN_2_58 because it’s
+ * used within the GLib headers in function declarations which are always
+ * evaluated when a header is included. This results in warnings in third party
+ * code which includes glib.h, even if the third party code doesn’t use the new
+ * macro itself. */
 
-#if    __GNUC__ > 2 || (__GNUC__ == 2 && __GNUC_MINOR__ >= 96)
+#if g_macro__has_attribute(__pure__)
 #define G_GNUC_PURE __attribute__((__pure__))
-#define G_GNUC_MALLOC __attribute__((__malloc__))
-#define G_GNUC_NO_INLINE __attribute__((noinline))
 #else
 #define G_GNUC_PURE
+#endif
+
+#if g_macro__has_attribute(__malloc__)
+#define G_GNUC_MALLOC __attribute__ ((__malloc__))
+#else
 #define G_GNUC_MALLOC
+#endif
+
+#if g_macro__has_attribute(__noinline__)
+#define G_GNUC_NO_INLINE __attribute__ ((__noinline__))
+#else
 #define G_GNUC_NO_INLINE
 #endif
 
@@ -4872,24 +4927,10 @@
  *
  * Since: 2.8
  */
-#if     __GNUC__ >= 4
+#if g_macro__has_attribute(__sentinel__)
 #define G_GNUC_NULL_TERMINATED __attribute__((__sentinel__))
 #else
 #define G_GNUC_NULL_TERMINATED
-#endif
-
-/*
- * We can only use __typeof__ on GCC >= 4.8, and not when compiling C++. Since
- * __typeof__ is used in a few places in GLib, provide a pre-processor symbol
- * to factor the check out from callers.
- *
- * This symbol is private.
- */
-#undef glib_typeof
-#if !defined(__cplusplus) && \
-     ((defined(__GNUC__) && (__GNUC__ > 4 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 8))) || \
-      defined(__clang__))
-#define glib_typeof(t) __typeof__ (t)
 #endif
 
 /*
@@ -4902,12 +4943,6 @@
  * So we define it to 0 to satisfy the pre-processor.
  */
 
-#ifdef __has_attribute
-#define g_macro__has_attribute __has_attribute
-#else
-#define g_macro__has_attribute(x) 0
-#endif
-
 #ifdef __has_feature
 #define g_macro__has_feature __has_feature
 #else
@@ -4918,6 +4953,12 @@
 #define g_macro__has_builtin __has_builtin
 #else
 #define g_macro__has_builtin(x) 0
+#endif
+
+#ifdef __has_extension
+#define g_macro__has_extension __has_extension
+#else
+#define g_macro__has_extension(x) 0
 #endif
 
 /**
@@ -4963,8 +5004,7 @@
  *
  * Since: 2.18
  */
-#if     (!defined(__clang__) && ((__GNUC__ > 4) || (__GNUC__ == 4 && __GNUC_MINOR__ >= 3))) || \
-        (defined(__clang__) && g_macro__has_attribute(__alloc_size__))
+#if g_macro__has_attribute(__alloc_size__)
 #define G_GNUC_ALLOC_SIZE(x) __attribute__((__alloc_size__(x)))
 #define G_GNUC_ALLOC_SIZE2(x,y) __attribute__((__alloc_size__(x,y)))
 #else
@@ -5077,6 +5117,12 @@
  * It is used for declaring functions which never return. It enables
  * optimization of the function, and avoids possible compiler warnings.
  *
+ * Since 2.68, it is recommended that code uses %G_NORETURN instead of
+ * %G_GNUC_NORETURN, as that works on more platforms and compilers (in
+ * particular, MSVC and C++11) than %G_GNUC_NORETURN, which works with GCC and
+ * Clang only. %G_GNUC_NORETURN continues to work, so has not been deprecated
+ * yet.
+ *
  * Place the attribute after the declaration, just before the semicolon.
  *
  * |[<!-- language="C" -->
@@ -5144,46 +5190,73 @@
  * See the [GNU C documentation](https://gcc.gnu.org/onlinedocs/gcc/Common-Function-Attributes.html#index-no_005finstrument_005ffunction-function-attribute) for more details.
  */
 
-#if     __GNUC__ > 2 || (__GNUC__ == 2 && __GNUC_MINOR__ > 4)
+#if g_macro__has_attribute(__format__)
+
 #if !defined (__clang__) && G_GNUC_CHECK_VERSION (4, 4)
 #define G_GNUC_PRINTF( format_idx, arg_idx )    \
   __attribute__((__format__ (gnu_printf, format_idx, arg_idx)))
 #define G_GNUC_SCANF( format_idx, arg_idx )     \
   __attribute__((__format__ (gnu_scanf, format_idx, arg_idx)))
 #define G_GNUC_STRFTIME( format_idx )    \
-  __attribute__((__format__ (gnu_strftime, format_idx, 0)))
+  __attribute__((__format__ (gnu_strftime, format_idx, 0))) \
+  GLIB_AVAILABLE_MACRO_IN_2_60
 #else
 #define G_GNUC_PRINTF( format_idx, arg_idx )    \
   __attribute__((__format__ (__printf__, format_idx, arg_idx)))
 #define G_GNUC_SCANF( format_idx, arg_idx )     \
   __attribute__((__format__ (__scanf__, format_idx, arg_idx)))
 #define G_GNUC_STRFTIME( format_idx )    \
-  __attribute__((__format__ (__strftime__, format_idx, 0)))
+  __attribute__((__format__ (__strftime__, format_idx, 0))) \
+  GLIB_AVAILABLE_MACRO_IN_2_60
 #endif
-#define G_GNUC_FORMAT( arg_idx )                \
-  __attribute__((__format_arg__ (arg_idx)))
-#define G_GNUC_NORETURN                         \
-  __attribute__((__noreturn__))
-#define G_GNUC_CONST                            \
-  __attribute__((__const__))
-#define G_GNUC_UNUSED                           \
-  __attribute__((__unused__))
-#define G_GNUC_NO_INSTRUMENT			\
-  __attribute__((__no_instrument_function__))
-#else   /* !__GNUC__ */
+
+#else
+
 #define G_GNUC_PRINTF( format_idx, arg_idx )
 #define G_GNUC_SCANF( format_idx, arg_idx )
-#define G_GNUC_STRFTIME( format_idx )
+#define G_GNUC_STRFTIME( format_idx ) \
+  GLIB_AVAILABLE_MACRO_IN_2_60
+
+#endif
+
+#if g_macro__has_attribute(__format_arg__)
+#define G_GNUC_FORMAT(arg_idx) \
+  __attribute__ ((__format_arg__ (arg_idx)))
+#else
 #define G_GNUC_FORMAT( arg_idx )
+#endif
+
+#if g_macro__has_attribute(__noreturn__)
+#define G_GNUC_NORETURN \
+  __attribute__ ((__noreturn__))
+#else
 /* NOTE: MSVC has __declspec(noreturn) but unlike GCC __attribute__,
  * __declspec can only be placed at the start of the function prototype
  * and not at the end, so we can't use it without breaking API.
  */
 #define G_GNUC_NORETURN
+#endif
+
+#if g_macro__has_attribute(__const__)
+#define G_GNUC_CONST \
+  __attribute__ ((__const__))
+#else
 #define G_GNUC_CONST
+#endif
+
+#if g_macro__has_attribute(__unused__)
+#define G_GNUC_UNUSED \
+  __attribute__ ((__unused__))
+#else
 #define G_GNUC_UNUSED
+#endif
+
+#if g_macro__has_attribute(__no_instrument_function__)
+#define G_GNUC_NO_INSTRUMENT \
+  __attribute__ ((__no_instrument_function__))
+#else
 #define G_GNUC_NO_INSTRUMENT
-#endif  /* !__GNUC__ */
+#endif
 
 /**
  * G_GNUC_FALLTHROUGH:
@@ -5213,13 +5286,13 @@
  *
  * Since: 2.60
  */
-#if    __GNUC__ > 6
-#define G_GNUC_FALLTHROUGH __attribute__((fallthrough))
-#elif g_macro__has_attribute (fallthrough)
-#define G_GNUC_FALLTHROUGH __attribute__((fallthrough))
+#if g_macro__has_attribute(fallthrough)
+#define G_GNUC_FALLTHROUGH __attribute__((fallthrough)) \
+  GLIB_AVAILABLE_MACRO_IN_2_60
 #else
-#define G_GNUC_FALLTHROUGH
-#endif /* __GNUC__ */
+#define G_GNUC_FALLTHROUGH \
+  GLIB_AVAILABLE_MACRO_IN_2_60
+#endif
 
 /**
  * G_GNUC_DEPRECATED:
@@ -5239,7 +5312,7 @@
  *
  * Since: 2.2
  */
-#if    __GNUC__ > 3 || (__GNUC__ == 3 && __GNUC_MINOR__ >= 1) || defined (__clang__)
+#if g_macro__has_attribute(__deprecated__)
 #define G_GNUC_DEPRECATED __attribute__((__deprecated__))
 #else
 #define G_GNUC_DEPRECATED
@@ -5268,11 +5341,13 @@
  *
  * Since: 2.26
  */
-#if    __GNUC__ > 4 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 5) || defined (__clang__)
+#if G_GNUC_CHECK_VERSION(4, 5) || defined(__clang__)
 #define G_GNUC_DEPRECATED_FOR(f)                        \
-  __attribute__((deprecated("Use " #f " instead")))
+  __attribute__((deprecated("Use " #f " instead")))     \
+  GLIB_AVAILABLE_MACRO_IN_2_26
 #else
-#define G_GNUC_DEPRECATED_FOR(f)        G_GNUC_DEPRECATED
+#define G_GNUC_DEPRECATED_FOR(f)      G_GNUC_DEPRECATED \
+  GLIB_AVAILABLE_MACRO_IN_2_26
 #endif /* __GNUC__ */
 
 #ifdef __ICC
@@ -5281,7 +5356,7 @@
   _Pragma ("warning (disable:1478)")
 #define G_GNUC_END_IGNORE_DEPRECATIONS			\
   _Pragma ("warning (pop)")
-#elif    __GNUC__ > 4 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 6)
+#elif G_GNUC_CHECK_VERSION(4, 6)
 #define G_GNUC_BEGIN_IGNORE_DEPRECATIONS		\
   _Pragma ("GCC diagnostic push")			\
   _Pragma ("GCC diagnostic ignored \"-Wdeprecated-declarations\"")
@@ -5302,6 +5377,7 @@
 #else
 #define G_GNUC_BEGIN_IGNORE_DEPRECATIONS
 #define G_GNUC_END_IGNORE_DEPRECATIONS
+#define GLIB_CANNOT_IGNORE_DEPRECATIONS
 #endif
 
 /**
@@ -5315,7 +5391,7 @@
  *
  * Since: 2.14
  */
-#if     __GNUC__ > 3 || (__GNUC__ == 3 && __GNUC_MINOR__ >= 3)
+#if g_macro__has_attribute(may_alias)
 #define G_GNUC_MAY_ALIAS __attribute__((may_alias))
 #else
 #define G_GNUC_MAY_ALIAS
@@ -5339,7 +5415,7 @@
  *
  * Since: 2.10
  */
-#if    __GNUC__ > 3 || (__GNUC__ == 3 && __GNUC_MINOR__ >= 4)
+#if g_macro__has_attribute(warn_unused_result)
 #define G_GNUC_WARN_UNUSED_RESULT __attribute__((warn_unused_result))
 #else
 #define G_GNUC_WARN_UNUSED_RESULT
@@ -5381,6 +5457,9 @@
 #if g_macro__has_feature(attribute_analyzer_noreturn) && defined(__clang_analyzer__)
 #define G_ANALYZER_ANALYZING 1
 #define G_ANALYZER_NORETURN __attribute__((analyzer_noreturn))
+#elif defined(__COVERITY__)
+#define G_ANALYZER_ANALYZING 1
+#define G_ANALYZER_NORETURN __attribute__((noreturn))
 #else
 #define G_ANALYZER_ANALYZING 0
 #define G_ANALYZER_NORETURN
@@ -5392,7 +5471,8 @@
 #ifndef __GI_SCANNER__ /* The static assert macro really confuses the introspection parser */
 #define G_PASTE_ARGS(identifier1,identifier2) identifier1 ## identifier2
 #define G_PASTE(identifier1,identifier2)      G_PASTE_ARGS (identifier1, identifier2)
-#if !defined(__cplusplus) && defined(__STDC_VERSION__) && __STDC_VERSION__ >= 201112L
+#if !defined(__cplusplus) && defined(__STDC_VERSION__) && \
+    (__STDC_VERSION__ >= 201112L || g_macro__has_feature(c_static_assert) || g_macro__has_extension(c_static_assert))
 #define G_STATIC_ASSERT(expr) _Static_assert (expr, "Expression evaluates to false")
 #elif (defined(__cplusplus) && __cplusplus >= 201103L) || \
       (defined(__cplusplus) && defined (_MSC_VER) && (_MSC_VER >= 1600)) || \
@@ -5486,7 +5566,7 @@
  * fields through their offsets.
  */
 
-#if (defined(__GNUC__)  && __GNUC__ >= 4) || defined (_MSC_VER)
+#if G_GNUC_CHECK_VERSION(4, 0) || defined(_MSC_VER)
 #define G_STRUCT_OFFSET(struct_type, member) \
       ((glong) offsetof (struct_type, member))
 #else
@@ -5545,9 +5625,11 @@
  * Since: 2.60
  */
 #if defined(__STDC_VERSION__) && __STDC_VERSION__ >= 201112L && !defined(__cplusplus)
-#define G_ALIGNOF(type) _Alignof (type)
+#define G_ALIGNOF(type) _Alignof (type) \
+  GLIB_AVAILABLE_MACRO_IN_2_60
 #else
-#define G_ALIGNOF(type) (G_STRUCT_OFFSET (struct { char a; type b; }, b))
+#define G_ALIGNOF(type) (G_STRUCT_OFFSET (struct { char a; type b; }, b)) \
+  GLIB_AVAILABLE_MACRO_IN_2_60
 #endif
 
 /**
@@ -5571,6 +5653,76 @@
 #define G_CONST_RETURN const GLIB_DEPRECATED_MACRO_IN_2_30_FOR(const)
 #endif
 
+/**
+ * G_NORETURN:
+ *
+ * Expands to the GNU C or MSVC `noreturn` function attribute depending on
+ * the compiler. It is used for declaring functions which never return.
+ * Enables optimization of the function, and avoids possible compiler warnings.
+ *
+ * Note that %G_NORETURN supersedes the previous %G_GNUC_NORETURN macro, which
+ * will eventually be deprecated. %G_NORETURN supports more platforms.
+ *
+ * Place the attribute before the function declaration as follows:
+ *
+ * |[<!-- language="C" -->
+ * G_NORETURN void g_abort (void);
+ * ]|
+ *
+ * Since: 2.68
+ */
+/* Note: We can’t annotate this with GLIB_AVAILABLE_MACRO_IN_2_68 because it’s
+ * used within the GLib headers in function declarations which are always
+ * evaluated when a header is included. This results in warnings in third party
+ * code which includes glib.h, even if the third party code doesn’t use the new
+ * macro itself. */
+#if g_macro__has_attribute(__noreturn__)
+  /* For compatibility with G_NORETURN_FUNCPTR on clang, use
+     __attribute__((__noreturn__)), not _Noreturn.  */
+# define G_NORETURN __attribute__ ((__noreturn__))
+#elif defined (_MSC_VER) && (1200 <= _MSC_VER)
+  /* Use MSVC specific syntax.  */
+# define G_NORETURN __declspec (noreturn)
+  /* Use ISO C++11 syntax when the compiler supports it.  */
+#elif defined (__cplusplus) && __cplusplus >= 201103
+# define G_NORETURN [[noreturn]]
+  /* Use ISO C11 syntax when the compiler supports it.  */
+#elif defined (__STDC_VERSION__) && __STDC_VERSION__ >= 201112
+# define G_NORETURN _Noreturn
+#else
+# define G_NORETURN /* empty */
+#endif
+
+/**
+ * G_NORETURN_FUNCPTR:
+ *
+ * Expands to the GNU C or MSVC `noreturn` function attribute depending on
+ * the compiler. It is used for declaring function pointers which never return.
+ * Enables optimization of the function, and avoids possible compiler warnings.
+ *
+ * Place the attribute before the function declaration as follows:
+ *
+ * |[<!-- language="C" -->
+ * G_NORETURN_FUNCPTR void (*funcptr) (void);
+ * ]|
+ *
+ * Note that if the function is not a function pointer, you can simply use
+ * the %G_NORETURN macro as follows:
+ *
+ * |[<!-- language="C" -->
+ * G_NORETURN void g_abort (void);
+ * ]|
+ *
+ * Since: 2.68
+ */
+#if g_macro__has_attribute(__noreturn__)
+# define G_NORETURN_FUNCPTR __attribute__ ((__noreturn__))      \
+  GLIB_AVAILABLE_MACRO_IN_2_68
+#else
+# define G_NORETURN_FUNCPTR /* empty */         \
+  GLIB_AVAILABLE_MACRO_IN_2_68
+#endif
+
 /*
  * The G_LIKELY and G_UNLIKELY macros let the programmer give hints to 
  * the compiler about the expected result of an expression. Some compilers
@@ -5579,7 +5731,7 @@
  * The _G_BOOLEAN_EXPR macro is intended to trigger a gcc warning when
  * putting assignments in g_return_if_fail ().  
  */
-#if defined(__GNUC__) && (__GNUC__ > 2) && defined(__OPTIMIZE__)
+#if G_GNUC_CHECK_VERSION(2, 0) && defined(__OPTIMIZE__)
 #define _G_BOOLEAN_EXPR(expr)                   \
  G_GNUC_EXTENSION ({                            \
    int _g_boolean_var_;                         \
@@ -5596,7 +5748,14 @@
 #define G_UNLIKELY(expr) (expr)
 #endif
 
-#if    __GNUC__ > 3 || (__GNUC__ == 3 && __GNUC_MINOR__ >= 1) || defined (__clang__)
+/* GLIB_CANNOT_IGNORE_DEPRECATIONS is defined above for compilers that do not
+ * have a way to temporarily suppress deprecation warnings. In these cases,
+ * suppress the deprecated attribute altogether (otherwise a simple #include
+ * <glib.h> will emit a barrage of warnings).
+ */
+#if defined(GLIB_CANNOT_IGNORE_DEPRECATIONS)
+#define G_DEPRECATED
+#elif G_GNUC_CHECK_VERSION(3, 1) || defined(__clang__)
 #define G_DEPRECATED __attribute__((__deprecated__))
 #elif defined(_MSC_VER) && (_MSC_VER >= 1300)
 #define G_DEPRECATED __declspec(deprecated)
@@ -5604,7 +5763,9 @@
 #define G_DEPRECATED
 #endif
 
-#if    __GNUC__ > 4 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 5) || defined (__clang__)
+#if defined(GLIB_CANNOT_IGNORE_DEPRECATIONS)
+#define G_DEPRECATED_FOR(f) G_DEPRECATED
+#elif G_GNUC_CHECK_VERSION(4, 5) || defined(__clang__)
 #define G_DEPRECATED_FOR(f) __attribute__((__deprecated__("Use '" #f "' instead")))
 #elif defined(_MSC_FULL_VER) && (_MSC_FULL_VER > 140050320)
 #define G_DEPRECATED_FOR(f) __declspec(deprecated("is deprecated. Use '" #f "' instead"))
@@ -5612,7 +5773,7 @@
 #define G_DEPRECATED_FOR(f) G_DEPRECATED
 #endif
 
-#if    __GNUC__ > 4 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 5) || defined (__clang__)
+#if G_GNUC_CHECK_VERSION(4, 5) || defined(__clang__)
 #define G_UNAVAILABLE(maj,min) __attribute__((deprecated("Not available before " #maj "." #min)))
 #elif defined(_MSC_FULL_VER) && (_MSC_FULL_VER > 140050320)
 #define G_UNAVAILABLE(maj,min) __declspec(deprecated("is not available before " #maj "." #min))
@@ -5643,12 +5804,14 @@
 #endif
 
 #if !defined(GLIB_DISABLE_DEPRECATION_WARNINGS) && \
-    (__GNUC__ > 4 || (__GNUC__ == 4 && __GNUC_MINOR__ >= 6) || \
+    (G_GNUC_CHECK_VERSION(4, 6) ||                 \
      __clang_major__ > 3 || (__clang_major__ == 3 && __clang_minor__ >= 4))
 #define _GLIB_GNUC_DO_PRAGMA(x) _Pragma(G_STRINGIFY (x))
 #define GLIB_DEPRECATED_MACRO _GLIB_GNUC_DO_PRAGMA(GCC warning "Deprecated pre-processor symbol")
-#define GLIB_DEPRECATED_MACRO_FOR(f) _GLIB_GNUC_DO_PRAGMA(GCC warning "Deprecated pre-processor symbol, replace with " #f)
-#define GLIB_UNAVAILABLE_MACRO(maj,min) _GLIB_GNUC_DO_PRAGMA(GCC warning "Not available before " #maj "." #min)
+#define GLIB_DEPRECATED_MACRO_FOR(f) \
+  _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Deprecated pre-processor symbol: replace with #f))
+#define GLIB_UNAVAILABLE_MACRO(maj,min) \
+  _GLIB_GNUC_DO_PRAGMA(GCC warning G_STRINGIFY (Not available before maj.min))
 #else
 #define GLIB_DEPRECATED_MACRO
 #define GLIB_DEPRECATED_MACRO_FOR(f)
@@ -5656,7 +5819,7 @@
 #endif
 
 #if !defined(GLIB_DISABLE_DEPRECATION_WARNINGS) && \
-    ((defined (__GNUC__) && (__GNUC__ > 6 || (__GNUC__ == 6 && __GNUC_MINOR__ >= 1))) || \
+    (G_GNUC_CHECK_VERSION(6, 1) ||                 \
      (defined (__clang_major__) && (__clang_major__ > 3 || (__clang_major__ == 3 && __clang_minor__ >= 0))))
 #define GLIB_DEPRECATED_ENUMERATOR G_DEPRECATED
 #define GLIB_DEPRECATED_ENUMERATOR_FOR(f) G_DEPRECATED_FOR(f)
@@ -5668,7 +5831,7 @@
 #endif
 
 #if !defined(GLIB_DISABLE_DEPRECATION_WARNINGS) && \
-    ((defined (__GNUC__) && (__GNUC__ > 3 || (__GNUC__ == 3 && __GNUC_MINOR__ >= 1))) || \
+    (G_GNUC_CHECK_VERSION(3, 1) ||                 \
      (defined (__clang_major__) && (__clang_major__ > 3 || (__clang_major__ == 3 && __clang_minor__ >= 0))))
 #define GLIB_DEPRECATED_TYPE G_DEPRECATED
 #define GLIB_DEPRECATED_TYPE_FOR(f) G_DEPRECATED_FOR(f)
@@ -5784,6 +5947,11 @@
  */
 #undef GLIB_USING_SYSTEM_PRINTF
 
+/* Specifies that glib_init() is supported by this GLib
+ * build.
+ */
+#define GLIB_DYNAMIC_UNLOADING 1
+
 #define GLIB_STATIC_COMPILATION 1
 #define GOBJECT_STATIC_COMPILATION 1
 #define GIO_STATIC_COMPILATION 1
@@ -5876,7 +6044,7 @@ typedef unsigned long guintptr;
 #define G_GUINTPTR_FORMAT       "lu"
 
 #define GLIB_MAJOR_VERSION 2
-#define GLIB_MINOR_VERSION 67
+#define GLIB_MINOR_VERSION 71
 #define GLIB_MICRO_VERSION 0
 
 #define G_OS_UNIX
@@ -6237,8 +6405,36 @@ G_END_DECLS
  */
 #define GLIB_VERSION_2_68       (G_ENCODE_VERSION (2, 68))
 
-/* evaluates to the current stable version; for development cycles,
- * this means the next stable target
+/**
+ * GLIB_VERSION_2_70:
+ *
+ * A macro that evaluates to the 2.70 version of GLib, in a format
+ * that can be used by the C pre-processor.
+ *
+ * Since: 2.70
+ */
+#define GLIB_VERSION_2_70       (G_ENCODE_VERSION (2, 70))
+
+/**
+ * GLIB_VERSION_2_72:
+ *
+ * A macro that evaluates to the 2.72 version of GLib, in a format
+ * that can be used by the C pre-processor.
+ *
+ * Since: 2.72
+ */
+#define GLIB_VERSION_2_72       (G_ENCODE_VERSION (2, 72))
+
+/**
+ * GLIB_VERSION_CUR_STABLE:
+ *
+ * A macro that evaluates to the current stable version of GLib, in a format
+ * that can be used by the C pre-processor.
+ *
+ * During an unstable development cycle, this evaluates to the next stable
+ * (unreleased) version which will be the result of the development cycle.
+ *
+ * Since: 2.32
  */
 #if (GLIB_MINOR_VERSION % 2)
 #define GLIB_VERSION_CUR_STABLE         (G_ENCODE_VERSION (GLIB_MAJOR_VERSION, GLIB_MINOR_VERSION + 1))
@@ -6246,7 +6442,17 @@ G_END_DECLS
 #define GLIB_VERSION_CUR_STABLE         (G_ENCODE_VERSION (GLIB_MAJOR_VERSION, GLIB_MINOR_VERSION))
 #endif
 
-/* evaluates to the previous stable version */
+/**
+ * GLIB_VERSION_PREV_STABLE:
+ *
+ * A macro that evaluates to the previous stable version of GLib, in a format
+ * that can be used by the C pre-processor.
+ *
+ * During an unstable development cycle, this evaluates to the most recent
+ * released stable release, which preceded this development cycle.
+ *
+ * Since: 2.32
+ */
 #if (GLIB_MINOR_VERSION % 2)
 #define GLIB_VERSION_PREV_STABLE        (G_ENCODE_VERSION (GLIB_MAJOR_VERSION, GLIB_MINOR_VERSION - 1))
 #else
@@ -7040,6 +7246,74 @@ G_END_DECLS
 # define GLIB_AVAILABLE_TYPE_IN_2_68
 #endif
 
+#if GLIB_VERSION_MIN_REQUIRED >= GLIB_VERSION_2_70
+# define GLIB_DEPRECATED_IN_2_70                GLIB_DEPRECATED
+# define GLIB_DEPRECATED_IN_2_70_FOR(f)         GLIB_DEPRECATED_FOR(f)
+# define GLIB_DEPRECATED_MACRO_IN_2_70          GLIB_DEPRECATED_MACRO
+# define GLIB_DEPRECATED_MACRO_IN_2_70_FOR(f)   GLIB_DEPRECATED_MACRO_FOR(f)
+# define GLIB_DEPRECATED_ENUMERATOR_IN_2_70          GLIB_DEPRECATED_ENUMERATOR
+# define GLIB_DEPRECATED_ENUMERATOR_IN_2_70_FOR(f)   GLIB_DEPRECATED_ENUMERATOR_FOR(f)
+# define GLIB_DEPRECATED_TYPE_IN_2_70           GLIB_DEPRECATED_TYPE
+# define GLIB_DEPRECATED_TYPE_IN_2_70_FOR(f)    GLIB_DEPRECATED_TYPE_FOR(f)
+#else
+# define GLIB_DEPRECATED_IN_2_70                _GLIB_EXTERN
+# define GLIB_DEPRECATED_IN_2_70_FOR(f)         _GLIB_EXTERN
+# define GLIB_DEPRECATED_MACRO_IN_2_70
+# define GLIB_DEPRECATED_MACRO_IN_2_70_FOR(f)
+# define GLIB_DEPRECATED_ENUMERATOR_IN_2_70
+# define GLIB_DEPRECATED_ENUMERATOR_IN_2_70_FOR(f)
+# define GLIB_DEPRECATED_TYPE_IN_2_70
+# define GLIB_DEPRECATED_TYPE_IN_2_70_FOR(f)
+#endif
+
+#if GLIB_VERSION_MAX_ALLOWED < GLIB_VERSION_2_70
+# define GLIB_AVAILABLE_IN_2_70                 GLIB_UNAVAILABLE(2, 70)
+# define GLIB_AVAILABLE_STATIC_INLINE_IN_2_70   GLIB_UNAVAILABLE_STATIC_INLINE(2, 70)
+# define GLIB_AVAILABLE_MACRO_IN_2_70           GLIB_UNAVAILABLE_MACRO(2, 70)
+# define GLIB_AVAILABLE_ENUMERATOR_IN_2_70      GLIB_UNAVAILABLE_ENUMERATOR(2, 70)
+# define GLIB_AVAILABLE_TYPE_IN_2_70            GLIB_UNAVAILABLE_TYPE(2, 70)
+#else
+# define GLIB_AVAILABLE_IN_2_70                 _GLIB_EXTERN
+# define GLIB_AVAILABLE_STATIC_INLINE_IN_2_70
+# define GLIB_AVAILABLE_MACRO_IN_2_70
+# define GLIB_AVAILABLE_ENUMERATOR_IN_2_70
+# define GLIB_AVAILABLE_TYPE_IN_2_70
+#endif
+
+#if GLIB_VERSION_MIN_REQUIRED >= GLIB_VERSION_2_72
+# define GLIB_DEPRECATED_IN_2_72                GLIB_DEPRECATED
+# define GLIB_DEPRECATED_IN_2_72_FOR(f)         GLIB_DEPRECATED_FOR(f)
+# define GLIB_DEPRECATED_MACRO_IN_2_72          GLIB_DEPRECATED_MACRO
+# define GLIB_DEPRECATED_MACRO_IN_2_72_FOR(f)   GLIB_DEPRECATED_MACRO_FOR(f)
+# define GLIB_DEPRECATED_ENUMERATOR_IN_2_72          GLIB_DEPRECATED_ENUMERATOR
+# define GLIB_DEPRECATED_ENUMERATOR_IN_2_72_FOR(f)   GLIB_DEPRECATED_ENUMERATOR_FOR(f)
+# define GLIB_DEPRECATED_TYPE_IN_2_72           GLIB_DEPRECATED_TYPE
+# define GLIB_DEPRECATED_TYPE_IN_2_72_FOR(f)    GLIB_DEPRECATED_TYPE_FOR(f)
+#else
+# define GLIB_DEPRECATED_IN_2_72                _GLIB_EXTERN
+# define GLIB_DEPRECATED_IN_2_72_FOR(f)         _GLIB_EXTERN
+# define GLIB_DEPRECATED_MACRO_IN_2_72
+# define GLIB_DEPRECATED_MACRO_IN_2_72_FOR(f)
+# define GLIB_DEPRECATED_ENUMERATOR_IN_2_72
+# define GLIB_DEPRECATED_ENUMERATOR_IN_2_72_FOR(f)
+# define GLIB_DEPRECATED_TYPE_IN_2_72
+# define GLIB_DEPRECATED_TYPE_IN_2_72_FOR(f)
+#endif
+
+#if GLIB_VERSION_MAX_ALLOWED < GLIB_VERSION_2_72
+# define GLIB_AVAILABLE_IN_2_72                 GLIB_UNAVAILABLE(2, 72)
+# define GLIB_AVAILABLE_STATIC_INLINE_IN_2_72   GLIB_UNAVAILABLE_STATIC_INLINE(2, 72)
+# define GLIB_AVAILABLE_MACRO_IN_2_72           GLIB_UNAVAILABLE_MACRO(2, 72)
+# define GLIB_AVAILABLE_ENUMERATOR_IN_2_72      GLIB_UNAVAILABLE_ENUMERATOR(2, 72)
+# define GLIB_AVAILABLE_TYPE_IN_2_72            GLIB_UNAVAILABLE_TYPE(2, 72)
+#else
+# define GLIB_AVAILABLE_IN_2_72                 _GLIB_EXTERN
+# define GLIB_AVAILABLE_STATIC_INLINE_IN_2_72
+# define GLIB_AVAILABLE_MACRO_IN_2_72
+# define GLIB_AVAILABLE_ENUMERATOR_IN_2_72
+# define GLIB_AVAILABLE_TYPE_IN_2_72
+#endif
+
 #endif /*  __G_VERSION_MACROS_H__ */
 #include <time.h>
 
@@ -7639,6 +7913,11 @@ G_END_DECLS
  *   way as out of stack space situations from infinite function recursion, i.e.
  *   with a segmentation fault.
  *
+ * - Allowing @size to be specified by an untrusted party would allow for them
+ *   to trigger a segmentation fault by specifying a large size, leading to a
+ *   denial of service vulnerability. @size must always be entirely under the
+ *   control of the program.
+ *
  * - Special care has to be taken when mixing alloca() with GNU C variable sized arrays.
  *   Stack space allocated with alloca() in the same scope as a variable sized array
  *   will be freed together with the variable sized array upon exit of that scope, and
@@ -7654,6 +7933,12 @@ G_END_DECLS
  * 
  * Wraps g_alloca() in a more typesafe manner.
  * 
+ * As mentioned in the documentation for g_alloca(), @n_structs must always be
+ * entirely under the control of the program, or you may introduce a denial of
+ * service vulnerability. In addition, the multiplication of @struct_type by
+ * @n_structs is not checked, so an overflow may lead to a remote code execution
+ * vulnerability.
+ *
  * Returns: Pointer to stack space for @n_structs chunks of type @struct_type
  */
 #define g_newa(struct_type, n_structs)	((struct_type*) g_alloca (sizeof (struct_type) * (gsize) (n_structs)))
@@ -8027,6 +8312,48 @@ G_END_DECLS
 #error "Only <glib.h> can be included directly."
 #endif
 
+/* GLIB - Library of useful routines for C programming
+ * Copyright (C) 2021  Iain Lane, Xavier Claessens
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, see <http://www.gnu.org/licenses/>.
+ */
+
+#ifndef __GLIB_TYPEOF_H__
+#define __GLIB_TYPEOF_H__
+
+#if !defined (__GLIB_H_INSIDE__) && !defined (GLIB_COMPILATION)
+#error "Only <glib.h> can be included directly."
+#endif
+
+
+/*
+ * We can only use __typeof__ on GCC >= 4.8, and not when compiling C++. Since
+ * __typeof__ is used in a few places in GLib, provide a pre-processor symbol
+ * to factor the check out from callers.
+ *
+ * This symbol is private.
+ */
+#undef glib_typeof
+#if !defined(__cplusplus) && (G_GNUC_CHECK_VERSION(4, 8) || defined(__clang__))
+#define glib_typeof(t) __typeof__ (t)
+#elif defined(__cplusplus) && __cplusplus >= 201103L && GLIB_VERSION_MIN_REQUIRED >= GLIB_VERSION_2_68
+/* C++11 decltype() is close enough for our usage */
+#include <type_traits>
+#define glib_typeof(t) typename std::remove_reference<decltype (t)>::type
+#endif
+
+#endif /* __GLIB_TYPEOF_H__ */
 
 G_BEGIN_DECLS
 
@@ -8126,13 +8453,13 @@ G_END_DECLS
     (void) (0 ? (gpointer) * (atomic) : NULL);                              \
     __atomic_store (gaps_temp_atomic, &gaps_temp_newval, __ATOMIC_SEQ_CST); \
   }))
-#else /* if !defined(glib_typeof) */
+#else /* if !(defined(glib_typeof) */
 #undef g_atomic_pointer_get
 #define g_atomic_pointer_get(atomic) \
   (G_GNUC_EXTENSION ({                                                       \
     G_STATIC_ASSERT (sizeof *(atomic) == sizeof (gpointer));                 \
     gpointer gapg_temp_newval;                                               \
-    gpointer *gapg_temp_atomic = (gpointer *)(atomic);                       \
+    gpointer *gapg_temp_atomic G_GNUC_UNUSED = (gpointer *)(atomic);         \
     __atomic_load (gapg_temp_atomic, &gapg_temp_newval, __ATOMIC_SEQ_CST);   \
     gapg_temp_newval;                                                        \
   }))
@@ -8145,7 +8472,7 @@ G_END_DECLS
     (void) (0 ? (gpointer) *(atomic) : NULL);                                \
     __atomic_store (gaps_temp_atomic, &gaps_temp_newval, __ATOMIC_SEQ_CST);  \
   }))
-#endif /* !defined(glib_typeof) */
+#endif /* if defined(glib_typeof) */
 
 #undef g_atomic_int_inc
 #define g_atomic_int_inc(atomic) \
@@ -8167,7 +8494,7 @@ G_END_DECLS
     gint gaicae_oldval = (oldval);                                           \
     G_STATIC_ASSERT (sizeof *(atomic) == sizeof (gint));                     \
     (void) (0 ? *(atomic) ^ (newval) ^ (oldval) : 1);                        \
-    __atomic_compare_exchange_n ((atomic), &gaicae_oldval, (newval), FALSE, __ATOMIC_SEQ_CST, __ATOMIC_SEQ_CST) ? TRUE : FALSE; \
+    __atomic_compare_exchange_n ((atomic), (void *) (&(gaicae_oldval)), (newval), FALSE, __ATOMIC_SEQ_CST, __ATOMIC_SEQ_CST) ? TRUE : FALSE; \
   }))
 #undef g_atomic_int_add
 #define g_atomic_int_add(atomic, val) \
@@ -8198,17 +8525,25 @@ G_END_DECLS
     (guint) __atomic_fetch_xor ((atomic), (val), __ATOMIC_SEQ_CST);          \
   }))
 
-#if defined(glib_typeof)
+#if defined(glib_typeof) && defined(__cplusplus) && __cplusplus >= 201103L
+/* This is typesafe because we check we can assign oldval to the type of
+ * (*atomic). Unfortunately it can only be done in C++ because gcc/clang warn
+ * when atomic is volatile and not oldval, or when atomic is gsize* and oldval
+ * is NULL. Note that clang++ force us to be typesafe because it is an error if the 2nd
+ * argument of __atomic_compare_exchange_n() has a different type than the
+ * first.
+ * https://gitlab.gnome.org/GNOME/glib/-/merge_requests/1919
+ * https://gitlab.gnome.org/GNOME/glib/-/merge_requests/1715#note_1024120. */
 #undef g_atomic_pointer_compare_and_exchange
 #define g_atomic_pointer_compare_and_exchange(atomic, oldval, newval) \
   (G_GNUC_EXTENSION ({                                                       \
     G_STATIC_ASSERT (sizeof (oldval) == sizeof (gpointer));                  \
-    glib_typeof ((oldval)) gapcae_oldval = (oldval);                         \
+    glib_typeof (*(atomic)) gapcae_oldval = (oldval);                        \
     G_STATIC_ASSERT (sizeof *(atomic) == sizeof (gpointer));                 \
     (void) (0 ? (gpointer) *(atomic) : NULL);                                \
     __atomic_compare_exchange_n ((atomic), &gapcae_oldval, (newval), FALSE, __ATOMIC_SEQ_CST, __ATOMIC_SEQ_CST) ? TRUE : FALSE; \
   }))
-#else /* if !defined(glib_typeof) */
+#else /* if !(defined(glib_typeof) && defined(__cplusplus) && __cplusplus >= 201103L) */
 #undef g_atomic_pointer_compare_and_exchange
 #define g_atomic_pointer_compare_and_exchange(atomic, oldval, newval) \
   (G_GNUC_EXTENSION ({                                                       \
@@ -8216,7 +8551,7 @@ G_END_DECLS
     gpointer gapcae_oldval = (gpointer)(oldval);                             \
     G_STATIC_ASSERT (sizeof *(atomic) == sizeof (gpointer));                 \
     (void) (0 ? (gpointer) *(atomic) : NULL);                                \
-    __atomic_compare_exchange_n ((atomic), &gapcae_oldval, (newval), FALSE, __ATOMIC_SEQ_CST, __ATOMIC_SEQ_CST) ? TRUE : FALSE; \
+    __atomic_compare_exchange_n ((atomic), (void *) (&(gapcae_oldval)), (newval), FALSE, __ATOMIC_SEQ_CST, __ATOMIC_SEQ_CST) ? TRUE : FALSE; \
   }))
 #endif /* defined(glib_typeof) */
 #undef g_atomic_pointer_add
@@ -8328,7 +8663,7 @@ G_END_DECLS
     __asm__ __volatile__ ("" : : : "memory");                                \
     *(atomic) = (glib_typeof (*(atomic))) (gsize) (newval);                  \
   }))
-#else /* if !defined(glib_typeof) */
+#else /* if !(defined(glib_typeof) */
 #undef g_atomic_pointer_set
 #define g_atomic_pointer_set(atomic, newval) \
   (G_GNUC_EXTENSION ({                                                       \
@@ -8338,7 +8673,7 @@ G_END_DECLS
     __asm__ __volatile__ ("" : : : "memory");                                \
     *(atomic) = (gpointer) (gsize) (newval);                                         \
   }))
-#endif /* defined(glib_typeof) */
+#endif /* if defined(glib_typeof) */
 
 #undef g_atomic_int_inc
 #define g_atomic_int_inc(atomic) \
@@ -8462,12 +8797,27 @@ G_END_DECLS
 #define g_atomic_int_dec_and_test(atomic) \
   (_frida_g_atomic_int_dec_and_test ((gint *) (atomic)))
 
+#if defined(glib_typeof)
+  /* The (void *) cast in the middle *looks* redundant, because
+   * g_atomic_pointer_get returns void * already, but it's to silence
+   * -Werror=bad-function-cast when we're doing something like:
+   * guintptr a, b; ...; a = g_atomic_pointer_get (&b);
+   * which would otherwise be assigning the void * result of
+   * g_atomic_pointer_get directly to the pointer-sized but
+   * non-pointer-typed result. */
+#undef g_atomic_pointer_get
+#define g_atomic_pointer_get(atomic)                                       \
+  (glib_typeof (*(atomic))) (void *) ((_frida_g_atomic_pointer_get) ((void *) atomic))
+#else /* !(defined(glib_typeof) */
 #undef g_atomic_pointer_get
 #define g_atomic_pointer_get(atomic) \
   (_frida_g_atomic_pointer_get (atomic))
+#endif
+
 #undef g_atomic_pointer_set
 #define g_atomic_pointer_set(atomic, newval) \
   (_frida_g_atomic_pointer_set ((atomic), (gpointer) (newval)))
+
 #undef g_atomic_pointer_compare_and_exchange
 #define g_atomic_pointer_compare_and_exchange(atomic, oldval, newval) \
   (_frida_g_atomic_pointer_compare_and_exchange ((atomic), (gpointer) (oldval), (gpointer) (newval)))
@@ -8602,6 +8952,145 @@ struct _GError
   gchar       *message;
 };
 
+/**
+ * G_DEFINE_EXTENDED_ERROR:
+ * @ErrorType: name to return a #GQuark for
+ * @error_type: prefix for the function name
+ *
+ * A convenience macro which defines two functions. First, returning
+ * the #GQuark for the extended error type @ErrorType; it is called
+ * `error_type_quark()`. Second, returning the private data from a
+ * passed #GError; it is called `error_type_get_private()`.
+ *
+ * For this macro to work, a type named `ErrorTypePrivate` should be
+ * defined, `error_type_private_init()`, `error_type_private_copy()`
+ * and `error_type_private_clear()` functions need to be either
+ * declared or defined. The functions should be similar to
+ * #GErrorInitFunc, #GErrorCopyFunc and #GErrorClearFunc,
+ * respectively, but they should receive the private data type instead
+ * of #GError.
+ *
+ * See [Extended #GError Domains][gerror-extended-domains] for an example.
+ *
+ * Since: 2.68
+ */
+#define G_DEFINE_EXTENDED_ERROR(ErrorType, error_type)                  \
+static inline ErrorType ## Private *                                    \
+error_type ## _get_private (const GError *error)                        \
+{                                                                       \
+  /* Copied from gtype.c (STRUCT_ALIGNMENT and ALIGN_STRUCT macros). */ \
+  const gsize sa = 2 * sizeof (gsize);                                  \
+  const gsize as = (sizeof (ErrorType ## Private) + (sa - 1)) & -sa;    \
+  g_return_val_if_fail (error != NULL, NULL);                           \
+  g_return_val_if_fail (error->domain == error_type ## _quark (), NULL); \
+  return (ErrorType ## Private *) (((guint8 *)error) - as); \
+}                                                                       \
+                                                                        \
+static void                                                             \
+g_error_with_ ## error_type ## _private_init (GError *error)            \
+{                                                                       \
+  ErrorType ## Private *priv = error_type ## _get_private (error);      \
+  error_type ## _private_init (priv);                                   \
+}                                                                       \
+                                                                        \
+static void                                                             \
+g_error_with_ ## error_type ## _private_copy (const GError *src_error,  \
+                                              GError       *dest_error) \
+{                                                                       \
+  const ErrorType ## Private *src_priv = error_type ## _get_private (src_error);  \
+  ErrorType ## Private *dest_priv = error_type ## _get_private (dest_error); \
+  error_type ## _private_copy (src_priv, dest_priv);                    \
+}                                                                       \
+                                                                        \
+static void                                                             \
+g_error_with_ ## error_type ## _private_clear (GError *error)           \
+{                                                                       \
+  ErrorType ## Private *priv = error_type ## _get_private (error);      \
+  error_type ## _private_clear (priv);                                  \
+}                                                                       \
+                                                                        \
+GQuark                                                                  \
+error_type ## _quark (void)                                             \
+{                                                                       \
+  static GQuark q;                                                      \
+  static gsize initialized = 0;                                         \
+                                                                        \
+  if (g_once_init_enter (&initialized))                                 \
+    {                                                                   \
+      q = g_error_domain_register_static (#ErrorType,                   \
+                                          sizeof (ErrorType ## Private), \
+                                          g_error_with_ ## error_type ## _private_init, \
+                                          g_error_with_ ## error_type ## _private_copy, \
+                                          g_error_with_ ## error_type ## _private_clear); \
+      g_once_init_leave (&initialized, 1);                              \
+    }                                                                   \
+                                                                        \
+  return q;                                                             \
+}
+
+/**
+ * GErrorInitFunc:
+ * @error: extended error
+ *
+ * Specifies the type of function which is called just after an
+ * extended error instance is created and its fields filled. It should
+ * only initialize the fields in the private data, which can be
+ * received with the generated `*_get_private()` function.
+ *
+ * Normally, it is better to use G_DEFINE_EXTENDED_ERROR(), as it
+ * already takes care of getting the private data from @error.
+ *
+ * Since: 2.68
+ */
+typedef void (*GErrorInitFunc) (GError *error);
+
+/**
+ * GErrorCopyFunc:
+ * @src_error: source extended error
+ * @dest_error: destination extended error
+ *
+ * Specifies the type of function which is called when an extended
+ * error instance is copied. It is passed the pointer to the
+ * destination error and source error, and should copy only the fields
+ * of the private data from @src_error to @dest_error.
+ *
+ * Normally, it is better to use G_DEFINE_EXTENDED_ERROR(), as it
+ * already takes care of getting the private data from @src_error and
+ * @dest_error.
+ *
+ * Since: 2.68
+ */
+typedef void (*GErrorCopyFunc) (const GError *src_error, GError *dest_error);
+
+/**
+ * GErrorClearFunc:
+ * @error: extended error to clear
+ *
+ * Specifies the type of function which is called when an extended
+ * error instance is freed. It is passed the error pointer about to be
+ * freed, and should free the error's private data fields.
+ *
+ * Normally, it is better to use G_DEFINE_EXTENDED_ERROR(), as it
+ * already takes care of getting the private data from @error.
+ *
+ * Since: 2.68
+ */
+typedef void (*GErrorClearFunc) (GError *error);
+
+GLIB_AVAILABLE_IN_2_68
+GQuark   g_error_domain_register_static (const char        *error_type_name,
+                                         gsize              error_type_private_size,
+                                         GErrorInitFunc     error_type_init,
+                                         GErrorCopyFunc     error_type_copy,
+                                         GErrorClearFunc    error_type_clear);
+
+GLIB_AVAILABLE_IN_2_68
+GQuark   g_error_domain_register (const char        *error_type_name,
+                                  gsize              error_type_private_size,
+                                  GErrorInitFunc     error_type_init,
+                                  GErrorCopyFunc     error_type_copy,
+                                  GErrorClearFunc    error_type_clear);
+
 GLIB_AVAILABLE_IN_ALL
 GError*  g_error_new           (GQuark         domain,
                                 gint           code,
@@ -8659,6 +9148,11 @@ GLIB_AVAILABLE_IN_ALL
 void     g_prefix_error               (GError       **err,
                                        const gchar   *format,
                                        ...) G_GNUC_PRINTF (2, 3);
+
+/* if (err) prefix the string to the ->message */
+GLIB_AVAILABLE_IN_2_70
+void     g_prefix_error_literal       (GError       **err,
+                                       const gchar   *prefix);
 
 /* g_propagate_error then g_error_prefix on dest */
 GLIB_AVAILABLE_IN_ALL
@@ -9110,7 +9604,7 @@ g_bit_storage_impl (gulong number)
 #  define g_abort() abort ()
 #else
 GLIB_AVAILABLE_IN_2_50
-void g_abort (void) G_GNUC_NORETURN G_ANALYZER_NORETURN;
+G_NORETURN void g_abort (void) G_ANALYZER_NORETURN;
 #endif
 #endif
 
@@ -10170,8 +10664,10 @@ typedef enum
   G_TIME_TYPE_UNIVERSAL
 } GTimeType;
 
-GLIB_AVAILABLE_IN_ALL
+GLIB_DEPRECATED_IN_2_68_FOR (g_time_zone_new_identifier)
 GTimeZone *             g_time_zone_new                                 (const gchar *identifier);
+GLIB_AVAILABLE_IN_2_68
+GTimeZone *             g_time_zone_new_identifier                      (const gchar *identifier);
 GLIB_AVAILABLE_IN_ALL
 GTimeZone *             g_time_zone_new_utc                             (void);
 GLIB_AVAILABLE_IN_ALL
@@ -10269,8 +10765,7 @@ typedef gint64 GTimeSpan;
 /**
  * GDateTime:
  *
- * `GDateTime` is an opaque structure whose members
- * cannot be accessed directly.
+ * An opaque structure that represents a date and time, including a time zone.
  *
  * Since: 2.26
  */
@@ -10460,6 +10955,7 @@ G_BEGIN_DECLS
  * G_BOOKMARK_FILE_ERROR:
  *
  * Error domain for bookmark file parsing.
+ *
  * Errors in this domain will be from the #GBookmarkFileError
  * enumeration. See #GError for information on error domains.
  */
@@ -10499,8 +10995,7 @@ GQuark g_bookmark_file_error_quark (void);
 /**
  * GBookmarkFile:
  *
- * The `GBookmarkFile` structure contains only
- * private data and should not be directly accessed.
+ * An opaque data structure representing a set of bookmarks.
  */
 typedef struct _GBookmarkFile GBookmarkFile;
 
@@ -10805,6 +11300,13 @@ GLIB_AVAILABLE_IN_ALL
 gint            g_bytes_compare                 (gconstpointer   bytes1,
                                                  gconstpointer   bytes2);
 
+GLIB_AVAILABLE_IN_2_70
+gconstpointer   g_bytes_get_region              (GBytes         *bytes,
+                                                 gsize           element_size,
+                                                 gsize           offset,
+                                                 gsize           n_elements);
+
+
 G_END_DECLS
 
 #endif /* __G_BYTES_H__ */
@@ -10910,6 +11412,7 @@ typedef enum {
  * GChecksum:
  *
  * An opaque structure representing a checksumming operation.
+ *
  * To create a new GChecksum, use g_checksum_new(). To free
  * a GChecksum, use g_checksum_free().
  *
@@ -11773,21 +12276,21 @@ typedef enum
 /**
  * GFileSetContentsFlags:
  * @G_FILE_SET_CONTENTS_NONE: No guarantees about file consistency or durability.
- *    The most dangerous setting, which is slightly faster than other settings.
+ *   The most dangerous setting, which is slightly faster than other settings.
  * @G_FILE_SET_CONTENTS_CONSISTENT: Guarantee file consistency: after a crash,
- *    either the old version of the file or the new version of the file will be
- *    available, but not a mixture. On Unix systems this equates to an `fsync()`
- *    on the file and use of an atomic `rename()` of the new version of the file
- *    over the old.
+ *   either the old version of the file or the new version of the file will be
+ *   available, but not a mixture. On Unix systems this equates to an `fsync()`
+ *   on the file and use of an atomic `rename()` of the new version of the file
+ *   over the old.
  * @G_FILE_SET_CONTENTS_DURABLE: Guarantee file durability: after a crash, the
- *    new version of the file will be available. On Unix systems this equates to
- *    an `fsync()` on the file (if %G_FILE_SET_CONTENTS_CONSISTENT is unset), or
- *    the effects of %G_FILE_SET_CONTENTS_CONSISTENT plus an `fsync()` on the
- *    directory containing the file after calling `rename()`.
+ *   new version of the file will be available. On Unix systems this equates to
+ *   an `fsync()` on the file (if %G_FILE_SET_CONTENTS_CONSISTENT is unset), or
+ *   the effects of %G_FILE_SET_CONTENTS_CONSISTENT plus an `fsync()` on the
+ *   directory containing the file after calling `rename()`.
  * @G_FILE_SET_CONTENTS_ONLY_EXISTING: Only apply consistency and durability
- *    guarantees if the file already exists. This may speed up file operations
- *    if the file doesn’t currently exist, but may result in a corrupted version
- *    of the new file if the system crashes while writing it.
+ *   guarantees if the file already exists. This may speed up file operations
+ *   if the file doesn’t currently exist, but may result in a corrupted version
+ *   of the new file if the system crashes while writing it.
  *
  * Flags to pass to g_file_set_contents_full() to affect its safety and
  * performance.
@@ -13718,6 +14221,26 @@ typedef enum /*< flags >*/
   G_IO_NVAL	GLIB_SYSDEF_POLLNVAL
 } GIOCondition;
 
+/**
+ * GMainContextFlags:
+ * @G_MAIN_CONTEXT_FLAGS_NONE: Default behaviour.
+ * @G_MAIN_CONTEXT_FLAGS_OWNERLESS_POLLING: Assume that polling for events will
+ * free the thread to process other jobs. That's useful if you're using
+ * `g_main_context_{prepare,query,check,dispatch}` to integrate GMainContext in
+ * other event loops.
+ *
+ * Flags to pass to g_main_context_new_with_flags() which affect the behaviour
+ * of a #GMainContext.
+ *
+ * Since: 2.72
+ */
+GLIB_AVAILABLE_TYPE_IN_2_72
+typedef enum /*< flags >*/
+{
+  G_MAIN_CONTEXT_FLAGS_NONE = 0,
+  G_MAIN_CONTEXT_FLAGS_OWNERLESS_POLLING = 1
+} GMainContextFlags;
+
 
 /**
  * GMainContext:
@@ -13873,16 +14396,20 @@ typedef gboolean (*GSourceFunc)       (gpointer user_data);
 /**
  * GChildWatchFunc:
  * @pid: the process id of the child process
- * @status: Status information about the child process, encoded
- *     in a platform-specific manner
+ * @wait_status: Status information about the child process, encoded
+ *               in a platform-specific manner
  * @user_data: user data passed to g_child_watch_add()
  *
  * Prototype of a #GChildWatchSource callback, called when a child
- * process has exited.  To interpret @status, see the documentation
- * for g_spawn_check_exit_status().
+ * process has exited.
+ *
+ * To interpret @wait_status, see the documentation
+ * for g_spawn_check_wait_status(). In particular,
+ * on Unix platforms, note that it is usually not equal
+ * to the integer passed to `exit()` or returned from `main()`.
  */
 typedef void     (*GChildWatchFunc)   (GPid     pid,
-                                       gint     status,
+                                       gint     wait_status,
                                        gpointer user_data);
 
 
@@ -13944,8 +14471,8 @@ typedef void (*GSourceDummyMarshal) (void);
 struct _GSourceFuncs
 {
   gboolean (*prepare)  (GSource    *source,
-                        gint       *timeout_);
-  gboolean (*check)    (GSource    *source);
+                        gint       *timeout_);/* Can be NULL */
+  gboolean (*check)    (GSource    *source);/* Can be NULL */
   gboolean (*dispatch) (GSource    *source,
                         GSourceFunc callback,
                         gpointer    user_data);
@@ -14034,6 +14561,10 @@ struct _GSourceFuncs
 
 GLIB_AVAILABLE_IN_ALL
 GMainContext *g_main_context_new       (void);
+G_GNUC_BEGIN_IGNORE_DEPRECATIONS
+GLIB_AVAILABLE_IN_2_72
+GMainContext *g_main_context_new_with_flags (GMainContextFlags flags);
+G_GNUC_END_IGNORE_DEPRECATIONS
 GLIB_AVAILABLE_IN_ALL
 GMainContext *g_main_context_ref       (GMainContext *context);
 GLIB_AVAILABLE_IN_ALL
@@ -14281,6 +14812,9 @@ gboolean g_source_is_destroyed    (GSource        *source);
 GLIB_AVAILABLE_IN_ALL
 void                 g_source_set_name       (GSource        *source,
                                               const char     *name);
+GLIB_AVAILABLE_IN_2_70
+void                 g_source_set_static_name (GSource        *source,
+                                               const char     *name);
 GLIB_AVAILABLE_IN_ALL
 const char *         g_source_get_name       (GSource        *source);
 GLIB_AVAILABLE_IN_ALL
@@ -14461,6 +14995,15 @@ GLIB_AVAILABLE_IN_ALL
 void     g_main_context_invoke      (GMainContext   *context,
                                      GSourceFunc     function,
                                      gpointer        data);
+
+GLIB_AVAILABLE_STATIC_INLINE_IN_2_70
+static inline int
+g_steal_fd (int *fd_ptr)
+{
+  int fd = *fd_ptr;
+  *fd_ptr = -1;
+  return fd;
+}
 
 /* Hook for GClosure / GSource integration. Don't touch */
 GLIB_VAR GSourceFuncs g_timeout_funcs;
@@ -14699,7 +15242,8 @@ typedef enum
  * @G_UNICODE_BREAK_HANGUL_T_JAMO: Hangul T Jamo (JT)
  * @G_UNICODE_BREAK_HANGUL_LV_SYLLABLE: Hangul LV Syllable (H2)
  * @G_UNICODE_BREAK_HANGUL_LVT_SYLLABLE: Hangul LVT Syllable (H3)
- * @G_UNICODE_BREAK_CLOSE_PARANTHESIS: Closing Parenthesis (CP). Since 2.28
+ * @G_UNICODE_BREAK_CLOSE_PARANTHESIS: Closing Parenthesis (CP). Since 2.28. Deprecated: 2.70: Use %G_UNICODE_BREAK_CLOSE_PARENTHESIS instead.
+ * @G_UNICODE_BREAK_CLOSE_PARENTHESIS: Closing Parenthesis (CP). Since 2.70
  * @G_UNICODE_BREAK_CONDITIONAL_JAPANESE_STARTER: Conditional Japanese Starter (CJ). Since: 2.32
  * @G_UNICODE_BREAK_HEBREW_LETTER: Hebrew Letter (HL). Since: 2.32
  * @G_UNICODE_BREAK_REGIONAL_INDICATOR: Regional Indicator (RI). Since: 2.36
@@ -14753,6 +15297,7 @@ typedef enum
   G_UNICODE_BREAK_HANGUL_LV_SYLLABLE,
   G_UNICODE_BREAK_HANGUL_LVT_SYLLABLE,
   G_UNICODE_BREAK_CLOSE_PARANTHESIS,
+  G_UNICODE_BREAK_CLOSE_PARENTHESIS GLIB_AVAILABLE_ENUMERATOR_IN_2_70 = G_UNICODE_BREAK_CLOSE_PARANTHESIS,
   G_UNICODE_BREAK_CONDITIONAL_JAPANESE_STARTER,
   G_UNICODE_BREAK_HEBREW_LETTER,
   G_UNICODE_BREAK_REGIONAL_INDICATOR,
@@ -14933,6 +15478,11 @@ typedef enum
  * @G_UNICODE_SCRIPT_DIVES_AKURU:          Dives Akuru. Since: 2.66
  * @G_UNICODE_SCRIPT_KHITAN_SMALL_SCRIPT:  Khitan small script. Since: 2.66
  * @G_UNICODE_SCRIPT_YEZIDI:               Yezidi. Since: 2.66
+ * @G_UNICODE_SCRIPT_CYPRO_MINOAN:         Cypro-Minoan. Since: 2.72
+ * @G_UNICODE_SCRIPT_OLD_UYGHUR:           Old Uyghur. Since: 2.72
+ * @G_UNICODE_SCRIPT_TANGSA:               Tangsa. Since: 2.72
+ * @G_UNICODE_SCRIPT_TOTO:                 Toto. Since: 2.72
+ * @G_UNICODE_SCRIPT_VITHKUQI:             Vithkuqi. Since: 2.72
  *
  * The #GUnicodeScript enumeration identifies different writing
  * systems. The values correspond to the names as defined in the
@@ -15130,7 +15680,14 @@ typedef enum
   G_UNICODE_SCRIPT_CHORASMIAN,             /* Chrs */
   G_UNICODE_SCRIPT_DIVES_AKURU,            /* Diak */
   G_UNICODE_SCRIPT_KHITAN_SMALL_SCRIPT,    /* Kits */
-  G_UNICODE_SCRIPT_YEZIDI                  /* Yezi */
+  G_UNICODE_SCRIPT_YEZIDI,                 /* Yezi */
+
+  /* Unicode 14.0 additions */
+  G_UNICODE_SCRIPT_CYPRO_MINOAN,           /* Cpmn */
+  G_UNICODE_SCRIPT_OLD_UYGHUR,             /* Ougr */
+  G_UNICODE_SCRIPT_TANGSA,                 /* Tnsa */
+  G_UNICODE_SCRIPT_TOTO,                   /* Toto */
+  G_UNICODE_SCRIPT_VITHKUQI,               /* Vith */
 } GUnicodeScript;
 
 GLIB_AVAILABLE_IN_ALL
@@ -15263,10 +15820,15 @@ GLIB_VAR const gchar * const g_utf8_skip;
  * g_utf8_next_char:
  * @p: Pointer to the start of a valid UTF-8 character
  *
- * Skips to the next character in a UTF-8 string. The string must be
- * valid; this macro is as fast as possible, and has no error-checking.
- * You would use this macro to iterate over a string character by
- * character. The macro returns the start of the next UTF-8 character.
+ * Skips to the next character in a UTF-8 string.
+ *
+ * The string must be valid; this macro is as fast as possible, and has
+ * no error-checking.
+ *
+ * You would use this macro to iterate over a string character by character.
+ *
+ * The macro returns the start of the next UTF-8 character.
+ *
  * Before using this macro, use g_utf8_validate() to validate strings
  * that may contain invalid UTF-8.
  */
@@ -15536,6 +16098,11 @@ GLIB_AVAILABLE_IN_ALL
 GString*     g_string_erase             (GString         *string,
                                          gssize           pos,
                                          gssize           len);
+GLIB_AVAILABLE_IN_2_68
+guint         g_string_replace          (GString         *string,
+                                         const gchar     *find,
+                                         const gchar     *replace,
+                                         guint            limit);
 GLIB_AVAILABLE_IN_ALL
 GString*     g_string_ascii_down        (GString         *string);
 GLIB_AVAILABLE_IN_ALL
@@ -17365,7 +17932,9 @@ GQuark                          g_variant_parse_error_quark             (void);
  * A stack-allocated #GVariantBuilder must be initialized if it is
  * used together with g_auto() to avoid warnings or crashes if
  * function returns before g_variant_builder_init() is called on the
- * builder.  This macro can be used as initializer instead of an
+ * builder.
+ *
+ * This macro can be used as initializer instead of an
  * explicit zeroing a variable when declaring it and a following
  * g_variant_builder_init(), but it cannot be assigned to a variable.
  *
@@ -17374,7 +17943,7 @@ GQuark                          g_variant_parse_error_quark             (void);
  * the G_VARIANT_BUILDER_INIT() call, but rather in functions that
  * make sure that #GVariantBuilder is valid.
  *
- * |[
+ * |[<!-- language="C" -->
  *   g_auto(GVariantBuilder) builder = G_VARIANT_BUILDER_INIT (G_VARIANT_TYPE_BYTESTRING);
  * ]|
  *
@@ -17475,6 +18044,7 @@ struct _GVariantDict {
  * A stack-allocated #GVariantDict must be initialized if it is used
  * together with g_auto() to avoid warnings or crashes if function
  * returns before g_variant_dict_init() is called on the builder.
+ *
  * This macro can be used as initializer instead of an explicit
  * zeroing a variable when declaring it and a following
  * g_variant_dict_init(), but it cannot be assigned to a variable.
@@ -17488,7 +18058,7 @@ struct _GVariantDict {
  * safely with a different @asv right after the variable was
  * initialized with G_VARIANT_DICT_INIT().
  *
- * |[
+ * |[<!-- language="C" -->
  *   g_autoptr(GVariant) variant = get_asv_variant ();
  *   g_auto(GVariantDict) dict = G_VARIANT_DICT_INIT (variant);
  * ]|
@@ -17694,7 +18264,8 @@ struct _GLogField
  * chained and fall back to simpler handlers in case of failure.
  *
  * Returns: %G_LOG_WRITER_HANDLED if the log entry was handled successfully;
- *    %G_LOG_WRITER_UNHANDLED otherwise
+ *   %G_LOG_WRITER_UNHANDLED otherwise
+ *
  * Since: 2.50
  */
 typedef GLogWriterOutput (*GLogWriterFunc)     (GLogLevelFlags   log_level,
@@ -17789,11 +18360,12 @@ void g_warn_message           (const char     *domain,
                                const char     *func,
                                const char     *warnexpr) G_ANALYZER_NORETURN;
 GLIB_DEPRECATED
+G_NORETURN
 void g_assert_warning         (const char *log_domain,
 			       const char *file,
 			       const int   line,
 		               const char *pretty_function,
-		               const char *expression) G_GNUC_NORETURN;
+		               const char *expression);
 
 GLIB_AVAILABLE_IN_2_56
 void g_log_structured_standard (const gchar    *log_domain,
@@ -17905,7 +18477,7 @@ void g_log_structured_standard (const gchar    *log_domain,
                                        format)
 #endif
 #else   /* no varargs macros */
-static void g_error (const gchar *format, ...) G_GNUC_NORETURN G_ANALYZER_NORETURN;
+static G_NORETURN void g_error (const gchar *format, ...) G_ANALYZER_NORETURN;
 static void g_critical (const gchar *format, ...) G_ANALYZER_NORETURN;
 
 static inline void
@@ -18470,6 +19042,24 @@ struct _GOptionEntry
  */
 #define G_OPTION_REMAINING ""
 
+/**
+ * G_OPTION_ENTRY_NULL:
+ *
+ * A #GOptionEntry array requires a %NULL terminator, this macro can
+ * be used as terminator instead of an explicit `{ 0 }` but it cannot
+ * be assigned to a variable.
+ *
+ * |[
+ *   GOptionEntry option[] = { G_OPTION_ENTRY_NULL };
+ * ]|
+ *
+ * Since: 2.70
+ */
+#define G_OPTION_ENTRY_NULL    \
+  GLIB_AVAILABLE_MACRO_IN_2_70 \
+  { NULL, 0, 0, 0, NULL, NULL, NULL }
+
+
 GLIB_AVAILABLE_IN_ALL
 GOptionContext *g_option_context_new              (const gchar         *parameter_string);
 GLIB_AVAILABLE_IN_ALL
@@ -18604,15 +19194,25 @@ GLIB_AVAILABLE_IN_ALL
 GPatternSpec* g_pattern_spec_new       (const gchar  *pattern);
 GLIB_AVAILABLE_IN_ALL
 void          g_pattern_spec_free      (GPatternSpec *pspec);
+GLIB_AVAILABLE_IN_2_70
+GPatternSpec *g_pattern_spec_copy (GPatternSpec *pspec);
 GLIB_AVAILABLE_IN_ALL
 gboolean      g_pattern_spec_equal     (GPatternSpec *pspec1,
 					GPatternSpec *pspec2);
-GLIB_AVAILABLE_IN_ALL
+GLIB_AVAILABLE_IN_2_70
+gboolean g_pattern_spec_match (GPatternSpec *pspec,
+                               gsize string_length,
+                               const gchar *string,
+                               const gchar *string_reversed);
+GLIB_AVAILABLE_IN_2_70
+gboolean g_pattern_spec_match_string (GPatternSpec *pspec,
+                                      const gchar *string);
+GLIB_DEPRECATED_IN_2_70_FOR (g_pattern_spec_match)
 gboolean      g_pattern_match          (GPatternSpec *pspec,
 					guint         string_length,
 					const gchar  *string,
 					const gchar  *string_reversed);
-GLIB_AVAILABLE_IN_ALL
+GLIB_DEPRECATED_IN_2_70_FOR (g_pattern_spec_match_string)
 gboolean      g_pattern_match_string   (GPatternSpec *pspec,
 					const gchar  *string);
 GLIB_AVAILABLE_IN_ALL
@@ -19076,7 +19676,8 @@ G_END_DECLS
  * License along with this library; if not, see <http://www.gnu.org/licenses/>.
  */
 
-#pragma once
+#ifndef __G_RCBOX_H__
+#define __G_RCBOX_H__
 
 #if !defined (__GLIB_H_INSIDE__) && !defined (GLIB_COMPILATION)
 #error "Only <glib.h> can be included directly."
@@ -19130,7 +19731,7 @@ gsize           g_atomic_rc_box_get_size        (gpointer        mem_block);
 #define g_atomic_rc_box_new0(type) \
   ((type *) g_atomic_rc_box_alloc0 (sizeof (type)))
 
-#ifdef glib_typeof
+#if defined(glib_typeof)
 /* Type check to avoid assigning references to different types */
 #undef g_rc_box_acquire
 #define g_rc_box_acquire(mem_block) \
@@ -19149,6 +19750,8 @@ gsize           g_atomic_rc_box_get_size        (gpointer        mem_block);
 #endif
 
 G_END_DECLS
+
+#endif /* __G_RCBOX_H__ */
 /* grefcount.h: Reference counting
  *
  * Copyright 2018  Emmanuele Bassi
@@ -19174,8 +19777,6 @@ G_END_DECLS
 #error "Only <glib.h> can be included directly."
 #endif
 
-#if defined(__GNUC__) && defined(G_DISABLE_CHECKS)
-#endif
 
 G_BEGIN_DECLS
 
@@ -19298,7 +19899,8 @@ G_END_DECLS
  * License along with this library; if not, see <http://www.gnu.org/licenses/>.
  */
 
-#pragma once
+#ifndef __G_REFSTRING_H__
+#define __G_REFSTRING_H__
 
 
 G_BEGIN_DECLS
@@ -19335,6 +19937,8 @@ gsize   g_ref_string_length     (char       *str);
 typedef char GRefString;
 
 G_END_DECLS
+
+#endif /* __G_REFSTRING_H__ */
 /* GRegex -- regular expression API wrapper around PCRE.
  *
  * Copyright (C) 1999, 2000 Scott Wimer
@@ -20677,7 +21281,7 @@ typedef enum
 /**
  * G_SPAWN_EXIT_ERROR:
  *
- * Error domain used by g_spawn_check_exit_status().  The code
+ * Error domain used by g_spawn_check_wait_status().  The code
  * will be the program exit code.
  */
 #define G_SPAWN_EXIT_ERROR g_spawn_exit_error_quark ()
@@ -20795,6 +21399,25 @@ gboolean g_spawn_async_with_pipes (const gchar          *working_directory,
                                    gint                 *standard_error,
                                    GError              **error);
 
+GLIB_AVAILABLE_IN_2_68
+gboolean g_spawn_async_with_pipes_and_fds (const gchar          *working_directory,
+                                           const gchar * const  *argv,
+                                           const gchar * const  *envp,
+                                           GSpawnFlags           flags,
+                                           GSpawnChildSetupFunc  child_setup,
+                                           gpointer              user_data,
+                                           gint                  stdin_fd,
+                                           gint                  stdout_fd,
+                                           gint                  stderr_fd,
+                                           const gint           *source_fds,
+                                           const gint           *target_fds,
+                                           gsize                 n_fds,
+                                           GPid                 *child_pid_out,
+                                           gint                 *stdin_pipe_out,
+                                           gint                 *stdout_pipe_out,
+                                           gint                 *stderr_pipe_out,
+                                           GError              **error);
+
 /* Lets you provide fds for stdin/stdout/stderr */
 GLIB_AVAILABLE_IN_2_58
 gboolean g_spawn_async_with_fds (const gchar          *working_directory,
@@ -20822,21 +21445,25 @@ gboolean g_spawn_sync         (const gchar          *working_directory,
                                gpointer              user_data,
                                gchar               **standard_output,
                                gchar               **standard_error,
-                               gint                 *exit_status,
+                               gint                 *wait_status,
                                GError              **error);
 
 GLIB_AVAILABLE_IN_ALL
 gboolean g_spawn_command_line_sync  (const gchar          *command_line,
                                      gchar               **standard_output,
                                      gchar               **standard_error,
-                                     gint                 *exit_status,
+                                     gint                 *wait_status,
                                      GError              **error);
 GLIB_AVAILABLE_IN_ALL
 gboolean g_spawn_command_line_async (const gchar          *command_line,
                                      GError              **error);
 
-GLIB_AVAILABLE_IN_2_34
-gboolean g_spawn_check_exit_status (gint      exit_status,
+GLIB_AVAILABLE_IN_2_70
+gboolean g_spawn_check_wait_status (gint      wait_status,
+                                    GError  **error);
+
+GLIB_DEPRECATED_IN_2_70_FOR(g_spawn_check_wait_status)
+gboolean g_spawn_check_exit_status (gint      wait_status,
 				    GError  **error);
 
 GLIB_AVAILABLE_IN_ALL
@@ -21097,9 +21724,13 @@ GLIB_AVAILABLE_IN_ALL
 gchar*                g_strescape      (const gchar *source,
 					const gchar *exceptions) G_GNUC_MALLOC;
 
-GLIB_AVAILABLE_IN_ALL
-gpointer              g_memdup	       (gconstpointer mem,
-					guint	       byte_size) G_GNUC_ALLOC_SIZE(2);
+GLIB_DEPRECATED_IN_2_68_FOR (g_memdup2)
+gpointer              g_memdup         (gconstpointer mem,
+                                        guint         byte_size) G_GNUC_ALLOC_SIZE(2);
+
+GLIB_AVAILABLE_IN_2_68
+gpointer              g_memdup2        (gconstpointer mem,
+                                        gsize         byte_size) G_GNUC_ALLOC_SIZE(2);
 
 /* NULL terminated string arrays.
  * g_strsplit(), g_strsplit_set() split up string into max_tokens tokens
@@ -21262,6 +21893,7 @@ G_END_DECLS
 #endif /* __G_STRING_H__ */
 /*
  * Copyright © 2020 Canonical Ltd.
+ * Copyright © 2021 Alexandros Theodotou
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -21289,7 +21921,7 @@ G_BEGIN_DECLS
 
 /**
  * GStrvBuilder:
- * 
+ *
  * A helper object to build a %NULL-terminated string array
  * by appending. See g_strv_builder_new().
  *
@@ -21309,6 +21941,14 @@ GStrvBuilder *g_strv_builder_ref (GStrvBuilder *builder);
 GLIB_AVAILABLE_IN_2_68
 void g_strv_builder_add (GStrvBuilder *builder,
                          const char *value);
+
+GLIB_AVAILABLE_IN_2_70
+void g_strv_builder_addv (GStrvBuilder *builder,
+                          const char **value);
+
+GLIB_AVAILABLE_IN_2_70
+void g_strv_builder_add_many (GStrvBuilder *builder,
+                              ...) G_GNUC_NULL_TERMINATED;
 
 GLIB_AVAILABLE_IN_2_68
 GStrv g_strv_builder_end (GStrvBuilder *builder);
@@ -21530,9 +22170,11 @@ typedef void (*GTestFixtureFunc) (gpointer      fixture,
 
 #ifdef G_DISABLE_ASSERT
 /* https://gcc.gnu.org/onlinedocs/gcc-8.3.0/gcc/Other-Builtins.html#index-_005f_005fbuiltin_005funreachable
- * GCC 5 is not a strict lower bound for versions of GCC which provide __builtin_unreachable(). */
-#if __GNUC__ >= 5 || g_macro__has_builtin(__builtin_unreachable)
+ * GCC 4.5 is not a strict lower bound for versions of GCC which provide __builtin_unreachable(). */
+#if G_GNUC_CHECK_VERSION (4, 5) || g_macro__has_builtin (__builtin_unreachable)
 #define g_assert_not_reached()          G_STMT_START { (void) 0; __builtin_unreachable (); } G_STMT_END
+#elif defined (_MSC_VER)
+#define g_assert_not_reached()          G_STMT_START { (void) 0; __assume (0); } G_STMT_END
 #else  /* if __builtin_unreachable() is not supported: */
 #define g_assert_not_reached()          G_STMT_START { (void) 0; } G_STMT_END
 #endif
@@ -21546,17 +22188,6 @@ typedef void (*GTestFixtureFunc) (gpointer      fixture,
                                                                          #expr); \
                                         } G_STMT_END
 #endif /* !G_DISABLE_ASSERT */
-
-typedef void (*GAssertionFunc)          (const char     *domain,
-                                         const char     *file,
-                                         int             line,
-                                         const char     *func,
-                                         const char     *message,
-                                         gpointer        user_data);
-
-GLIB_AVAILABLE_IN_2_68
-void g_assertion_set_handler            (GAssertionFunc handler,
-                                         gpointer user_data);
 
 GLIB_AVAILABLE_IN_ALL
 int     g_strcmp0                       (const char     *str1,
@@ -21663,13 +22294,26 @@ void    g_test_add_data_func_full       (const char     *testpath,
                                          GTestDataFunc   test_func,
                                          GDestroyNotify  data_free_func);
 
+/* tell about currently run test */
+GLIB_AVAILABLE_IN_2_68
+const char * g_test_get_path            (void);
+
 /* tell about failure */
 GLIB_AVAILABLE_IN_2_30
 void    g_test_fail                     (void);
+GLIB_AVAILABLE_IN_2_70
+void    g_test_fail_printf              (const char *format,
+                                         ...) G_GNUC_PRINTF (1, 2);
 GLIB_AVAILABLE_IN_2_38
 void    g_test_incomplete               (const gchar *msg);
+GLIB_AVAILABLE_IN_2_70
+void    g_test_incomplete_printf        (const char *format,
+                                         ...) G_GNUC_PRINTF (1, 2);
 GLIB_AVAILABLE_IN_2_38
 void    g_test_skip                     (const gchar *msg);
+GLIB_AVAILABLE_IN_2_70
+void    g_test_skip_printf              (const char *format,
+                                         ...) G_GNUC_PRINTF (1, 2);
 GLIB_AVAILABLE_IN_2_38
 gboolean g_test_failed                  (void);
 GLIB_AVAILABLE_IN_2_38
@@ -21827,6 +22471,12 @@ void          g_test_suite_add_suite    (GTestSuite     *suite,
 GLIB_AVAILABLE_IN_ALL
 int           g_test_run_suite          (GTestSuite     *suite);
 
+GLIB_AVAILABLE_IN_2_70
+void          g_test_case_free          (GTestCase *test_case);
+
+GLIB_AVAILABLE_IN_2_70
+void          g_test_suite_free         (GTestSuite     *suite);
+
 GLIB_AVAILABLE_IN_ALL
 void    g_test_trap_assertions          (const char     *domain,
                                          const char     *file,
@@ -21841,11 +22491,12 @@ void    g_assertion_message             (const char     *domain,
                                          const char     *func,
                                          const char     *message) G_ANALYZER_NORETURN;
 GLIB_AVAILABLE_IN_ALL
+G_NORETURN
 void    g_assertion_message_expr        (const char     *domain,
                                          const char     *file,
                                          int             line,
                                          const char     *func,
-                                         const char     *expr) G_GNUC_NORETURN;
+                                         const char     *expr);
 GLIB_AVAILABLE_IN_ALL
 void    g_assertion_message_cmpstr      (const char     *domain,
                                          const char     *file,
@@ -22055,6 +22706,13 @@ struct _GThreadPool
 GLIB_AVAILABLE_IN_ALL
 GThreadPool *   g_thread_pool_new               (GFunc            func,
                                                  gpointer         user_data,
+                                                 gint             max_threads,
+                                                 gboolean         exclusive,
+                                                 GError         **error);
+GLIB_AVAILABLE_IN_2_70
+GThreadPool *   g_thread_pool_new_full          (GFunc            func,
+                                                 gpointer         user_data,
+                                                 GDestroyNotify   item_free_func,
                                                  gint             max_threads,
                                                  gboolean         exclusive,
                                                  GError         **error);
@@ -22347,6 +23005,10 @@ void     g_tree_replace         (GTree            *tree,
 GLIB_AVAILABLE_IN_ALL
 gboolean g_tree_remove          (GTree            *tree,
                                  gconstpointer     key);
+
+GLIB_AVAILABLE_IN_2_70
+void     g_tree_remove_all      (GTree            *tree);
+
 GLIB_AVAILABLE_IN_ALL
 gboolean g_tree_steal           (GTree            *tree,
                                  gconstpointer     key);
@@ -22427,7 +23089,8 @@ G_END_DECLS
  * <http://www.gnu.org/licenses/>.
  */
 
-#pragma once
+#ifndef __G_URI_H__
+#define __G_URI_H__
 
 #if !defined (__GLIB_H_INSIDE__) && !defined (GLIB_COMPILATION)
 #error "Only <glib.h> can be included directly."
@@ -22472,10 +23135,10 @@ void         g_uri_unref            (GUri *uri);
  * @G_URI_FLAGS_ENCODED_PATH: Same as %G_URI_FLAGS_ENCODED, for the path only.
  * @G_URI_FLAGS_ENCODED_FRAGMENT: Same as %G_URI_FLAGS_ENCODED, for the
  *     fragment only.
- * @G_URI_FLAGS_SCHEME_NORMALIZE: Applies scheme-based normalization to the
- *     parsed URI. For example when parsing an HTTP URI changing empty paths
- *     to `/` and changing port `80` to `-1`. This only supports a subset
- *     of known schemes. (Since: 2.68)
+ * @G_URI_FLAGS_SCHEME_NORMALIZE: A scheme-based normalization will be applied.
+ *     For example, when parsing an HTTP URI changing omitted path to `/` and
+ *     omitted port to `80`; and when building a URI, changing empty path to `/`
+ *     and default port `80`). This only supports a subset of known schemes. (Since: 2.68)
  *
  * Flags that describe a URI.
  *
@@ -22497,7 +23160,7 @@ typedef enum {
   G_URI_FLAGS_ENCODED_QUERY   = 1 << 5,
   G_URI_FLAGS_ENCODED_PATH    = 1 << 6,
   G_URI_FLAGS_ENCODED_FRAGMENT = 1 << 7,
-  G_URI_FLAGS_SCHEME_NORMALIZE = 1 << 8,
+  G_URI_FLAGS_SCHEME_NORMALIZE GLIB_AVAILABLE_ENUMERATOR_IN_2_68 = 1 << 8,
 } GUriFlags;
 
 GLIB_AVAILABLE_IN_2_66
@@ -22826,6 +23489,8 @@ char *      g_uri_escape_bytes     (const guint8 *unescaped,
 G_GNUC_END_IGNORE_DEPRECATIONS
 
 G_END_DECLS
+
+#endif /* __G_URI_H__ */
 /* guuid.h - UUID functions
  *
  * Copyright (C) 2013-2015, 2017 Red Hat, Inc.
@@ -23533,7 +24198,11 @@ void     g_thread_foreach      (GFunc             thread_func,
 #endif
 
 #define g_static_mutex_get_mutex g_static_mutex_get_mutex_impl GLIB_DEPRECATED_MACRO_IN_2_32
+#ifndef G_OS_WIN32
+#define G_STATIC_MUTEX_INIT { NULL, PTHREAD_MUTEX_INITIALIZER } GLIB_DEPRECATED_MACRO_IN_2_32_FOR(g_mutex_init)
+#else
 #define G_STATIC_MUTEX_INIT { NULL } GLIB_DEPRECATED_MACRO_IN_2_32_FOR(g_mutex_init)
+#endif
 typedef struct
 {
   GMutex *mutex;
@@ -23808,6 +24477,9 @@ GLIB_AVAILABLE_IN_2_68
 void                            glib_init                               (void);
 
 GLIB_AVAILABLE_IN_2_68
+void                            glib_enable_io_features                 (void);
+
+GLIB_AVAILABLE_IN_2_68
 void                            glib_shutdown                           (void);
 
 GLIB_AVAILABLE_IN_2_68
@@ -23825,6 +24497,62 @@ void                            glib_recover_from_fork_in_child         (void);
 G_END_DECLS
 
 #endif /* __G_LIB_H__ */
+
+/* This file is generated by glib-mkenums, do not modify it. This code is licensed under the same license as the containing project. Note that it links to GLib, so must comply with the LGPL linking clauses. */
+
+#ifndef __GUM_ENUM_TYPES_H__
+#define __GUM_ENUM_TYPES_H__
+
+#ifndef GUM_DIET
+
+/* GObject - GLib Type, Object, Parameter and Signal Library
+ * Copyright (C) 1998, 1999, 2000 Tim Janik and Red Hat, Inc.
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.	 See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General
+ * Public License along with this library; if not, see <http://www.gnu.org/licenses/>.
+ */
+#ifndef __GLIB_GOBJECT_H__
+#define __GLIB_GOBJECT_H__
+
+#define __GLIB_GOBJECT_H_INSIDE__
+
+/* gbinding.h: Binding for object properties
+ *
+ * Copyright (C) 2010  Intel Corp.
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General
+ * Public License along with this library; if not, see <http://www.gnu.org/licenses/>.
+ *
+ * Author: Emmanuele Bassi <ebassi@linux.intel.com>
+ */
+
+#ifndef __G_BINDING_H__
+#define __G_BINDING_H__
+
+#if !defined (__GLIB_GOBJECT_H_INSIDE__) && !defined (GOBJECT_COMPILATION)
+#error "Only <glib-object.h> can be included directly."
+#endif
+
 /* GObject - GLib Type, Object, Parameter and Signal Library
  * Copyright (C) 1998-1999, 2000-2001 Tim Janik and Red Hat, Inc.
  *
@@ -23881,6 +24609,7 @@ G_BEGIN_DECLS
  * @type: A #GType value.
  * 
  * The fundamental type which is the ancestor of @type.
+ *
  * Fundamental types are types that serve as ultimate bases for the derived types, 
  * thus they are the roots of distinct inheritance hierarchies.
  */
@@ -23919,6 +24648,7 @@ G_BEGIN_DECLS
  * G_TYPE_CHAR:
  * 
  * The fundamental type corresponding to #gchar.
+ *
  * The type designated by G_TYPE_CHAR is unconditionally an 8-bit signed integer.
  * This may or may not be the same type a the C type "gchar".
  */
@@ -24062,6 +24792,7 @@ G_BEGIN_DECLS
  * @x: the fundamental type number.
  * 
  * Get the type ID for the fundamental type number @x.
+ *
  * Use g_type_fundamental_next() instead of this macro to create new fundamental 
  * types.
  *
@@ -24130,6 +24861,7 @@ G_BEGIN_DECLS
  * @type: A #GType value
  * 
  * Checks if @type is an interface type.
+ *
  * An interface type provides a pure API, the implementation
  * of which is provided by another type (which is then said to conform
  * to the interface).  GLib interfaces are somewhat analogous to Java
@@ -24219,6 +24951,18 @@ G_BEGIN_DECLS
  * Returns: %TRUE on success
  */
 #define G_TYPE_HAS_VALUE_TABLE(type)            (g_type_value_table_peek (type) != NULL)
+/**
+ * G_TYPE_IS_FINAL:
+ * @type: a #GType value
+ *
+ * Checks if @type is a final type. A final type cannot be derived any
+ * further.
+ *
+ * Returns: %TRUE on success
+ *
+ * Since: 2.70
+ */
+#define G_TYPE_IS_FINAL(type)                   (g_type_test_flags ((type), G_TYPE_FLAG_FINAL)) GLIB_AVAILABLE_MACRO_IN_2_70
 
 
 /* Typedefs
@@ -24288,7 +25032,8 @@ struct _GTypeInterface
  * @instance_size: the size of the instance structure
  * 
  * A structure holding information for a specific type.
- * It is filled in by the g_type_query() function.
+ *
+ * See also: g_type_query()
  */
 struct _GTypeQuery
 {
@@ -24479,6 +25224,7 @@ struct _GTypeQuery
  * @c_type: The C type for the private structure
  * 
  * Gets the private structure for a particular type.
+ *
  * The private structure must have been registered in the
  * class_init function with g_type_class_add_private().
  * 
@@ -24498,6 +25244,7 @@ struct _GTypeQuery
  * @c_type: The C type for the private structure
  * 
  * Gets the private class structure for a particular type.
+ *
  * The private structure must have been registered in the
  * get_type() function with g_type_add_class_private().
  * 
@@ -24610,9 +25357,12 @@ int                   g_type_get_instance_count      (GType            type);
  * @g_class: (type GObject.TypeClass): The #GTypeClass structure to initialize
  * 
  * A callback function used by the type system to do base initialization
- * of the class structures of derived types. It is called as part of the
- * initialization process of all derived classes and should reallocate
- * or reset all dynamic class members copied over from the parent class.
+ * of the class structures of derived types.
+ *
+ * This function is called as part of the initialization process of all derived
+ * classes and should reallocate or reset all dynamic class members copied over
+ * from the parent class.
+ *
  * For example, class members (such as strings) that are not sufficiently
  * handled by a plain memory copy of the parent class into the derived class
  * have to be altered. See GClassInitFunc() for a discussion of the class
@@ -24625,8 +25375,11 @@ typedef void   (*GBaseInitFunc)              (gpointer         g_class);
  * 
  * A callback function used by the type system to finalize those portions
  * of a derived types class structure that were setup from the corresponding
- * GBaseInitFunc() function. Class finalization basically works the inverse
- * way in which class initialization is performed.
+ * GBaseInitFunc() function.
+ *
+ * Class finalization basically works the inverse way in which class
+ * initialization is performed.
+ *
  * See GClassInitFunc() for a discussion of the class initialization process.
  */
 typedef void   (*GBaseFinalizeFunc)          (gpointer         g_class);
@@ -24636,8 +25389,9 @@ typedef void   (*GBaseFinalizeFunc)          (gpointer         g_class);
  * @class_data: The @class_data member supplied via the #GTypeInfo structure.
  * 
  * A callback function used by the type system to initialize the class
- * of a specific type. This function should initialize all static class
- * members.
+ * of a specific type.
+ *
+ * This function should initialize all static class members.
  *
  * The initialization process of a class involves:
  * 
@@ -24706,6 +25460,7 @@ typedef void   (*GBaseFinalizeFunc)          (gpointer         g_class);
  *   class->static_float = 3.14159265358979323846;
  * }
  * ]|
+ *
  * Initialization of TypeBClass will first cause initialization of
  * TypeAClass (derived classes reference their parent classes, see
  * g_type_class_ref() on this).
@@ -24739,8 +25494,10 @@ typedef void   (*GClassInitFunc)             (gpointer         g_class,
  * @class_data: The @class_data member supplied via the #GTypeInfo structure
  * 
  * A callback function used by the type system to finalize a class.
+ *
  * This function is rarely needed, as dynamically allocated class resources
  * should be handled by GBaseInitFunc() and GBaseFinalizeFunc().
+ *
  * Also, specification of a GClassFinalizeFunc() in the #GTypeInfo
  * structure of a static type is invalid, because classes of static types
  * will never be finalized (they are artificially kept alive when their
@@ -24755,8 +25512,10 @@ typedef void   (*GClassFinalizeFunc)         (gpointer         g_class,
  *    created for
  * 
  * A callback function used by the type system to initialize a new
- * instance of a type. This function initializes all instance members and
- * allocates any resources required by it.
+ * instance of a type.
+ *
+ * This function initializes all instance members and allocates any resources
+ * required by it.
  *
  * Initialization of a derived instance involves calling all its parent
  * types instance initializers, so the class member of the instance
@@ -24774,8 +25533,10 @@ typedef void   (*GInstanceInitFunc)          (GTypeInstance   *instance,
  * @iface_data: The @interface_data supplied via the #GInterfaceInfo structure
  * 
  * A callback function used by the type system to initialize a new
- * interface.  This function should initialize all internal data and
- * allocate any resources required by the interface.
+ * interface.
+ *
+ * This function should initialize all internal data and* allocate any
+ * resources required by the interface.
  *
  * The members of @iface_data are guaranteed to have been filled with
  * zeros before this function is called.
@@ -24788,6 +25549,7 @@ typedef void   (*GInterfaceInitFunc)         (gpointer         g_iface,
  * @iface_data: The @interface_data supplied via the #GInterfaceInfo structure
  * 
  * A callback function used by the type system to finalize an interface.
+ *
  * This function should destroy any internal data and release any resources
  * allocated by the corresponding GInterfaceInitFunc() function.
  */
@@ -24800,10 +25562,11 @@ typedef void   (*GInterfaceFinalizeFunc)     (gpointer         g_iface,
  *    unreferenced
  * 
  * A callback function which is called when the reference count of a class 
- * drops to zero. It may use g_type_class_ref() to prevent the class from
- * being freed. You should not call g_type_class_unref() from a 
- * #GTypeClassCacheFunc function to prevent infinite recursion, use 
- * g_type_class_unref_uncached() instead.
+ * drops to zero.
+ *
+ * It may use g_type_class_ref() to prevent the class from being freed. You
+ * should not call g_type_class_unref() from a #GTypeClassCacheFunc function
+ * to prevent infinite recursion, use g_type_class_unref_uncached() instead.
  * 
  * The functions have to check the class id passed in to figure 
  * whether they actually want to cache the class of this type, since all
@@ -24821,6 +25584,7 @@ typedef gboolean (*GTypeClassCacheFunc)	     (gpointer	       cache_data,
  *    initialized
  * 
  * A callback called after an interface vtable is initialized.
+ *
  * See g_type_add_interface_check().
  * 
  * Since: 2.4
@@ -24851,13 +25615,16 @@ typedef enum    /*< skip >*/
  * @G_TYPE_FLAG_VALUE_ABSTRACT: Indicates an abstract value type, i.e. a type
  *  that introduces a value table, but can't be used for
  *  g_value_init()
+ * @G_TYPE_FLAG_FINAL: Indicates a final type. A final type is a non-derivable
+ *  leaf node in a deep derivable type hierarchy tree. Since: 2.70
  * 
  * Bit masks used to check or determine characteristics of a type.
  */
 typedef enum    /*< skip >*/
 {
-  G_TYPE_FLAG_ABSTRACT		= (1 << 4),
-  G_TYPE_FLAG_VALUE_ABSTRACT	= (1 << 5)
+  G_TYPE_FLAG_ABSTRACT = (1 << 4),
+  G_TYPE_FLAG_VALUE_ABSTRACT = (1 << 5),
+  G_TYPE_FLAG_FINAL GLIB_AVAILABLE_ENUMERATOR_IN_2_70 = (1 << 6)
 } GTypeFlags;
 /**
  * GTypeInfo:
@@ -25183,19 +25950,19 @@ guint     g_type_get_type_registration_serial (void);
 /* --- GType boilerplate --- */
 /**
  * G_DECLARE_FINAL_TYPE:
- * @ModuleObjName: The name of the new type, in camel case (like GtkWidget)
+ * @ModuleObjName: The name of the new type, in camel case (like `GtkWidget`)
  * @module_obj_name: The name of the new type in lowercase, with words
- *  separated by '_' (like 'gtk_widget')
- * @MODULE: The name of the module, in all caps (like 'GTK')
- * @OBJ_NAME: The bare name of the type, in all caps (like 'WIDGET')
- * @ParentName: the name of the parent type, in camel case (like GtkWidget)
+ *  separated by `_` (like `gtk_widget`)
+ * @MODULE: The name of the module, in all caps (like `GTK`)
+ * @OBJ_NAME: The bare name of the type, in all caps (like `WIDGET`)
+ * @ParentName: the name of the parent type, in camel case (like `GtkWidget`)
  *
- * A convenience macro for emitting the usual declarations in the header file for a type which is not (at the
- * present time) intended to be subclassed.
+ * A convenience macro for emitting the usual declarations in the header file
+ * for a type which is not (at the present time) intended to be subclassed.
  *
  * You might use it in a header as follows:
  *
- * |[
+ * |[<!-- language="C" -->
  * #ifndef _myapp_window_h_
  * #define _myapp_window_h_
  *
@@ -25213,15 +25980,15 @@ guint     g_type_get_type_registration_serial (void);
  *
  * This results in the following things happening:
  *
- * - the usual my_app_window_get_type() function is declared with a return type of #GType
+ * - the usual `my_app_window_get_type()` function is declared with a return type of #GType
  *
- * - the MyAppWindow types is defined as a typedef of struct _MyAppWindow.  The struct itself is not
+ * - the `MyAppWindow` type is defined as a `typedef` of `struct _MyAppWindow`.  The struct itself is not
  *   defined and should be defined from the .c file before G_DEFINE_TYPE() is used.
  *
- * - the MY_APP_WINDOW() cast is emitted as static inline function along with the MY_APP_IS_WINDOW() type
+ * - the `MY_APP_WINDOW()` cast is emitted as `static inline` function along with the `MY_APP_IS_WINDOW()` type
  *   checking function
  *
- * - the MyAppWindowClass type is defined as a struct containing GtkWindowClass.  This is done for the
+ * - the `MyAppWindowClass` type is defined as a struct containing `GtkWindowClass`.  This is done for the
  *   convenience of the person defining the type and should not be considered to be part of the ABI.  In
  *   particular, without a firm declaration of the instance structure, it is not possible to subclass the type
  *   and therefore the fact that the size of the class structure is exposed is not a concern and it can be
@@ -25231,10 +25998,10 @@ guint     g_type_get_type_registration_serial (void);
  *
  * You can only use this function if your parent type also supports g_autoptr().
  *
- * Because the type macro (MY_APP_TYPE_WINDOW in the above example) is not a callable, you must continue to
+ * Because the type macro (`MY_APP_TYPE_WINDOW` in the above example) is not a callable, you must continue to
  * manually define this as a macro for yourself.
  *
- * The declaration of the _get_type() function is the first thing emitted by the macro.  This allows this macro
+ * The declaration of the `_get_type()` function is the first thing emitted by the macro.  This allows this macro
  * to be used in the usual way with export control and API versioning macros.
  *
  * If you want to declare your own class structure, use G_DECLARE_DERIVABLE_TYPE().
@@ -25264,19 +26031,19 @@ guint     g_type_get_type_registration_serial (void);
 
 /**
  * G_DECLARE_DERIVABLE_TYPE:
- * @ModuleObjName: The name of the new type, in camel case (like GtkWidget)
+ * @ModuleObjName: The name of the new type, in camel case (like `GtkWidget`)
  * @module_obj_name: The name of the new type in lowercase, with words
- *  separated by '_' (like 'gtk_widget')
- * @MODULE: The name of the module, in all caps (like 'GTK')
- * @OBJ_NAME: The bare name of the type, in all caps (like 'WIDGET')
- * @ParentName: the name of the parent type, in camel case (like GtkWidget)
+ *  separated by `_` (like `gtk_widget`)
+ * @MODULE: The name of the module, in all caps (like `GTK`)
+ * @OBJ_NAME: The bare name of the type, in all caps (like `WIDGET`)
+ * @ParentName: the name of the parent type, in camel case (like `GtkWidget`)
  *
  * A convenience macro for emitting the usual declarations in the
  * header file for a type which is intended to be subclassed.
  *
  * You might use it in a header as follows:
  *
- * |[
+ * |[<!-- language="C" -->
  * #ifndef _gtk_frobber_h_
  * #define _gtk_frobber_h_
  *
@@ -25303,26 +26070,26 @@ guint     g_type_get_type_registration_serial (void);
  *
  * This results in the following things happening:
  *
- * - the usual gtk_frobber_get_type() function is declared with a return type of #GType
+ * - the usual `gtk_frobber_get_type()` function is declared with a return type of #GType
  *
- * - the GtkFrobber struct is created with GtkWidget as the first and only item.  You are expected to use
+ * - the `GtkFrobber` struct is created with `GtkWidget` as the first and only item.  You are expected to use
  *   a private structure from your .c file to store your instance variables.
  *
- * - the GtkFrobberClass type is defined as a typedef to struct _GtkFrobberClass, which is left undefined.
+ * - the `GtkFrobberClass` type is defined as a typedef to `struct _GtkFrobberClass`, which is left undefined.
  *   You should do this from the header file directly after you use the macro.
  *
- * - the GTK_FROBBER() and GTK_FROBBER_CLASS() casts are emitted as static inline functions along with
- *   the GTK_IS_FROBBER() and GTK_IS_FROBBER_CLASS() type checking functions and GTK_FROBBER_GET_CLASS()
+ * - the `GTK_FROBBER()` and `GTK_FROBBER_CLASS()` casts are emitted as `static inline` functions along with
+ *   the `GTK_IS_FROBBER()` and `GTK_IS_FROBBER_CLASS()` type checking functions and `GTK_FROBBER_GET_CLASS()`
  *   function.
  *
  * - g_autoptr() support being added for your type, based on the type of your parent class
  *
  * You can only use this function if your parent type also supports g_autoptr().
  *
- * Because the type macro (GTK_TYPE_FROBBER in the above example) is not a callable, you must continue to
+ * Because the type macro (`GTK_TYPE_FROBBER` in the above example) is not a callable, you must continue to
  * manually define this as a macro for yourself.
  *
- * The declaration of the _get_type() function is the first thing emitted by the macro.  This allows this macro
+ * The declaration of the `_get_type()` function is the first thing emitted by the macro.  This allows this macro
  * to be used in the usual way with export control and API versioning macros.
  *
  * If you are writing a library, it is important to note that it is possible to convert a type from using
@@ -25362,18 +26129,18 @@ guint     g_type_get_type_registration_serial (void);
 
 /**
  * G_DECLARE_INTERFACE:
- * @ModuleObjName: The name of the new type, in camel case (like GtkWidget)
+ * @ModuleObjName: The name of the new type, in camel case (like `GtkWidget`)
  * @module_obj_name: The name of the new type in lowercase, with words
- *  separated by '_' (like 'gtk_widget')
- * @MODULE: The name of the module, in all caps (like 'GTK')
- * @OBJ_NAME: The bare name of the type, in all caps (like 'WIDGET')
- * @PrerequisiteName: the name of the prerequisite type, in camel case (like GtkWidget)
+ *  separated by `_` (like `gtk_widget`)
+ * @MODULE: The name of the module, in all caps (like `GTK`)
+ * @OBJ_NAME: The bare name of the type, in all caps (like `WIDGET`)
+ * @PrerequisiteName: the name of the prerequisite type, in camel case (like `GtkWidget`)
  *
- * A convenience macro for emitting the usual declarations in the header file for a GInterface type.
+ * A convenience macro for emitting the usual declarations in the header file for a #GInterface type.
  *
  * You might use it in a header as follows:
  *
- * |[
+ * |[<!-- language="C" -->
  * #ifndef _my_model_h_
  * #define _my_model_h_
  *
@@ -25397,23 +26164,23 @@ guint     g_type_get_type_registration_serial (void);
  *
  * This results in the following things happening:
  *
- * - the usual my_model_get_type() function is declared with a return type of #GType
+ * - the usual `my_model_get_type()` function is declared with a return type of #GType
  *
- * - the MyModelInterface type is defined as a typedef to struct _MyModelInterface,
+ * - the `MyModelInterface` type is defined as a typedef to `struct _MyModelInterface`,
  *   which is left undefined. You should do this from the header file directly after
  *   you use the macro.
  *
- * - the MY_MODEL() cast is emitted as static inline functions along with
- *   the MY_IS_MODEL() type checking function and MY_MODEL_GET_IFACE() function.
+ * - the `MY_MODEL()` cast is emitted as `static inline` functions along with
+ *   the `MY_IS_MODEL()` type checking function and `MY_MODEL_GET_IFACE()` function.
  *
  * - g_autoptr() support being added for your type, based on your prerequisite type.
  *
  * You can only use this function if your prerequisite type also supports g_autoptr().
  *
- * Because the type macro (MY_TYPE_MODEL in the above example) is not a callable, you must continue to
+ * Because the type macro (`MY_TYPE_MODEL` in the above example) is not a callable, you must continue to
  * manually define this as a macro for yourself.
  *
- * The declaration of the _get_type() function is the first thing emitted by the macro.  This allows this macro
+ * The declaration of the `_get_type()` function is the first thing emitted by the macro.  This allows this macro
  * to be used in the usual way with export control and API versioning macros.
  *
  * Since: 2.44
@@ -25438,13 +26205,13 @@ guint     g_type_get_type_registration_serial (void);
  * G_DEFINE_TYPE:
  * @TN: The name of the new type, in Camel case.
  * @t_n: The name of the new type, in lowercase, with words 
- *  separated by '_'.
+ *  separated by `_`.
  * @T_P: The #GType of the parent type.
  * 
  * A convenience macro for type implementations, which declares a class
  * initialization function, an instance initialization function (see #GTypeInfo
  * for information about these) and a static variable named `t_n_parent_class`
- * pointing to the parent class. Furthermore, it defines  a *_get_type() function.
+ * pointing to the parent class. Furthermore, it defines a `*_get_type()` function.
  * See G_DEFINE_TYPE_EXTENDED() for an example.
  * 
  * Since: 2.4
@@ -25453,13 +26220,14 @@ guint     g_type_get_type_registration_serial (void);
 /**
  * G_DEFINE_TYPE_WITH_CODE:
  * @TN: The name of the new type, in Camel case.
- * @t_n: The name of the new type in lowercase, with words separated by '_'.
+ * @t_n: The name of the new type in lowercase, with words separated by `_`.
  * @T_P: The #GType of the parent type.
- * @_C_: Custom code that gets inserted in the *_get_type() function.
+ * @_C_: Custom code that gets inserted in the `*_get_type()` function.
  * 
- * A convenience macro for type implementations.  
+ * A convenience macro for type implementations.
+ *
  * Similar to G_DEFINE_TYPE(), but allows you to insert custom code into the 
- * *_get_type() function, e.g. interface implementations via G_IMPLEMENT_INTERFACE().
+ * `*_get_type()` function, e.g. interface implementations via G_IMPLEMENT_INTERFACE().
  * See G_DEFINE_TYPE_EXTENDED() for an example.
  * 
  * Since: 2.4
@@ -25469,18 +26237,19 @@ guint     g_type_get_type_registration_serial (void);
  * G_DEFINE_TYPE_WITH_PRIVATE:
  * @TN: The name of the new type, in Camel case.
  * @t_n: The name of the new type, in lowercase, with words 
- *  separated by '_'.
+ *  separated by `_`.
  * @T_P: The #GType of the parent type.
  * 
  * A convenience macro for type implementations, which declares a class
  * initialization function, an instance initialization function (see #GTypeInfo
  * for information about these), a static variable named `t_n_parent_class`
  * pointing to the parent class, and adds private instance data to the type.
- * Furthermore, it defines a *_get_type() function. See G_DEFINE_TYPE_EXTENDED()
+ *
+ * Furthermore, it defines a `*_get_type()` function. See G_DEFINE_TYPE_EXTENDED()
  * for an example.
  * 
  * Note that private structs added with this macros must have a struct
- * name of the form @TN Private.
+ * name of the form `TN ## Private`.
  *
  * The private instance data can be retrieved using the automatically generated
  * getter function `t_n_get_instance_private()`.
@@ -25494,11 +26263,12 @@ guint     g_type_get_type_registration_serial (void);
  * G_DEFINE_ABSTRACT_TYPE:
  * @TN: The name of the new type, in Camel case.
  * @t_n: The name of the new type, in lowercase, with words 
- *  separated by '_'.
+ *  separated by `_`.
  * @T_P: The #GType of the parent type.
  * 
- * A convenience macro for type implementations. 
- * Similar to G_DEFINE_TYPE(), but defines an abstract type. 
+ * A convenience macro for type implementations.
+ *
+ * Similar to G_DEFINE_TYPE(), but defines an abstract type.
  * See G_DEFINE_TYPE_EXTENDED() for an example.
  * 
  * Since: 2.4
@@ -25508,14 +26278,16 @@ guint     g_type_get_type_registration_serial (void);
  * G_DEFINE_ABSTRACT_TYPE_WITH_CODE:
  * @TN: The name of the new type, in Camel case.
  * @t_n: The name of the new type, in lowercase, with words 
- *  separated by '_'.
+ *  separated by `_`.
  * @T_P: The #GType of the parent type.
- * @_C_: Custom code that gets inserted in the @type_name_get_type() function.
+ * @_C_: Custom code that gets inserted in the `type_name_get_type()` function.
  * 
  * A convenience macro for type implementations.
+ *
  * Similar to G_DEFINE_TYPE_WITH_CODE(), but defines an abstract type and
- * allows you to insert custom code into the *_get_type() function, e.g.
+ * allows you to insert custom code into the `*_get_type()` function, e.g.
  * interface implementations  via G_IMPLEMENT_INTERFACE().
+ *
  * See G_DEFINE_TYPE_EXTENDED() for an example.
  * 
  * Since: 2.4
@@ -25525,23 +26297,75 @@ guint     g_type_get_type_registration_serial (void);
  * G_DEFINE_ABSTRACT_TYPE_WITH_PRIVATE:
  * @TN: The name of the new type, in Camel case.
  * @t_n: The name of the new type, in lowercase, with words 
- *  separated by '_'.
+ *  separated by `_`.
  * @T_P: The #GType of the parent type.
  *
- * Similar to G_DEFINE_TYPE_WITH_PRIVATE(), but defines an abstract type. 
+ * Similar to G_DEFINE_TYPE_WITH_PRIVATE(), but defines an abstract type.
+ *
  * See G_DEFINE_TYPE_EXTENDED() for an example.
  * 
  * Since: 2.38
  */
 #define G_DEFINE_ABSTRACT_TYPE_WITH_PRIVATE(TN, t_n, T_P)   G_DEFINE_TYPE_EXTENDED (TN, t_n, T_P, G_TYPE_FLAG_ABSTRACT, G_ADD_PRIVATE (TN))
 /**
+ * G_DEFINE_FINAL_TYPE:
+ * @TN: the name of the new type, in Camel case
+ * @t_n: the name of the new type, in lower case, with words
+ *   separated by `_` (snake case)
+ * @T_P: the #GType of the parent type
+ *
+ * A convenience macro for type implementations.
+ *
+ * Similar to G_DEFINE_TYPE(), but defines a final type.
+ *
+ * See G_DEFINE_TYPE_EXTENDED() for an example.
+ *
+ * Since: 2.70
+ */
+#define G_DEFINE_FINAL_TYPE(TN, t_n, T_P)                      G_DEFINE_TYPE_EXTENDED (TN, t_n, T_P, G_TYPE_FLAG_FINAL, {}) GLIB_AVAILABLE_MACRO_IN_2_70
+/**
+ * G_DEFINE_FINAL_TYPE_WITH_CODE:
+ * @TN: the name of the new type, in Camel case
+ * @t_n: the name of the new type, in lower case, with words
+ *   separated by `_` (snake case)
+ * @T_P: the #GType of the parent type
+ * @_C_: Custom code that gets inserted in the `type_name_get_type()` function.
+ *
+ * A convenience macro for type implementations.
+ *
+ * Similar to G_DEFINE_TYPE_WITH_CODE(), but defines a final type and
+ * allows you to insert custom code into the `*_get_type()` function, e.g.
+ * interface implementations  via G_IMPLEMENT_INTERFACE().
+ *
+ * See G_DEFINE_TYPE_EXTENDED() for an example.
+ *
+ * Since: 2.70
+ */
+#define G_DEFINE_FINAL_TYPE_WITH_CODE(TN, t_n, T_P, _C_)       _G_DEFINE_TYPE_EXTENDED_BEGIN (TN, t_n, T_P, G_TYPE_FLAG_FINAL) {_C_;} _G_DEFINE_TYPE_EXTENDED_END() GLIB_AVAILABLE_MACRO_IN_2_70
+/**
+ * G_DEFINE_FINAL_TYPE_WITH_PRIVATE:
+ * @TN: the name of the new type, in Camel case
+ * @t_n: the name of the new type, in lower case, with words
+ *   separated by `_` (snake case)
+ * @T_P: the #GType of the parent type
+ *
+ * A convenience macro for type implementations.
+ *
+ * Similar to G_DEFINE_TYPE_WITH_PRIVATE(), but defines a final type.
+ *
+ * See G_DEFINE_TYPE_EXTENDED() for an example.
+ *
+ * Since: 2.70
+ */
+#define G_DEFINE_FINAL_TYPE_WITH_PRIVATE(TN, t_n, T_P)         G_DEFINE_TYPE_EXTENDED (TN, t_n, T_P, G_TYPE_FLAG_FINAL, G_ADD_PRIVATE (TN)) GLIB_AVAILABLE_MACRO_IN_2_70
+/**
  * G_DEFINE_TYPE_EXTENDED:
  * @TN: The name of the new type, in Camel case.
  * @t_n: The name of the new type, in lowercase, with words
- *    separated by '_'.
+ *    separated by `_`.
  * @T_P: The #GType of the parent type.
  * @_f_: #GTypeFlags to pass to g_type_register_static()
- * @_C_: Custom code that gets inserted in the *_get_type() function.
+ * @_C_: Custom code that gets inserted in the `*_get_type()` function.
  *
  * The most general convenience macro for type implementations, on which
  * G_DEFINE_TYPE(), etc are based.
@@ -25555,7 +26379,9 @@ guint     g_type_get_type_registration_serial (void);
  *                         G_IMPLEMENT_INTERFACE (TYPE_GIZMO,
  *                                                gtk_gadget_gizmo_init));
  * ]|
+ *
  * expands to
+ *
  * |[<!-- language="C" -->
  * static void     gtk_gadget_init       (GtkGadget      *self);
  * static void     gtk_gadget_class_init (GtkGadgetClass *klass);
@@ -25602,6 +26428,7 @@ guint     g_type_get_type_registration_serial (void);
  *   return static_g_define_type_id;
  * }
  * ]|
+ *
  * The only pieces which have to be manually provided are the definitions of
  * the instance and class structure and the definitions of the instance and
  * class init functions.
@@ -25613,12 +26440,12 @@ guint     g_type_get_type_registration_serial (void);
 /**
  * G_DEFINE_INTERFACE:
  * @TN: The name of the new type, in Camel case.
- * @t_n: The name of the new type, in lowercase, with words separated by '_'.
- * @T_P: The #GType of the prerequisite type for the interface, or 0
- * (%G_TYPE_INVALID) for no prerequisite type.
+ * @t_n: The name of the new type, in lowercase, with words separated by `_`.
+ * @T_P: The #GType of the prerequisite type for the interface, or %G_TYPE_INVALID
+ * for no prerequisite type.
  *
  * A convenience macro for #GTypeInterface definitions, which declares
- * a default vtable initialization function and defines a *_get_type()
+ * a default vtable initialization function and defines a `*_get_type()`
  * function.
  *
  * The macro expects the interface initialization function to have the
@@ -25638,16 +26465,18 @@ guint     g_type_get_type_registration_serial (void);
 /**
  * G_DEFINE_INTERFACE_WITH_CODE:
  * @TN: The name of the new type, in Camel case.
- * @t_n: The name of the new type, in lowercase, with words separated by '_'.
- * @T_P: The #GType of the prerequisite type for the interface, or 0
- * (%G_TYPE_INVALID) for no prerequisite type.
- * @_C_: Custom code that gets inserted in the *_get_type() function.
+ * @t_n: The name of the new type, in lowercase, with words separated by `_`.
+ * @T_P: The #GType of the prerequisite type for the interface, or %G_TYPE_INVALID
+ * for no prerequisite type.
+ * @_C_: Custom code that gets inserted in the `*_get_type()` function.
  *
- * A convenience macro for #GTypeInterface definitions. Similar to
- * G_DEFINE_INTERFACE(), but allows you to insert custom code into the
- * *_get_type() function, e.g. additional interface implementations
- * via G_IMPLEMENT_INTERFACE(), or additional prerequisite types. See
- * G_DEFINE_TYPE_EXTENDED() for a similar example using
+ * A convenience macro for #GTypeInterface definitions.
+ *
+ * Similar to G_DEFINE_INTERFACE(), but allows you to insert custom code
+ * into the `*_get_type()` function, e.g. additional interface implementations
+ * via G_IMPLEMENT_INTERFACE(), or additional prerequisite types.
+ *
+ * See G_DEFINE_TYPE_EXTENDED() for a similar example using
  * G_DEFINE_TYPE_WITH_CODE().
  *
  * Since: 2.24
@@ -25663,7 +26492,7 @@ guint     g_type_get_type_registration_serial (void);
  * of G_DEFINE_TYPE_WITH_CODE() or G_DEFINE_ABSTRACT_TYPE_WITH_CODE().
  * See G_DEFINE_TYPE_EXTENDED() for an example.
  *
- * Note that this macro can only be used together with the G_DEFINE_TYPE_*
+ * Note that this macro can only be used together with the `G_DEFINE_TYPE_*`
  * macros, since it depends on variable names from those macros.
  *
  * Since: 2.4
@@ -25698,10 +26527,10 @@ guint     g_type_get_type_registration_serial (void);
  *                            G_ADD_PRIVATE (MyObject))
  * ]|
  *
- * Will add MyObjectPrivate as the private data to any instance of the MyObject
- * type.
+ * Will add `MyObjectPrivate` as the private data to any instance of the
+ * `MyObject` type.
  *
- * G_DEFINE_TYPE_* macros will automatically create a private function
+ * `G_DEFINE_TYPE_*` macros will automatically create a private function
  * based on the arguments to this macro, which can be used to safely
  * retrieve the private data from an instance of the type; for instance:
  *
@@ -25729,7 +26558,7 @@ guint     g_type_get_type_registration_serial (void);
  *   }
  * ]|
  *
- * Note that this macro can only be used together with the G_DEFINE_TYPE_*
+ * Note that this macro can only be used together with the `G_DEFINE_TYPE_*`
  * macros, since it depends on variable names from those macros.
  *
  * Also note that private structs added with these macros must have a struct
@@ -25754,7 +26583,7 @@ guint     g_type_get_type_registration_serial (void);
  * Evaluates to the offset of the @field inside the instance private data
  * structure for @TypeName.
  *
- * Note that this macro can only be used together with the G_DEFINE_TYPE_*
+ * Note that this macro can only be used together with the `G_DEFINE_TYPE_*`
  * and G_ADD_PRIVATE() macros, since it depends on variable names from
  * those macros.
  *
@@ -25772,7 +26601,7 @@ guint     g_type_get_type_registration_serial (void);
  * Evaluates to a pointer to the @field_name inside the @inst private data
  * structure for @TypeName.
  *
- * Note that this macro can only be used together with the G_DEFINE_TYPE_*
+ * Note that this macro can only be used together with the `G_DEFINE_TYPE_*`
  * and G_ADD_PRIVATE() macros, since it depends on variable names from
  * those macros.
  *
@@ -25791,7 +26620,7 @@ guint     g_type_get_type_registration_serial (void);
  * Evaluates to the @field_name inside the @inst private data
  * structure for @TypeName.
  *
- * Note that this macro can only be used together with the G_DEFINE_TYPE_*
+ * Note that this macro can only be used together with the `G_DEFINE_TYPE_*`
  * and G_ADD_PRIVATE() macros, since it depends on variable names from
  * those macros.
  *
@@ -25916,12 +26745,27 @@ type_name##_get_type (void) \
  * G_DEFINE_BOXED_TYPE:
  * @TypeName: The name of the new type, in Camel case
  * @type_name: The name of the new type, in lowercase, with words
- *  separated by '_'
+ *  separated by `_`
  * @copy_func: the #GBoxedCopyFunc for the new type
  * @free_func: the #GBoxedFreeFunc for the new type
  *
- * A convenience macro for boxed type implementations, which defines a
- * type_name_get_type() function registering the boxed type.
+ * A convenience macro for defining a new custom boxed type. 
+ *
+ * Using this macro is the recommended way of defining new custom boxed
+ * types, over calling g_boxed_type_register_static() directly. It defines 
+ * a `type_name_get_type()` function which will return the newly defined
+ * #GType, enabling lazy instantiation.
+ *
+ * |[<!-- language="C" --> 
+ * G_DEFINE_BOXED_TYPE (MyStruct, my_struct, my_struct_copy, my_struct_free)
+ *
+ * void 
+ * foo ()
+ * {
+ *   GType type = my_struct_get_type ();
+ *   // ... your code ...
+ * }
+ * ]|
  *
  * Since: 2.26
  */
@@ -25930,14 +26774,15 @@ type_name##_get_type (void) \
  * G_DEFINE_BOXED_TYPE_WITH_CODE:
  * @TypeName: The name of the new type, in Camel case
  * @type_name: The name of the new type, in lowercase, with words
- *  separated by '_'
+ *  separated by `_`
  * @copy_func: the #GBoxedCopyFunc for the new type
  * @free_func: the #GBoxedFreeFunc for the new type
- * @_C_: Custom code that gets inserted in the *_get_type() function
+ * @_C_: Custom code that gets inserted in the `*_get_type()` function
  *
  * A convenience macro for boxed type implementations.
+ *
  * Similar to G_DEFINE_BOXED_TYPE(), but allows to insert custom code into the
- * type_name_get_type() function, e.g. to register value transformations with
+ * `type_name_get_type()` function, e.g. to register value transformations with
  * g_value_register_transform_func(), for instance:
  *
  * |[<!-- language="C" -->
@@ -25957,7 +26802,7 @@ type_name##_get_type (void) \
 /* Only use this in non-C++ on GCC >= 2.7, except for Darwin/ppc64.
  * See https://bugzilla.gnome.org/show_bug.cgi?id=647145
  */
-#if !defined (__cplusplus) && (__GNUC__ > 2 || (__GNUC__ == 2 && __GNUC_MINOR__ >= 7)) && !(defined (__APPLE__) && defined (__ppc64__))
+#if !defined (__cplusplus) && (G_GNUC_CHECK_VERSION(2, 7)) && !(defined (__APPLE__) && defined (__ppc64__))
 #define _G_DEFINE_BOXED_TYPE_BEGIN(TypeName, type_name, copy_func, free_func) \
 static GType type_name##_get_type_once (void); \
 \
@@ -26025,10 +26870,10 @@ type_name##_get_type_once (void) \
  * G_DEFINE_POINTER_TYPE:
  * @TypeName: The name of the new type, in Camel case
  * @type_name: The name of the new type, in lowercase, with words
- *  separated by '_'
+ *  separated by `_`
  *
  * A convenience macro for pointer type implementations, which defines a
- * type_name_get_type() function registering the pointer type.
+ * `type_name_get_type()` function registering the pointer type.
  *
  * Since: 2.26
  */
@@ -26037,12 +26882,12 @@ type_name##_get_type_once (void) \
  * G_DEFINE_POINTER_TYPE_WITH_CODE:
  * @TypeName: The name of the new type, in Camel case
  * @type_name: The name of the new type, in lowercase, with words
- *  separated by '_'
- * @_C_: Custom code that gets inserted in the *_get_type() function
+ *  separated by `_`
+ * @_C_: Custom code that gets inserted in the `*_get_type()` function
  *
  * A convenience macro for pointer type implementations.
  * Similar to G_DEFINE_POINTER_TYPE(), but allows to insert
- * custom code into the type_name_get_type() function.
+ * custom code into the `type_name_get_type()` function.
  *
  * Since: 2.26
  */
@@ -26238,6 +27083,7 @@ G_BEGIN_DECLS
  * @type: A #GType value.
  * 
  * Checks whether the passed in type ID can be used for g_value_init().
+ *
  * That is, this macro checks whether this type provides an implementation
  * of the #GTypeValueTable functions required for a type to create a #GValue of.
  * 
@@ -26302,10 +27148,12 @@ typedef void (*GValueTransform) (const GValue *src_value,
  * GValue:
  * 
  * An opaque structure used to hold different types of values.
+ *
  * The data within the structure has protected scope: it is accessible only
  * to functions within a #GTypeValueTable structure, or implementations of
  * the g_value_*() API. That is, code portions which implement new fundamental
  * types.
+ *
  * #GValue users cannot make any assumptions about how data is stored
  * within the 2 element @data union, and the @g_type member should
  * only be accessed through the G_VALUE_TYPE() macro.
@@ -26398,7 +27246,7 @@ void	g_value_register_transform_func	(GType		 src_type,
  * be used as initializer instead of an explicit `{ 0 }` when declaring
  * a variable, but it cannot be assigned to a variable.
  *
- * |[
+ * |[<!-- language="C" -->
  *   GValue value = G_VALUE_INIT;
  * ]|
  *
@@ -26556,7 +27404,9 @@ G_BEGIN_DECLS
  *  Since 2.26
  * 
  * Through the #GParamFlags flag values, certain aspects of parameters
- * can be configured. See also #G_PARAM_STATIC_STRINGS.
+ * can be configured.
+ *
+ * See also: %G_PARAM_STATIC_STRINGS
  */
 typedef enum
 {
@@ -26779,6 +27629,7 @@ typedef struct _GParamSpecTypeInfo GParamSpecTypeInfo;
  * This structure is used to provide the type system with the information
  * required to initialize and destruct (finalize) a parameter's class and
  * instances thereof.
+ *
  * The initialized structure is passed to the g_param_type_register_static() 
  * The type system will perform a deep copy of this structure, so its memory 
  * does not need to be persistent across invocation of 
@@ -26907,6 +27758,7 @@ G_BEGIN_DECLS
  * @cl: a #GClosure
  * 
  * Get the total number of notifiers connected with the closure @cl. 
+ *
  * The count includes the meta marshaller, the finalize and invalidate notifiers 
  * and the marshal guards. Note that each guard counts as two notifiers. 
  * See g_closure_set_meta_marshal(), g_closure_add_finalize_notifier(),
@@ -26943,10 +27795,13 @@ typedef struct _GClosureNotifyData	 GClosureNotifyData;
  * GCallback:
  * 
  * The type used for callback functions in structure definitions and function 
- * signatures. This doesn't mean that all callback functions must take no 
- * parameters and return void. The required signature of a callback function 
- * is determined by the context in which is used (e.g. the signal to which it 
- * is connected). Use G_CALLBACK() to cast the callback function to a #GCallback. 
+ * signatures.
+ *
+ * This doesn't mean that all callback functions must take no  parameters and
+ * return void. The required signature of a callback function is determined by
+ * the context in which is used (e.g. the signal to which it is connected).
+ *
+ * Use G_CALLBACK() to cast the callback function to a #GCallback. 
  */
 typedef void  (*GCallback)              (void);
 /**
@@ -27648,9 +28503,11 @@ typedef struct _GSignalInvocationHint	 GSignalInvocationHint;
  * 
  * This is the signature of marshaller functions, required to marshall
  * arrays of parameter values to signal emissions into C language callback
- * invocations. It is merely an alias to #GClosureMarshal since the #GClosure
- * mechanism takes over responsibility of actual function invocation for the
- * signal system.
+ * invocations.
+ *
+ * It is merely an alias to #GClosureMarshal since the #GClosure mechanism
+ * takes over responsibility of actual function invocation for the signal
+ * system.
  */
 typedef GClosureMarshal			 GSignalCMarshaller;
 /**
@@ -27670,9 +28527,10 @@ typedef GVaClosureMarshal		 GSignalCVaMarshaller;
  *  the signal was emitted, followed by the parameters of the emission.
  * @data: user data associated with the hook.
  * 
- * A simple function pointer to get invoked when the signal is emitted. This 
- * allows you to tie a hook to the signal type, so that it will trap all 
- * emissions of that signal, from any object.
+ * A simple function pointer to get invoked when the signal is emitted.
+ *
+ * Emission hooks allow you to tie a hook to the signal type, so that it will
+ * trap all emissions of that signal, from any object.
  * 
  * You may not attach these to signals created with the #G_SIGNAL_NO_HOOKS flag.
  * 
@@ -27693,14 +28551,19 @@ typedef gboolean (*GSignalEmissionHook) (GSignalInvocationHint *ihint,
  * 
  * The signal accumulator is a special callback function that can be used
  * to collect return values of the various callbacks that are called
- * during a signal emission. The signal accumulator is specified at signal
- * creation time, if it is left %NULL, no accumulation of callback return
- * values is performed. The return value of signal emissions is then the
- * value returned by the last callback.
+ * during a signal emission.
+ *
+ * The signal accumulator is specified at signal creation time, if it is
+ * left %NULL, no accumulation of callback return values is performed.
+ * The return value of signal emissions is then the value returned by the
+ * last callback.
  * 
  * Returns: The accumulator function returns whether the signal emission
- *  should be aborted. Returning %FALSE means to abort the
- *  current emission and %TRUE is returned for continuation.
+ *  should be aborted. Returning %TRUE will continue with
+ *  the signal emission. Returning %FALSE will abort the current emission.
+ *  Since 2.62, returning %FALSE will skip to the CLEANUP stage. In this case,
+ *  emission will occur as normal in the CLEANUP stage and the handler's
+ *  return value will be accumulated.
  */
 typedef gboolean (*GSignalAccumulator)	(GSignalInvocationHint *ihint,
 					 GValue		       *return_accu,
@@ -27731,10 +28594,11 @@ typedef gboolean (*GSignalAccumulator)	(GSignalInvocationHint *ihint,
  * @G_SIGNAL_DEPRECATED: The signal is deprecated and will be removed
  *   in a future version. A warning will be generated if it is connected while
  *   running with G_ENABLE_DIAGNOSTIC=1.  Since 2.32.
- * 
- * The signal flags are used to specify a signal's behaviour, the overall
- * signal description outlines how especially the RUN flags control the
- * stages of a signal emission.
+ * @G_SIGNAL_ACCUMULATOR_FIRST_RUN: Only used in #GSignalAccumulator accumulator
+ *   functions for the #GSignalInvocationHint::run_type field to mark the first
+ *   call to the accumulator function for a signal emission.  Since 2.68.
+ *
+ * The signal flags are used to specify a signal's behaviour.
  */
 typedef enum
 {
@@ -27746,7 +28610,9 @@ typedef enum
   G_SIGNAL_ACTION	= 1 << 5,
   G_SIGNAL_NO_HOOKS	= 1 << 6,
   G_SIGNAL_MUST_COLLECT = 1 << 7,
-  G_SIGNAL_DEPRECATED   = 1 << 8
+  G_SIGNAL_DEPRECATED   = 1 << 8,
+  /* normal signal flags until 1 << 16 */
+  G_SIGNAL_ACCUMULATOR_FIRST_RUN    = 1 << 17,
 } GSignalFlags;
 /**
  * G_SIGNAL_FLAGS_MASK:
@@ -27827,7 +28693,9 @@ typedef enum
  * @detail: The detail passed on for this emission
  * @run_type: The stage the signal emission is currently in, this
  *  field will contain one of %G_SIGNAL_RUN_FIRST,
- *  %G_SIGNAL_RUN_LAST or %G_SIGNAL_RUN_CLEANUP.
+ *  %G_SIGNAL_RUN_LAST or %G_SIGNAL_RUN_CLEANUP and %G_SIGNAL_ACCUMULATOR_FIRST_RUN.
+ *  %G_SIGNAL_ACCUMULATOR_FIRST_RUN is only set for the first run of the accumulator
+ *  function for a signal emission.
  * 
  * The #GSignalInvocationHint structure is used to pass on additional information
  * to callbacks during a signal emission.
@@ -27855,8 +28723,9 @@ struct _GSignalInvocationHint
  *  gpointer     data2);
  *  ]|
  * 
- * A structure holding in-depth information for a specific signal. It is
- * filled in by the g_signal_query() function.
+ * A structure holding in-depth information for a specific signal.
+ *
+ * See also: g_signal_query()
  */
 struct _GSignalQuery
 {
@@ -28057,13 +28926,14 @@ void	 g_clear_signal_handler		      (gulong            *handler_id_ptr,
 #undef g_clear_signal_handler
 #define  g_clear_signal_handler(handler_id_ptr, instance)           \
   G_STMT_START {                                                    \
-    G_STATIC_ASSERT (sizeof *(handler_id_ptr) == sizeof (gulong));  \
-    gulong _handler_id = *(handler_id_ptr);                         \
+    gpointer const _instance      = (instance);                     \
+    gulong *const _handler_id_ptr = (handler_id_ptr);               \
+    const gulong _handler_id      = *_handler_id_ptr;               \
                                                                     \
     if (_handler_id > 0)                                            \
       {                                                             \
-        g_signal_handler_disconnect ((instance), _handler_id);      \
-        *(handler_id_ptr) = 0;                                      \
+        *_handler_id_ptr = 0;                                       \
+        g_signal_handler_disconnect (_instance, _handler_id);       \
       }                                                             \
   } G_STMT_END                                                      \
   GLIB_AVAILABLE_MACRO_IN_2_62
@@ -28577,6 +29447,15 @@ typedef gsize GType;
  */
 #define G_TYPE_TREE (g_tree_get_type ())
 
+/**
+ * G_TYPE_PATTERN_SPEC:
+ *
+ * The #GType for #GPatternSpec.
+ *
+ * Since: 2.70
+ */
+#define G_TYPE_PATTERN_SPEC (g_pattern_spec_get_type ())
+
 GLIB_AVAILABLE_IN_ALL
 GType   g_date_get_type            (void) G_GNUC_CONST;
 GLIB_AVAILABLE_IN_ALL
@@ -28637,6 +29516,8 @@ GLIB_AVAILABLE_IN_2_66
 GType   g_uri_get_type             (void) G_GNUC_CONST;
 GLIB_AVAILABLE_IN_2_68
 GType   g_tree_get_type            (void) G_GNUC_CONST;
+GLIB_AVAILABLE_IN_2_70
+GType g_pattern_spec_get_type (void) G_GNUC_CONST;
 
 GLIB_DEPRECATED_FOR('G_TYPE_VARIANT')
 GType   g_variant_get_gtype        (void) G_GNUC_CONST;
@@ -28757,6 +29638,7 @@ G_BEGIN_DECLS
  * @object: Object which is subject to casting.
  * 
  * Casts a #GObject or derived pointer into a (GObject*) pointer.
+ *
  * Depending on the current debugging level, this function may invoke
  * certain runtime checks to identify invalid casts.
  */
@@ -28856,7 +29738,9 @@ G_BEGIN_DECLS
  * @object: Object which is subject to casting.
  * 
  * Casts a #GInitiallyUnowned or derived pointer into a (GInitiallyUnowned*) 
- * pointer. Depending on the current debugging level, this function may invoke
+ * pointer.
+ *
+ * Depending on the current debugging level, this function may invoke
  * certain runtime checks to identify invalid casts.
  */
 #define G_INITIALLY_UNOWNED(object)           (G_TYPE_CHECK_INSTANCE_CAST ((object), G_TYPE_INITIALLY_UNOWNED, GInitiallyUnowned))
@@ -28939,20 +29823,29 @@ typedef void (*GObjectFinalizeFunc)     (GObject      *object);
 /**
  * GWeakNotify:
  * @data: data that was provided when the weak reference was established
- * @where_the_object_was: the object being finalized
+ * @where_the_object_was: the object being disposed
  * 
  * A #GWeakNotify function can be added to an object as a callback that gets
- * triggered when the object is finalized. Since the object is already being
- * finalized when the #GWeakNotify is called, there's not much you could do 
- * with the object, apart from e.g. using its address as hash-index or the like. 
+ * triggered when the object is finalized.
+ *
+ * Since the object is already being disposed when the #GWeakNotify is called,
+ * there's not much you could do with the object, apart from e.g. using its
+ * address as hash-index or the like.
+ *
+ * In particular, this means it’s invalid to call g_object_ref(),
+ * g_weak_ref_init(), g_weak_ref_set(), g_object_add_toggle_ref(),
+ * g_object_weak_ref(), g_object_add_weak_pointer() or any function which calls
+ * them on the object from this callback.
  */
 typedef void (*GWeakNotify)		(gpointer      data,
 					 GObject      *where_the_object_was);
 /**
  * GObject:
+ *
+ * The base object type.
  * 
- * All the fields in the GObject structure are private 
- * to the #GObject implementation and should never be accessed directly.
+ * All the fields in the `GObject` structure are private to the implementation
+ * and should never be accessed directly.
  */
 struct  _GObject
 {
@@ -29064,14 +29957,14 @@ struct  _GObjectClass
   /* padding */
   gpointer	pdummy[6];
 };
+
 /**
  * GObjectConstructParam:
  * @pspec: the #GParamSpec of the construct parameter
  * @value: the value to set the parameter to
  * 
- * The GObjectConstructParam struct is an auxiliary 
- * structure used to hand #GParamSpec/#GValue pairs to the @constructor of
- * a #GObjectClass.
+ * The GObjectConstructParam struct is an auxiliary structure used to hand
+ * #GParamSpec/#GValue pairs to the @constructor of a #GObjectClass.
  */
 struct _GObjectConstructParam
 {
@@ -29081,10 +29974,11 @@ struct _GObjectConstructParam
 
 /**
  * GInitiallyUnowned:
+ *
+ * A type for objects that have an initially floating reference.
  * 
- * All the fields in the GInitiallyUnowned structure 
- * are private to the #GInitiallyUnowned implementation and should never be 
- * accessed directly.
+ * All the fields in the `GInitiallyUnowned` structure are private to the
+ * implementation and should never be accessed directly.
  */
 /**
  * GInitiallyUnownedClass:
@@ -29206,6 +30100,8 @@ GLIB_AVAILABLE_IN_ALL
 gboolean    g_object_is_floating    	      (gpointer        object);
 GLIB_AVAILABLE_IN_ALL
 gpointer    g_object_ref_sink       	      (gpointer	       object);
+GLIB_AVAILABLE_IN_2_70
+gpointer    g_object_take_ref                 (gpointer        object);
 GLIB_AVAILABLE_IN_ALL
 gpointer    g_object_ref                      (gpointer        object);
 GLIB_AVAILABLE_IN_ALL
@@ -29243,7 +30139,9 @@ void        g_object_remove_weak_pointer      (GObject        *object,
  *  references.
  * 
  * A callback function used for notification when the state
- * of a toggle reference changes. See g_object_add_toggle_ref().
+ * of a toggle reference changes.
+ *
+ * See also: g_object_add_toggle_ref()
  */
 typedef void (*GToggleNotify) (gpointer      data,
 			       GObject      *object,
@@ -29362,6 +30260,7 @@ gsize	    g_object_compat_control	      (gsize	       what,
 					       gpointer	       data);
 
 /* --- implementation macros --- */
+#ifndef G_DISABLE_CHECKS
 #define G_OBJECT_WARN_INVALID_PSPEC(object, pname, property_id, pspec) \
 G_STMT_START { \
   GObject *_glib__object = (GObject*) (object); \
@@ -29375,6 +30274,12 @@ G_STMT_START { \
              g_type_name (G_PARAM_SPEC_TYPE (_glib__pspec)), \
              G_OBJECT_TYPE_NAME (_glib__object)); \
 } G_STMT_END
+#else
+#define G_OBJECT_WARN_INVALID_PSPEC(object, pname, property_id, pspec) \
+G_STMT_START { \
+  (void) 0; \
+} G_STMT_END
+#endif
 /**
  * G_OBJECT_WARN_INVALID_PROPERTY_ID:
  * @object: the #GObject on which set_property() or get_property() was called
@@ -29398,10 +30303,11 @@ void    g_clear_object (GObject **object_ptr);
  * @new_object: (nullable) (transfer none): a pointer to the new #GObject to
  *   assign to @object_ptr, or %NULL to clear the pointer
  *
- * Updates a #GObject pointer to refer to @new_object. It increments the
- * reference count of @new_object (if non-%NULL), decrements the reference
- * count of the current value of @object_ptr (if non-%NULL), and assigns
- * @new_object to @object_ptr. The assignment is not atomic.
+ * Updates a #GObject pointer to refer to @new_object.
+ *
+ * It increments the reference count of @new_object (if non-%NULL), decrements
+ * the reference count of the current value of @object_ptr (if non-%NULL), and
+ * assigns @new_object to @object_ptr. The assignment is not atomic.
  *
  * @object_ptr must not be %NULL, but can point to a %NULL value.
  *
@@ -29551,13 +30457,15 @@ static inline void
  * @new_object: (nullable) (transfer none): a pointer to the new #GObject to
  *   assign to it, or %NULL to clear the pointer
  *
- * Updates a pointer to weakly refer to @new_object. It assigns @new_object
- * to @weak_pointer_location and ensures that @weak_pointer_location will
- * automatically be set to %NULL if @new_object gets destroyed. The assignment
- * is not atomic. The weak reference is not thread-safe, see
- * g_object_add_weak_pointer() for details.
+ * Updates a pointer to weakly refer to @new_object.
  *
- * @weak_pointer_location must not be %NULL.
+ * It assigns @new_object to @weak_pointer_location and ensures
+ * that @weak_pointer_location will automatically be set to %NULL
+ * if @new_object gets destroyed. The assignment is not atomic.
+ * The weak reference is not thread-safe, see g_object_add_weak_pointer()
+ * for details.
+ *
+ * The @weak_pointer_location argument must not be %NULL.
  *
  * A macro is also included that allows this function to be used without
  * pointer casts. The function itself is static inline, so its address may vary
@@ -29657,8 +30565,9 @@ typedef struct _GBinding        GBinding;
  * @to_value: the #GValue in which to store the transformed value
  * @user_data: data passed to the transform function
  *
- * A function to be called to transform @from_value to @to_value. If
- * this is the @transform_to function of a binding, then @from_value
+ * A function to be called to transform @from_value to @to_value.
+ *
+ * If this is the @transform_to function of a binding, then @from_value
  * is the @source_property on the @source object, and @to_value is the
  * @target_property on the @target object. If this is the
  * @transform_from function of a %G_BINDING_BIDIRECTIONAL binding,
@@ -29712,10 +30621,14 @@ GType                 g_binding_get_type            (void) G_GNUC_CONST;
 
 GLIB_AVAILABLE_IN_ALL
 GBindingFlags         g_binding_get_flags           (GBinding *binding);
-GLIB_AVAILABLE_IN_ALL
+GLIB_DEPRECATED_IN_2_68_FOR(g_binding_dup_source)
 GObject *             g_binding_get_source          (GBinding *binding);
-GLIB_AVAILABLE_IN_ALL
+GLIB_AVAILABLE_IN_2_68
+GObject *             g_binding_dup_source          (GBinding *binding);
+GLIB_DEPRECATED_IN_2_68_FOR(g_binding_dup_target)
 GObject *             g_binding_get_target          (GBinding *binding);
+GLIB_AVAILABLE_IN_2_68
+GObject *             g_binding_dup_target          (GBinding *binding);
 GLIB_AVAILABLE_IN_ALL
 const gchar *         g_binding_get_source_property (GBinding *binding);
 GLIB_AVAILABLE_IN_ALL
@@ -30973,12 +31886,15 @@ struct _GParamSpecObject
 };
 /**
  * GParamSpecOverride:
+ *
+ * A #GParamSpec derived structure that redirects operations to
+ * other types of #GParamSpec.
  * 
- * This is a type of #GParamSpec type that simply redirects operations to
- * another paramspec.  All operations other than getting or
- * setting the value are redirected, including accessing the nick and
- * blurb, validating a value, and so forth. See
- * g_param_spec_get_redirect_target() for retrieving the overridden
+ * All operations other than getting or setting the value are redirected,
+ * including accessing the nick and blurb, validating a value, and so
+ * forth.
+ *
+ * See g_param_spec_get_redirect_target() for retrieving the overridden
  * property. #GParamSpecOverride is used in implementing
  * g_object_class_override_property(), and will not be directly useful
  * unless you are implementing a new base type similar to GObject.
@@ -31348,9 +32264,10 @@ struct _GTypeModuleClass
  * A convenience macro for dynamic type implementations, which declares a
  * class initialization function, an instance initialization function (see 
  * #GTypeInfo for information about these) and a static variable named 
- * `t_n`_parent_class pointing to the parent class. Furthermore,
- * it defines a `*_get_type()` and a static `*_register_type()` functions
- * for use in your `module_init()`.
+ * `t_n`_parent_class pointing to the parent class.
+ *
+ * Furthermore, it defines a `*_get_type()` and a static `*_register_type()`
+ * functions for use in your `module_init()`.
  *
  * See G_DEFINE_DYNAMIC_TYPE_EXTENDED() for an example.
  * 
@@ -31369,7 +32286,7 @@ struct _GTypeModuleClass
  * A more general version of G_DEFINE_DYNAMIC_TYPE() which
  * allows to specify #GTypeFlags and custom code.
  * 
- * |[
+ * |[<!-- language="C" -->
  * G_DEFINE_DYNAMIC_TYPE_EXTENDED (GtkGadget,
  *                                 gtk_gadget,
  *                                 GTK_TYPE_THING,
@@ -31377,8 +32294,10 @@ struct _GTypeModuleClass
  *                                 G_IMPLEMENT_INTERFACE_DYNAMIC (TYPE_GIZMO,
  *                                                                gtk_gadget_gizmo_init));
  * ]|
+ *
  * expands to
- * |[
+ *
+ * |[<!-- language="C" -->
  * static void     gtk_gadget_init              (GtkGadget      *self);
  * static void     gtk_gadget_class_init        (GtkGadgetClass *klass);
  * static void     gtk_gadget_class_finalize    (GtkGadgetClass *klass);
@@ -31482,8 +32401,9 @@ type_name##_register_type (GTypeModule *type_module) \
  * @iface_init: The interface init function
  *
  * A convenience macro to ease interface addition in the @_C_ section
- * of G_DEFINE_DYNAMIC_TYPE_EXTENDED(). See G_DEFINE_DYNAMIC_TYPE_EXTENDED()
- * for an example.
+ * of G_DEFINE_DYNAMIC_TYPE_EXTENDED().
+ *
+ * See G_DEFINE_DYNAMIC_TYPE_EXTENDED() for an example.
  *
  * Note that this macro can only be used together with the
  * G_DEFINE_DYNAMIC_TYPE_EXTENDED macros, since it depends on variable
@@ -31503,8 +32423,9 @@ type_name##_register_type (GTypeModule *type_module) \
  * @TypeName: the name of the type in CamelCase
  *
  * A convenience macro to ease adding private data to instances of a new dynamic
- * type in the @_C_ section of G_DEFINE_DYNAMIC_TYPE_EXTENDED(). See
- * G_ADD_PRIVATE() for details, it is similar but for static types.
+ * type in the @_C_ section of G_DEFINE_DYNAMIC_TYPE_EXTENDED().
+ *
+ * See G_ADD_PRIVATE() for details, it is similar but for static types.
  *
  * Note that this macro can only be used together with the
  * G_DEFINE_DYNAMIC_TYPE_EXTENDED macros, since it depends on variable
@@ -32141,11 +33062,27 @@ void                            gobject_init                            (void);
 
 G_BEGIN_DECLS
 
+/* Enumerations from "gumelfmodule.h" */
+GType gum_elf_mode_get_type (void) G_GNUC_CONST;
+#define GUM_TYPE_ELF_MODE (gum_elf_mode_get_type ())
+GType gum_elf_symbol_type_get_type (void) G_GNUC_CONST;
+#define GUM_TYPE_ELF_SYMBOL_TYPE (gum_elf_symbol_type_get_type ())
+GType gum_elf_symbol_bind_get_type (void) G_GNUC_CONST;
+#define GUM_TYPE_ELF_SYMBOL_BIND (gum_elf_symbol_bind_get_type ())
+GType gum_elf_dynamic_tag_get_type (void) G_GNUC_CONST;
+#define GUM_TYPE_ELF_DYNAMIC_TAG (gum_elf_dynamic_tag_get_type ())
+
+/* Enumerations from "gumdarwingrafter.h" */
+GType gum_darwin_grafter_flags_get_type (void) G_GNUC_CONST;
+#define GUM_TYPE_DARWIN_GRAFTER_FLAGS (gum_darwin_grafter_flags_get_type ())
+
 /* Enumerations from "gumdarwinmodule.h" */
 GType gum_darwin_module_flags_get_type (void) G_GNUC_CONST;
 #define GUM_TYPE_DARWIN_MODULE_FLAGS (gum_darwin_module_flags_get_type ())
 
 /* Enumerations from "gumdefs.h" */
+GType gum_error_get_type (void) G_GNUC_CONST;
+#define GUM_TYPE_ERROR (gum_error_get_type ())
 GType gum_cpu_type_get_type (void) G_GNUC_CONST;
 #define GUM_TYPE_CPU_TYPE (gum_cpu_type_get_type ())
 
@@ -32158,7 +33095,11 @@ GType gum_replace_return_get_type (void) G_GNUC_CONST;
 /* Enumerations from "gumprocess.h" */
 GType gum_code_signing_policy_get_type (void) G_GNUC_CONST;
 #define GUM_TYPE_CODE_SIGNING_POLICY (gum_code_signing_policy_get_type ())
+GType gum_thread_state_get_type (void) G_GNUC_CONST;
+#define GUM_TYPE_THREAD_STATE (gum_thread_state_get_type ())
 G_END_DECLS
+
+#endif
 
 #endif /* __GUM_ENUM_TYPES_H__ */
 
@@ -32175,32 +33116,18 @@ G_END_DECLS
 #  define GUM_API
 #endif
 
-#if !defined (__arm__) && !defined (__aarch64__)
-# if GLIB_SIZEOF_VOID_P == 4
-#  define GUM_NATIVE_CPU GUM_CPU_IA32
-# else
-#  define GUM_NATIVE_CPU GUM_CPU_AMD64
-# endif
-#elif defined (__arm__) || defined (__aarch64__)
-# if GLIB_SIZEOF_VOID_P == 4
-#  define GUM_NATIVE_CPU GUM_CPU_ARM
-# else
-#  define GUM_NATIVE_CPU GUM_CPU_ARM64
-# endif
-#elif defined (__mips__)
-# define GUM_NATIVE_CPU GUM_CPU_MIPS
-#endif
-#ifdef G_OS_WIN32
-# define GUM_NATIVE_ABI            GUM_ABI_WINDOWS
-# define GUM_NATIVE_ABI_IS_WINDOWS 1
-# define GUM_NATIVE_ABI_IS_UNIX    0
-#else
-# define GUM_NATIVE_ABI            GUM_ABI_UNIX
-# define GUM_NATIVE_ABI_IS_WINDOWS 0
-# define GUM_NATIVE_ABI_IS_UNIX    1
-#endif
-
 G_BEGIN_DECLS
+
+#define GUM_ERROR gum_error_quark ()
+
+typedef enum {
+  GUM_ERROR_FAILED,
+  GUM_ERROR_NOT_FOUND,
+  GUM_ERROR_EXISTS,
+  GUM_ERROR_INVALID_ARGUMENT,
+  GUM_ERROR_NOT_SUPPORTED,
+  GUM_ERROR_INVALID_DATA,
+} GumError;
 
 typedef guint64 GumAddress;
 #define GUM_ADDRESS(a) ((GumAddress) (guintptr) (a))
@@ -32216,35 +33143,30 @@ typedef guint GumBranchHint;
 typedef struct _GumIA32CpuContext GumIA32CpuContext;
 typedef struct _GumX64CpuContext GumX64CpuContext;
 typedef struct _GumArmCpuContext GumArmCpuContext;
+typedef union _GumArmVectorReg GumArmVectorReg;
 typedef struct _GumArm64CpuContext GumArm64CpuContext;
+typedef union _GumArm64VectorReg GumArm64VectorReg;
 typedef struct _GumMipsCpuContext GumMipsCpuContext;
-/*
- * The only non-legacy big-endian configuration on 32-bit ARM systems is BE8.
- * In this configuration, whilst the data is in big-endian, the code stream is
- * still in little-endian. Since Capstone is disassembling the code stream, it
- * should work in little-endian even on BE8 systems.
- */
-#if G_BYTE_ORDER == G_LITTLE_ENDIAN || defined (__arm__)
-# define GUM_DEFAULT_CS_ENDIAN CS_MODE_LITTLE_ENDIAN
-#else
-# define GUM_DEFAULT_CS_ENDIAN CS_MODE_BIG_ENDIAN
-#endif
-#if !defined (__arm__) && !defined (__aarch64__) && !defined (__mips__)
+typedef guint GumRelocationScenario;
+
+#if defined (_M_IX86) || defined (__i386__)
+# define GUM_NATIVE_CPU GUM_CPU_IA32
 # define GUM_DEFAULT_CS_ARCH CS_ARCH_X86
-# if GLIB_SIZEOF_VOID_P == 4
 /**
  * GUM_DEFAULT_CS_MODE: (skip)
  */
-#  define GUM_DEFAULT_CS_MODE CS_MODE_32
+# define GUM_DEFAULT_CS_MODE CS_MODE_32
 typedef GumIA32CpuContext GumCpuContext;
-# else
+#elif defined (_M_X64) || defined (__x86_64__)
+# define GUM_NATIVE_CPU GUM_CPU_AMD64
+# define GUM_DEFAULT_CS_ARCH CS_ARCH_X86
 /**
  * GUM_DEFAULT_CS_MODE: (skip)
  */
-#  define GUM_DEFAULT_CS_MODE CS_MODE_64
+# define GUM_DEFAULT_CS_MODE CS_MODE_64
 typedef GumX64CpuContext GumCpuContext;
-# endif
-#elif defined (__arm__) && !defined (__aarch64__)
+#elif defined (_M_ARM) || defined (__arm__)
+# define GUM_NATIVE_CPU GUM_CPU_ARM
 # define GUM_DEFAULT_CS_ARCH CS_ARCH_ARM
 /**
  * GUM_DEFAULT_CS_MODE: (skip)
@@ -32253,7 +33175,8 @@ typedef GumX64CpuContext GumCpuContext;
     ((cs_mode) (CS_MODE_ARM | CS_MODE_V8 | GUM_DEFAULT_CS_ENDIAN))
 # define GUM_PSR_T_BIT 0x20
 typedef GumArmCpuContext GumCpuContext;
-#elif defined (__aarch64__)
+#elif defined (_M_ARM64) || defined (__aarch64__)
+# define GUM_NATIVE_CPU GUM_CPU_ARM64
 # define GUM_DEFAULT_CS_ARCH CS_ARCH_ARM64
 /**
  * GUM_DEFAULT_CS_MODE: (skip)
@@ -32261,6 +33184,7 @@ typedef GumArmCpuContext GumCpuContext;
 # define GUM_DEFAULT_CS_MODE GUM_DEFAULT_CS_ENDIAN
 typedef GumArm64CpuContext GumCpuContext;
 #elif defined (__mips__)
+# define GUM_NATIVE_CPU GUM_CPU_MIPS
 # define GUM_DEFAULT_CS_ARCH CS_ARCH_MIPS
 # if GLIB_SIZEOF_VOID_P == 4
 /**
@@ -32276,8 +33200,29 @@ typedef GumArm64CpuContext GumCpuContext;
     (CS_MODE_MIPS64 | GUM_DEFAULT_CS_ENDIAN))
 # endif
 typedef GumMipsCpuContext GumCpuContext;
+#else
+# error Unsupported architecture.
 #endif
-typedef guint GumRelocationScenario;
+/*
+ * The only non-legacy big-endian configuration on 32-bit ARM systems is BE8.
+ * In this configuration, whilst the data is in big-endian, the code stream is
+ * still in little-endian. Since Capstone is disassembling the code stream, it
+ * should work in little-endian even on BE8 systems.
+ */
+#if G_BYTE_ORDER == G_LITTLE_ENDIAN || defined (__arm__)
+# define GUM_DEFAULT_CS_ENDIAN CS_MODE_LITTLE_ENDIAN
+#else
+# define GUM_DEFAULT_CS_ENDIAN CS_MODE_BIG_ENDIAN
+#endif
+#ifdef G_OS_WIN32
+# define GUM_NATIVE_ABI            GUM_ABI_WINDOWS
+# define GUM_NATIVE_ABI_IS_WINDOWS 1
+# define GUM_NATIVE_ABI_IS_UNIX    0
+#else
+# define GUM_NATIVE_ABI            GUM_ABI_UNIX
+# define GUM_NATIVE_ABI_IS_WINDOWS 0
+# define GUM_NATIVE_ABI_IS_UNIX    1
+#endif
 
 enum _GumOS
 {
@@ -32286,6 +33231,7 @@ enum _GumOS
   GUM_OS_LINUX,
   GUM_OS_IOS,
   GUM_OS_ANDROID,
+  GUM_OS_FREEBSD,
   GUM_OS_QNX
 };
 
@@ -32312,10 +33258,12 @@ typedef enum {
 
 enum _GumCpuFeatures
 {
-  GUM_CPU_AVX2    = 1 << 0,
-  GUM_CPU_VFP2    = 1 << 1,
-  GUM_CPU_VFP3    = 1 << 2,
-  GUM_CPU_PTRAUTH = 1 << 3,
+  GUM_CPU_AVX2            = 1 << 0,
+  GUM_CPU_THUMB_INTERWORK = 1 << 1,
+  GUM_CPU_VFP2            = 1 << 2,
+  GUM_CPU_VFP3            = 1 << 3,
+  GUM_CPU_VFPD32          = 1 << 4,
+  GUM_CPU_PTRAUTH         = 1 << 5,
 };
 
 enum _GumInstructionEncoding
@@ -32385,11 +33333,18 @@ struct _GumX64CpuContext
   guint64 rax;
 };
 
+union _GumArmVectorReg
+{
+  guint8 q[16];
+  gdouble d[2];
+  gfloat s[4];
+};
+
 struct _GumArmCpuContext
 {
-  guint32 cpsr;
   guint32 pc;
   guint32 sp;
+  guint32 cpsr;
 
   guint32 r8;
   guint32 r9;
@@ -32397,19 +33352,34 @@ struct _GumArmCpuContext
   guint32 r11;
   guint32 r12;
 
+  GumArmVectorReg v[16];
+
+  guint32 _padding;
+
   guint32 r[8];
   guint32 lr;
+};
+
+union _GumArm64VectorReg
+{
+  guint8 q[16];
+  gdouble d;
+  gfloat s;
+  guint16 h;
+  guint8 b;
 };
 
 struct _GumArm64CpuContext
 {
   guint64 pc;
   guint64 sp;
+  guint64 nzcv;
 
   guint64 x[29];
   guint64 fp;
   guint64 lr;
-  guint8 q[128];
+
+  GumArm64VectorReg v[32];
 };
 
 struct _GumMipsCpuContext
@@ -32525,47 +33495,46 @@ enum _GumRelocationScenario
 #define GUM_MAX_WORST_CASE_INFO_SIZE 128
 
 #define GUM_MAX_LISTENERS_PER_FUNCTION 2
-#define GUM_MAX_LISTENER_DATA        512
+#define GUM_MAX_LISTENER_DATA       1024
 
 #define GUM_MAX_THREAD_RANGES 2
 
 #if GLIB_SIZEOF_VOID_P == 8
 #define GUM_CPU_MODE CS_MODE_64
-#define GUM_THUNK
+#define GUM_X86_THUNK
 #else
 #define GUM_CPU_MODE CS_MODE_32
-#define GUM_THUNK GUM_FASTCALL
+#define GUM_X86_THUNK GUM_FASTCALL
 #endif
 #if !defined (G_OS_WIN32) && GLIB_SIZEOF_VOID_P == 8
-# define GUM_THUNK_REG_ARG0 GUM_REG_XDI
-# define GUM_THUNK_REG_ARG1 GUM_REG_XSI
+# define GUM_X86_THUNK_REG_ARG0 GUM_X86_XDI
+# define GUM_X86_THUNK_REG_ARG1 GUM_X86_XSI
 #else
-# define GUM_THUNK_REG_ARG0 GUM_REG_XCX
-# define GUM_THUNK_REG_ARG1 GUM_REG_XDX
+# define GUM_X86_THUNK_REG_ARG0 GUM_X86_XCX
+# define GUM_X86_THUNK_REG_ARG1 GUM_X86_XDX
 #endif
 #define GUM_RED_ZONE_SIZE 128
 
+#if defined (_M_IX86) || defined (__i386__)
+# ifdef _MSC_VER
+#  define GUM_CDECL __cdecl
+#  define GUM_STDCALL __stdcall
+#  define GUM_FASTCALL __fastcall
+# else
+#  define GUM_CDECL __attribute__ ((cdecl))
+#  define GUM_STDCALL __attribute__ ((stdcall))
+#  define GUM_FASTCALL __attribute__ ((fastcall))
+# endif
+#else
+# define GUM_CDECL
+# define GUM_STDCALL
+# define GUM_FASTCALL
+#endif
+
 #ifdef _MSC_VER
-# define GUM_CDECL __cdecl
-# define GUM_STDCALL __stdcall
-# define GUM_FASTCALL __fastcall
 # define GUM_NOINLINE __declspec (noinline)
 #else
-# ifndef __arm__
-#  if GLIB_SIZEOF_VOID_P == 4
-#   define GUM_CDECL __attribute__((cdecl))
-#   define GUM_STDCALL __attribute__((stdcall))
-#  else
-#   define GUM_CDECL
-#   define GUM_STDCALL
-#  endif
-#  define GUM_FASTCALL __attribute__((fastcall))
-# else
-#  define GUM_CDECL
-#  define GUM_STDCALL
-#  define GUM_FASTCALL
-# endif
-# define GUM_NOINLINE __attribute__((noinline))
+# define GUM_NOINLINE __attribute__ ((noinline))
 #endif
 
 #define GUM_ALIGN_POINTER(t, p, b) \
@@ -32578,6 +33547,7 @@ enum _GumRelocationScenario
 #define GUM_POINTER_TO_FUNCPTR(t, p) ((t) GPOINTER_TO_SIZE (p))
 
 #define GUM_INT2_MASK  0x00000003U
+#define GUM_INT3_MASK  0x00000007U
 #define GUM_INT4_MASK  0x0000000fU
 #define GUM_INT5_MASK  0x0000001fU
 #define GUM_INT6_MASK  0x0000003fU
@@ -32637,6 +33607,71 @@ enum _GumRelocationScenario
     (((gint64) (i)) >= (gint64) G_MININT32 && \
      ((gint64) (i)) <= (gint64) G_MAXINT32)
 
+#ifndef GUM_DIET
+
+# define GUM_DECLARE_FINAL_TYPE(ModuleObjName, module_obj_name, MODULE, \
+      OBJ_NAME, ParentName) \
+    G_DECLARE_FINAL_TYPE (ModuleObjName, module_obj_name, MODULE, OBJ_NAME, \
+      ParentName)
+# define GUM_DECLARE_INTERFACE(ModuleObjName, module_obj_name, MODULE, \
+      OBJ_NAME, PrerequisiteName) \
+    G_DECLARE_INTERFACE (ModuleObjName, module_obj_name, MODULE, OBJ_NAME, \
+      PrerequisiteName)
+# define GUM_DEFINE_BOXED_TYPE(TypeName, type_name, copy_func, free_func) \
+    G_DEFINE_BOXED_TYPE (TypeName, type_name, copy_func, free_func)
+# define gum_object_ref(object) g_object_ref (object)
+# define gum_object_unref(object) g_object_unref (object)
+# define gum_clear_object(object_ptr) \
+    g_clear_pointer ((object_ptr), g_object_unref)
+
+#else
+
+# define GUM_DECLARE_FINAL_TYPE(ModuleObjName, module_obj_name, MODULE, \
+      OBJ_NAME, ParentName) \
+    typedef struct _##ModuleObjName ModuleObjName; \
+    \
+    G_GNUC_UNUSED static inline ModuleObjName * MODULE##_##OBJ_NAME ( \
+      gpointer obj) \
+    { \
+      return obj; \
+    }
+# define GUM_DECLARE_INTERFACE(ModuleObjName, module_obj_name, MODULE, \
+      OBJ_NAME, PrerequisiteName) \
+    typedef struct _##ModuleObjName ModuleObjName; \
+    \
+    G_GNUC_UNUSED static inline ModuleObjName * MODULE##_##OBJ_NAME ( \
+      gpointer obj) \
+    { \
+      return obj; \
+    }
+# define GUM_DEFINE_BOXED_TYPE(TypeName, type_name, copy_func, free_func)
+# define gum_clear_object(object_ptr) \
+    g_clear_pointer ((object_ptr), gum_object_unref)
+
+typedef struct _GumObject GumObject;
+
+struct _GumObject
+{
+  gint ref_count;
+  void (* finalize) (GumObject * object);
+};
+
+GUM_API gpointer gum_object_ref (gpointer object);
+GUM_API void gum_object_unref (gpointer object);
+
+#endif
+
+#ifdef G_NORETURN
+# define GUM_NORETURN G_NORETURN
+#else
+# define GUM_NORETURN
+#endif
+
+GUM_API GQuark gum_error_quark (void);
+
+GUM_API GUM_NORETURN void gum_panic (const gchar * format, ...)
+    G_ANALYZER_NORETURN;
+
 GUM_API GumCpuFeatures gum_query_cpu_features (void);
 
 GUM_API gpointer gum_cpu_context_get_nth_argument (GumCpuContext * self,
@@ -32647,14 +33682,16 @@ GUM_API gpointer gum_cpu_context_get_return_value (GumCpuContext * self);
 GUM_API void gum_cpu_context_replace_return_value (GumCpuContext * self,
     gpointer value);
 
+#ifndef GUM_DIET
 GUM_API GType gum_address_get_type (void) G_GNUC_CONST;
+#endif
 
 G_END_DECLS
 
 #endif
 
 /*
- * Copyright (C) 2016-2018 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2016-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  *
  * Licence: wxWindows Library Licence, Version 3.1
  */
@@ -32666,13 +33703,15 @@ G_END_DECLS
 G_BEGIN_DECLS
 
 #define GUM_TYPE_API_RESOLVER (gum_api_resolver_get_type ())
-G_DECLARE_INTERFACE (GumApiResolver, gum_api_resolver, GUM, API_RESOLVER,
-    GObject)
+GUM_DECLARE_INTERFACE (GumApiResolver, gum_api_resolver, GUM, API_RESOLVER,
+                       GObject)
 
 typedef struct _GumApiDetails GumApiDetails;
 
 typedef gboolean (* GumFoundApiFunc) (const GumApiDetails * details,
     gpointer user_data);
+
+#ifndef GUM_DIET
 
 struct _GumApiResolverInterface
 {
@@ -32681,6 +33720,8 @@ struct _GumApiResolverInterface
   void (* enumerate_matches) (GumApiResolver * self, const gchar * query,
       GumFoundApiFunc func, gpointer user_data, GError ** error);
 };
+
+#endif
 
 struct _GumApiDetails
 {
@@ -32698,7 +33739,8 @@ G_END_DECLS
 
 #endif
 /*
- * Copyright (C) 2008-2018 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2008-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2021 Francesco Tamagni <mrmacete@protonmail.ch>
  *
  * Licence: wxWindows Library Licence, Version 3.1
  */
@@ -32751,15 +33793,19 @@ G_END_DECLS
 G_BEGIN_DECLS
 
 #define GUM_TYPE_BACKTRACER (gum_backtracer_get_type ())
-G_DECLARE_INTERFACE (GumBacktracer, gum_backtracer, GUM, BACKTRACER, GObject)
+GUM_DECLARE_INTERFACE (GumBacktracer, gum_backtracer, GUM, BACKTRACER, GObject)
+
+#ifndef GUM_DIET
 
 struct _GumBacktracerInterface
 {
   GTypeInterface parent;
 
   void (* generate) (GumBacktracer * self, const GumCpuContext * cpu_context,
-      GumReturnAddressArray * return_addresses);
+      GumReturnAddressArray * return_addresses, guint limit);
 };
+
+#endif
 
 GUM_API GumBacktracer * gum_backtracer_make_accurate (void);
 GUM_API GumBacktracer * gum_backtracer_make_fuzzy (void);
@@ -32767,6 +33813,9 @@ GUM_API GumBacktracer * gum_backtracer_make_fuzzy (void);
 GUM_API void gum_backtracer_generate (GumBacktracer * self,
     const GumCpuContext * cpu_context,
     GumReturnAddressArray * return_addresses);
+GUM_API void gum_backtracer_generate_with_limit (GumBacktracer * self,
+    const GumCpuContext * cpu_context,
+    GumReturnAddressArray * return_addresses, guint limit);
 
 G_END_DECLS
 
@@ -32781,7 +33830,7 @@ G_END_DECLS
 #define __GUM_CLOAK_H__
 
 /*
- * Copyright (C) 2008-2020 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2008-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  * Copyright (C) 2008 Christian Berentsen <jc.berentsen@gmail.com>
  *
  * Licence: wxWindows Library Licence, Version 3.1
@@ -32791,6 +33840,7 @@ G_END_DECLS
 #define __GUM_MEMORY_H__
 
 
+#define GUM_TYPE_MATCH_PATTERN (gum_match_pattern_get_type ())
 #define GUM_TYPE_MEMORY_RANGE (gum_memory_range_get_type ())
 #define GUM_MEMORY_RANGE_INCLUDES(r, a) ((a) >= (r)->base_address && \
     (a) < ((r)->base_address + (r)->size))
@@ -32882,16 +33932,23 @@ GUM_API void gum_memory_scan (const GumMemoryRange * range,
     const GumMatchPattern * pattern, GumMemoryScanMatchFunc func,
     gpointer user_data);
 
+#ifndef GUM_DIET
+GUM_API GType gum_match_pattern_get_type (void) G_GNUC_CONST;
+#endif
 GUM_API GumMatchPattern * gum_match_pattern_new_from_string (
-    const gchar * match_combined_str);
-GUM_API void gum_match_pattern_free (GumMatchPattern * pattern);
+    const gchar * pattern_str);
+GUM_API GumMatchPattern * gum_match_pattern_ref (GumMatchPattern * pattern);
+GUM_API void gum_match_pattern_unref (GumMatchPattern * pattern);
+GUM_API guint gum_match_pattern_get_size (const GumMatchPattern * pattern);
+GUM_API GPtrArray * gum_match_pattern_get_tokens (
+    const GumMatchPattern * pattern);
 
 GUM_API void gum_ensure_code_readable (gconstpointer address, gsize size);
 
 GUM_API void gum_mprotect (gpointer address, gsize size,
-    GumPageProtection page_prot);
+    GumPageProtection prot);
 GUM_API gboolean gum_try_mprotect (gpointer address, gsize size,
-    GumPageProtection page_prot);
+    GumPageProtection prot);
 
 GUM_API void gum_clear_cache (gpointer address, gsize size);
 
@@ -32911,26 +33968,33 @@ GUM_API gpointer gum_memalign (gsize alignment, gsize size);
 GUM_API gpointer gum_memdup (gconstpointer mem, gsize byte_size);
 GUM_API void gum_free (gpointer mem);
 
-GUM_API gpointer gum_alloc_n_pages (guint n_pages, GumPageProtection page_prot);
-GUM_API gpointer gum_try_alloc_n_pages (guint n_pages,
-    GumPageProtection page_prot);
-GUM_API gpointer gum_alloc_n_pages_near (guint n_pages,
-    GumPageProtection page_prot, const GumAddressSpec * address_spec);
+GUM_API gpointer gum_alloc_n_pages (guint n_pages, GumPageProtection prot);
+GUM_API gpointer gum_try_alloc_n_pages (guint n_pages, GumPageProtection prot);
+GUM_API gpointer gum_alloc_n_pages_near (guint n_pages, GumPageProtection prot,
+    const GumAddressSpec * spec);
 GUM_API gpointer gum_try_alloc_n_pages_near (guint n_pages,
-    GumPageProtection page_prot, const GumAddressSpec * address_spec);
+    GumPageProtection prot, const GumAddressSpec * spec);
 GUM_API void gum_query_page_allocation_range (gconstpointer mem, guint size,
     GumMemoryRange * range);
 GUM_API void gum_free_pages (gpointer mem);
 
 GUM_API gpointer gum_memory_allocate (gpointer address, gsize size,
-    gsize alignment, GumPageProtection page_prot);
+    gsize alignment, GumPageProtection prot);
+GUM_API gpointer gum_memory_allocate_near (const GumAddressSpec * spec,
+    gsize size, gsize alignment, GumPageProtection prot);
 GUM_API gboolean gum_memory_free (gpointer address, gsize size);
 GUM_API gboolean gum_memory_release (gpointer address, gsize size);
-GUM_API gboolean gum_memory_commit (gpointer address, gsize size,
-    GumPageProtection page_prot);
+GUM_API gboolean gum_memory_recommit (gpointer address, gsize size,
+    GumPageProtection prot);
+GUM_API gboolean gum_memory_discard (gpointer address, gsize size);
 GUM_API gboolean gum_memory_decommit (gpointer address, gsize size);
 
+GUM_API gboolean gum_address_spec_is_satisfied_by (const GumAddressSpec * spec,
+    gconstpointer address);
+
+#ifndef GUM_DIET
 GUM_API GType gum_memory_range_get_type (void) G_GNUC_CONST;
+#endif
 GUM_API GumMemoryRange * gum_memory_range_copy (const GumMemoryRange * range);
 GUM_API void gum_memory_range_free (GumMemoryRange * range);
 
@@ -32938,7 +34002,7 @@ G_END_DECLS
 
 #endif
 /*
- * Copyright (C) 2008-2020 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2008-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  * Copyright (C) 2020 Francesco Tamagni <mrmacete@protonmail.ch>
  *
  * Licence: wxWindows Library Licence, Version 3.1
@@ -32956,7 +34020,6 @@ G_BEGIN_DECLS
 
 typedef guint GumProcessId;
 typedef gsize GumThreadId;
-typedef guint GumThreadState;
 typedef struct _GumThreadDetails GumThreadDetails;
 typedef struct _GumModuleDetails GumModuleDetails;
 typedef guint GumImportType;
@@ -32975,14 +34038,13 @@ typedef enum {
   GUM_CODE_SIGNING_REQUIRED
 } GumCodeSigningPolicy;
 
-enum _GumThreadState
-{
+typedef enum {
   GUM_THREAD_RUNNING = 1,
   GUM_THREAD_STOPPED,
   GUM_THREAD_WAITING,
   GUM_THREAD_UNINTERRUPTIBLE,
   GUM_THREAD_HALTED
-};
+} GumThreadState;
 
 struct _GumThreadDetails
 {
@@ -33098,6 +34160,8 @@ typedef gboolean (* GumFoundRangeFunc) (const GumRangeDetails * details,
     gpointer user_data);
 typedef gboolean (* GumFoundMallocRangeFunc) (
     const GumMallocRangeDetails * details, gpointer user_data);
+typedef GumAddress (* GumResolveExportFunc) (const char * module_name,
+    const char * symbol_name, gpointer user_data);
 
 GUM_API GumOS gum_process_get_native_os (void);
 GUM_API GumCodeSigningPolicy gum_process_get_code_signing_policy (void);
@@ -33111,6 +34175,8 @@ GUM_API gboolean gum_process_modify_thread (GumThreadId thread_id,
     GumModifyThreadFunc func, gpointer user_data);
 GUM_API void gum_process_enumerate_threads (GumFoundThreadFunc func,
     gpointer user_data);
+GUM_API gboolean gum_process_resolve_module_pointer (gconstpointer ptr,
+    gchar ** path, GumMemoryRange * range);
 GUM_API void gum_process_enumerate_modules (GumFoundModuleFunc func,
     gpointer user_data);
 GUM_API void gum_process_enumerate_ranges (GumPageProtection prot,
@@ -33140,7 +34206,9 @@ GUM_API GumAddress gum_module_find_symbol_by_name (const gchar * module_name,
 GUM_API const gchar * gum_code_signing_policy_to_string (
     GumCodeSigningPolicy policy);
 
+#ifndef GUM_DIET
 GUM_API GType gum_module_details_get_type (void) G_GNUC_CONST;
+#endif
 GUM_API GumModuleDetails * gum_module_details_copy (
     const GumModuleDetails * module);
 GUM_API void gum_module_details_free (GumModuleDetails * module);
@@ -33152,6 +34220,8 @@ G_END_DECLS
 #endif
 
 G_BEGIN_DECLS
+
+typedef struct _GumCloak GumCloak;
 
 typedef gboolean (* GumCloakFoundThreadFunc) (GumThreadId id,
     gpointer user_data);
@@ -33181,7 +34251,7 @@ G_END_DECLS
 
 #endif
 /*
- * Copyright (C) 2010 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2010-2021 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  *
  * Licence: wxWindows Library Licence, Version 3.1
  */
@@ -33189,6 +34259,11 @@ G_END_DECLS
 #ifndef __GUM_CODE_ALLOCATOR_H__
 #define __GUM_CODE_ALLOCATOR_H__
 
+
+#define GUM_TYPE_CODE_SLICE (gum_code_slice_get_type ())
+#define GUM_TYPE_CODE_DEFLECTOR (gum_code_deflector_get_type ())
+
+G_BEGIN_DECLS
 
 typedef struct _GumCodeAllocator GumCodeAllocator;
 typedef struct _GumCodeSlice GumCodeSlice;
@@ -33211,7 +34286,10 @@ struct _GumCodeAllocator
 struct _GumCodeSlice
 {
   gpointer data;
-  gsize size;
+  guint size;
+
+  /*< private >*/
+  gint ref_count;
 };
 
 struct _GumCodeDeflector
@@ -33219,21 +34297,36 @@ struct _GumCodeDeflector
   gpointer return_address;
   gpointer target;
   gpointer trampoline;
+
+  /*< private >*/
+  gint ref_count;
 };
 
-void gum_code_allocator_init (GumCodeAllocator * allocator, gsize slice_size);
-void gum_code_allocator_free (GumCodeAllocator * allocator);
+GUM_API void gum_code_allocator_init (GumCodeAllocator * allocator,
+    gsize slice_size);
+GUM_API void gum_code_allocator_free (GumCodeAllocator * allocator);
 
-GumCodeSlice * gum_code_allocator_alloc_slice (GumCodeAllocator * self);
-GumCodeSlice * gum_code_allocator_try_alloc_slice_near (GumCodeAllocator * self,
-    const GumAddressSpec * spec, gsize alignment);
-void gum_code_allocator_commit (GumCodeAllocator * self);
-void gum_code_slice_free (GumCodeSlice * slice);
+GUM_API GumCodeSlice * gum_code_allocator_alloc_slice (GumCodeAllocator * self);
+GUM_API GumCodeSlice * gum_code_allocator_try_alloc_slice_near (
+    GumCodeAllocator * self, const GumAddressSpec * spec, gsize alignment);
+GUM_API void gum_code_allocator_commit (GumCodeAllocator * self);
+#ifndef GUM_DIET
+GUM_API GType gum_code_slice_get_type (void) G_GNUC_CONST;
+#endif
+GUM_API GumCodeSlice * gum_code_slice_ref (GumCodeSlice * slice);
+GUM_API void gum_code_slice_unref (GumCodeSlice * slice);
 
-GumCodeDeflector * gum_code_allocator_alloc_deflector (GumCodeAllocator * self,
-    const GumAddressSpec * caller, gpointer return_address, gpointer target,
-    gboolean dedicated);
-void gum_code_deflector_free (GumCodeDeflector * deflector);
+GUM_API GumCodeDeflector * gum_code_allocator_alloc_deflector (
+    GumCodeAllocator * self, const GumAddressSpec * caller,
+    gpointer return_address, gpointer target, gboolean dedicated);
+#ifndef GUM_DIET
+GUM_API GType gum_code_deflector_get_type (void) G_GNUC_CONST;
+#endif
+GUM_API GumCodeDeflector * gum_code_deflector_ref (
+    GumCodeDeflector * deflector);
+GUM_API void gum_code_deflector_unref (GumCodeDeflector * deflector);
+
+G_END_DECLS
 
 #endif
 /*
@@ -33271,7 +34364,42 @@ G_END_DECLS
 
 #endif
 /*
- * Copyright (C) 2015-2020 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2021-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ *
+ * Licence: wxWindows Library Licence, Version 3.1
+ */
+
+#ifndef __GUM_DARWIN_GRAFTER_H__
+#define __GUM_DARWIN_GRAFTER_H__
+
+
+G_BEGIN_DECLS
+
+typedef enum {
+  GUM_DARWIN_GRAFTER_FLAGS_NONE                   = 0,
+  GUM_DARWIN_GRAFTER_FLAGS_INGEST_FUNCTION_STARTS = (1 << 0),
+  GUM_DARWIN_GRAFTER_FLAGS_INGEST_IMPORTS         = (1 << 1),
+  GUM_DARWIN_GRAFTER_FLAGS_TRANSFORM_LAZY_BINDS   = (1 << 2),
+} GumDarwinGrafterFlags;
+
+#define GUM_TYPE_DARWIN_GRAFTER (gum_darwin_grafter_get_type ())
+GUM_DECLARE_FINAL_TYPE (GumDarwinGrafter, gum_darwin_grafter, GUM,
+                        DARWIN_GRAFTER, GObject)
+
+GUM_API GumDarwinGrafter * gum_darwin_grafter_new_from_file (
+    const gchar * path, GumDarwinGrafterFlags flags);
+
+GUM_API void gum_darwin_grafter_add (GumDarwinGrafter * self,
+    guint32 code_offset);
+
+GUM_API gboolean gum_darwin_grafter_graft (GumDarwinGrafter * self,
+    GError ** error);
+
+G_END_DECLS
+
+#endif
+/*
+ * Copyright (C) 2015-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  *
  * Licence: wxWindows Library Licence, Version 3.1
  */
@@ -33285,8 +34413,10 @@ G_END_DECLS
 G_BEGIN_DECLS
 
 #define GUM_TYPE_DARWIN_MODULE (gum_darwin_module_get_type ())
-G_DECLARE_FINAL_TYPE (GumDarwinModule, gum_darwin_module, GUM_DARWIN, MODULE,
-    GObject)
+GUM_DECLARE_FINAL_TYPE (GumDarwinModule, gum_darwin_module, GUM, DARWIN_MODULE,
+                        GObject)
+
+#define GUM_TYPE_DARWIN_MODULE_IMAGE (gum_darwin_module_image_get_type ())
 
 #define GUM_DARWIN_PORT_NULL 0
 #define GUM_DARWIN_EXPORT_KIND_MASK 3
@@ -33306,6 +34436,7 @@ typedef struct _GumDarwinThreadedItem GumDarwinThreadedItem;
 typedef struct _GumDarwinInitPointersDetails GumDarwinInitPointersDetails;
 typedef struct _GumDarwinInitOffsetsDetails GumDarwinInitOffsetsDetails;
 typedef struct _GumDarwinTermPointersDetails GumDarwinTermPointersDetails;
+typedef struct _GumDarwinFunctionStartsDetails GumDarwinFunctionStartsDetails;
 typedef struct _GumDarwinSegment GumDarwinSegment;
 typedef struct _GumDarwinExportDetails GumDarwinExportDetails;
 typedef struct _GumDarwinSymbolDetails GumDarwinSymbolDetails;
@@ -33341,6 +34472,8 @@ typedef gboolean (* GumFoundDarwinTermPointersFunc) (
     const GumDarwinTermPointersDetails * details, gpointer user_data);
 typedef gboolean (* GumFoundDarwinDependencyFunc) (const gchar * path,
     gpointer user_data);
+typedef gboolean (* GumFoundDarwinFunctionStartsFunc) (
+    const GumDarwinFunctionStartsDetails * details, gpointer user_data);
 
 typedef struct _GumDyldInfoCommand GumDyldInfoCommand;
 typedef struct _GumSymtabCommand GumSymtabCommand;
@@ -33353,7 +34486,11 @@ typedef enum {
 
 struct _GumDarwinModule
 {
+#ifndef GUM_DIET
   GObject parent;
+#else
+  GumObject parent;
+#endif
 
   GumDarwinModuleFiletype filetype;
   gchar * name;
@@ -33532,6 +34669,13 @@ struct _GumDarwinTermPointersDetails
   guint64 count;
 };
 
+struct _GumDarwinFunctionStartsDetails
+{
+  GumAddress vm_address;
+  guint64 file_offset;
+  guint32 size;
+};
+
 struct _GumDarwinSegment
 {
   gchar name[17];
@@ -33639,6 +34783,9 @@ GUM_API GumDarwinModule * gum_darwin_module_new_from_memory (const gchar * name,
     GumDarwinPort task, GumAddress base_address, GumDarwinModuleFlags flags,
     GError ** error);
 
+GUM_API gboolean gum_darwin_module_load (GumDarwinModule * self,
+    GError ** error);
+
 GUM_API gboolean gum_darwin_module_resolve_export (GumDarwinModule * self,
     const gchar * symbol, GumDarwinExportDetails * details);
 GUM_API GumAddress gum_darwin_module_resolve_symbol_address (
@@ -33646,7 +34793,7 @@ GUM_API GumAddress gum_darwin_module_resolve_symbol_address (
 GUM_API gboolean gum_darwin_module_get_lacks_exports_for_reexports (
     GumDarwinModule * self);
 GUM_API void gum_darwin_module_enumerate_imports (GumDarwinModule * self,
-    GumFoundImportFunc func, gpointer user_data);
+    GumFoundImportFunc func, GumResolveExportFunc resolver, gpointer user_data);
 GUM_API void gum_darwin_module_enumerate_exports (GumDarwinModule * self,
     GumFoundDarwinExportFunc func, gpointer user_data);
 GUM_API void gum_darwin_module_enumerate_symbols (GumDarwinModule * self,
@@ -33674,12 +34821,20 @@ GUM_API void gum_darwin_module_enumerate_term_pointers (GumDarwinModule * self,
     GumFoundDarwinTermPointersFunc func, gpointer user_data);
 GUM_API void gum_darwin_module_enumerate_dependencies (GumDarwinModule * self,
     GumFoundDarwinDependencyFunc func, gpointer user_data);
+GUM_API void gum_darwin_module_enumerate_function_starts (
+    GumDarwinModule * self, GumFoundDarwinFunctionStartsFunc func,
+    gpointer user_data);
 GUM_API const gchar * gum_darwin_module_get_dependency_by_ordinal (
     GumDarwinModule * self, gint ordinal);
+GUM_API gboolean gum_darwin_module_ensure_image_loaded (GumDarwinModule * self,
+    GError ** error);
 
 GUM_API void gum_darwin_threaded_item_parse (guint64 value,
     GumDarwinThreadedItem * result);
 
+#ifndef GUM_DIET
+GUM_API GType gum_darwin_module_image_get_type (void) G_GNUC_CONST;
+#endif
 GUM_API GumDarwinModuleImage * gum_darwin_module_image_new (void);
 GUM_API GumDarwinModuleImage * gum_darwin_module_image_dup (
     const GumDarwinModuleImage * other);
@@ -33689,7 +34844,7 @@ G_END_DECLS
 
 #endif
 /*
- * Copyright (C) 2009 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2009-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  *
  * Licence: wxWindows Library Licence, Version 3.1
  */
@@ -33755,7 +34910,7 @@ struct _GumBlockEvent
 {
   GumEventType type;
 
-  gpointer begin;
+  gpointer start;
   gpointer end;
 };
 
@@ -33763,7 +34918,7 @@ struct _GumCompileEvent
 {
   GumEventType type;
 
-  gpointer begin;
+  gpointer start;
   gpointer end;
 };
 
@@ -33783,7 +34938,7 @@ G_END_DECLS
 
 #endif
 /*
- * Copyright (C) 2009-2020 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2009-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  *
  * Licence: wxWindows Library Licence, Version 3.1
  */
@@ -33795,11 +34950,20 @@ G_END_DECLS
 G_BEGIN_DECLS
 
 #define GUM_TYPE_EVENT_SINK (gum_event_sink_get_type ())
-G_DECLARE_INTERFACE (GumEventSink, gum_event_sink, GUM, EVENT_SINK, GObject)
+GUM_DECLARE_INTERFACE (GumEventSink, gum_event_sink, GUM, EVENT_SINK, GObject)
 
 #define GUM_TYPE_DEFAULT_EVENT_SINK (gum_default_event_sink_get_type ())
-G_DECLARE_FINAL_TYPE (GumDefaultEventSink, gum_default_event_sink, GUM,
-    DEFAULT_EVENT_SINK, GObject)
+GUM_DECLARE_FINAL_TYPE (GumDefaultEventSink, gum_default_event_sink, GUM,
+                        DEFAULT_EVENT_SINK, GObject)
+
+#define GUM_TYPE_CALLBACK_EVENT_SINK (gum_callback_event_sink_get_type ())
+GUM_DECLARE_FINAL_TYPE (GumCallbackEventSink, gum_callback_event_sink, GUM,
+                        CALLBACK_EVENT_SINK, GObject)
+
+typedef void (* GumEventSinkCallback) (const GumEvent * event,
+    GumCpuContext * cpu_context, gpointer user_data);
+
+#ifndef GUM_DIET
 
 struct _GumEventSinkInterface
 {
@@ -33813,6 +34977,8 @@ struct _GumEventSinkInterface
   void (* stop) (GumEventSink * self);
 };
 
+#endif
+
 GUM_API GumEventType gum_event_sink_query_mask (GumEventSink * self);
 GUM_API void gum_event_sink_start (GumEventSink * self);
 GUM_API void gum_event_sink_process (GumEventSink * self,
@@ -33821,12 +34987,14 @@ GUM_API void gum_event_sink_flush (GumEventSink * self);
 GUM_API void gum_event_sink_stop (GumEventSink * self);
 
 GUM_API GumEventSink * gum_event_sink_make_default (void);
+GUM_API GumEventSink * gum_event_sink_make_from_callback (GumEventType mask,
+    GumEventSinkCallback callback, gpointer data, GDestroyNotify data_destroy);
 
 G_END_DECLS
 
 #endif
 /*
- * Copyright (C) 2015-2018 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2015-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  * Copyright (C) 2020 Francesco Tamagni <mrmacete@protonmail.ch>
  *
  * Licence: wxWindows Library Licence, Version 3.1
@@ -33840,18 +35008,23 @@ G_END_DECLS
 G_BEGIN_DECLS
 
 #define GUM_TYPE_EXCEPTOR (gum_exceptor_get_type ())
-G_DECLARE_FINAL_TYPE (GumExceptor, gum_exceptor, GUM, EXCEPTOR, GObject)
+GUM_DECLARE_FINAL_TYPE (GumExceptor, gum_exceptor, GUM, EXCEPTOR, GObject)
 
 #if defined (G_OS_WIN32) || defined (__APPLE__)
 # define GUM_NATIVE_SETJMP(env) setjmp (env)
 # define GUM_NATIVE_LONGJMP longjmp
+# ifndef GUM_GIR_COMPILATION
   typedef jmp_buf GumExceptorNativeJmpBuf;
+# endif
 #else
 # define GUM_NATIVE_SETJMP(env) sigsetjmp (env, TRUE)
 # define GUM_NATIVE_LONGJMP siglongjmp
-# if !defined (GUM_GIR_COMPILATION)
+# ifndef GUM_GIR_COMPILATION
   typedef sigjmp_buf GumExceptorNativeJmpBuf;
 # endif
+#endif
+#ifdef GUM_GIR_COMPILATION
+typedef int GumExceptorNativeJmpBuf;
 #endif
 
 typedef struct _GumExceptionDetails GumExceptionDetails;
@@ -33898,7 +35071,7 @@ struct _GumExceptorScope
   /*< private */
   gboolean exception_occurred;
   gpointer padding[2];
-  jmp_buf env;
+  GumExceptorNativeJmpBuf env;
 #ifdef __ANDROID__
   sigset_t mask;
 #endif
@@ -33906,7 +35079,11 @@ struct _GumExceptorScope
   GumExceptorScope * next;
 };
 
+GUM_API void gum_exceptor_disable (void);
+
 GUM_API GumExceptor * gum_exceptor_obtain (void);
+
+GUM_API void gum_exceptor_reset (GumExceptor * self);
 
 GUM_API void gum_exceptor_add (GumExceptor * self, GumExceptionHandler func,
     gpointer user_data);
@@ -33967,7 +35144,7 @@ G_END_DECLS
 
 #endif
 /*
- * Copyright (C) 2008-2019 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2008-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  * Copyright (C) 2008 Christian Berentsen <jc.berentsen@gmail.com>
  *
  * Licence: wxWindows Library Licence, Version 3.1
@@ -33977,7 +35154,7 @@ G_END_DECLS
 #define __GUM_INTERCEPTOR_H__
 
 /*
- * Copyright (C) 2008-2018 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2008-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  *
  * Licence: wxWindows Library Licence, Version 3.1
  */
@@ -33986,7 +35163,7 @@ G_END_DECLS
 #define __GUM_INVOCATION_LISTENER_H__
 
 /*
- * Copyright (C) 2008-2019 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2008-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  *
  * Licence: wxWindows Library Licence, Version 3.1
  */
@@ -34034,7 +35211,7 @@ struct _GumInvocationBackend
 
 struct _GumInvocationContext
 {
-  GCallback function;
+  gpointer function;
   GumCpuContext * cpu_context;
   gint system_error;
 
@@ -34087,8 +35264,13 @@ G_END_DECLS
 G_BEGIN_DECLS
 
 #define GUM_TYPE_INVOCATION_LISTENER (gum_invocation_listener_get_type ())
-G_DECLARE_INTERFACE (GumInvocationListener, gum_invocation_listener, GUM,
-    INVOCATION_LISTENER, GObject)
+GUM_DECLARE_INTERFACE (GumInvocationListener, gum_invocation_listener, GUM,
+                       INVOCATION_LISTENER, GObject)
+
+typedef void (* GumInvocationCallback) (GumInvocationContext * context,
+    gpointer user_data);
+
+#ifndef GUM_DIET
 
 struct _GumInvocationListenerInterface
 {
@@ -34099,6 +35281,27 @@ struct _GumInvocationListenerInterface
   void (* on_leave) (GumInvocationListener * self,
       GumInvocationContext * context);
 };
+
+#else
+
+struct _GumInvocationListener
+{
+  GumObject parent;
+
+  GumInvocationCallback on_enter;
+  GumInvocationCallback on_leave;
+
+  gpointer data;
+  GDestroyNotify data_destroy;
+};
+
+#endif
+
+GUM_API GumInvocationListener * gum_make_call_listener (
+    GumInvocationCallback on_enter, GumInvocationCallback on_leave,
+    gpointer data, GDestroyNotify data_destroy);
+GUM_API GumInvocationListener * gum_make_probe_listener (
+    GumInvocationCallback on_hit, gpointer data, GDestroyNotify data_destroy);
 
 GUM_API void gum_invocation_listener_on_enter (GumInvocationListener * self,
     GumInvocationContext * context);
@@ -34112,8 +35315,8 @@ G_END_DECLS
 G_BEGIN_DECLS
 
 #define GUM_TYPE_INTERCEPTOR (gum_interceptor_get_type ())
-G_DECLARE_FINAL_TYPE (GumInterceptor, gum_interceptor, GUM, INTERCEPTOR,
-    GObject)
+GUM_DECLARE_FINAL_TYPE (GumInterceptor, gum_interceptor, GUM, INTERCEPTOR,
+                        GObject)
 
 typedef GArray GumInvocationStack;
 typedef guint GumInvocationState;
@@ -34144,7 +35347,7 @@ GUM_API void gum_interceptor_detach (GumInterceptor * self,
 
 GUM_API GumReplaceReturn gum_interceptor_replace (GumInterceptor * self,
     gpointer function_address, gpointer replacement_function,
-    gpointer replacement_data);
+    gpointer replacement_data, gpointer * original_function);
 GUM_API void gum_interceptor_revert (GumInterceptor * self,
     gpointer function_address);
 
@@ -34157,6 +35360,8 @@ GUM_API GumInvocationStack * gum_interceptor_get_current_stack (void);
 
 GUM_API void gum_interceptor_ignore_current_thread (GumInterceptor * self);
 GUM_API void gum_interceptor_unignore_current_thread (GumInterceptor * self);
+GUM_API gboolean gum_interceptor_maybe_unignore_current_thread (
+    GumInterceptor * self);
 
 GUM_API void gum_interceptor_ignore_other_threads (GumInterceptor * self);
 GUM_API void gum_interceptor_unignore_other_threads (GumInterceptor * self);
@@ -34171,7 +35376,7 @@ G_END_DECLS
 
 #endif
 /*
- * Copyright (C) 2015 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2015-2021 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  *
  * Licence: wxWindows Library Licence, Version 3.1
  */
@@ -34200,7 +35405,7 @@ GUM_API guint gum_kernel_query_page_size (void);
 GUM_API GumAddress gum_kernel_alloc_n_pages (guint n_pages);
 GUM_API void gum_kernel_free_pages (GumAddress mem);
 GUM_API gboolean gum_kernel_try_mprotect (GumAddress address, gsize size,
-    GumPageProtection page_prot);
+    GumPageProtection prot);
 GUM_API guint8 * gum_kernel_read (GumAddress address, gsize len,
     gsize * n_bytes_read);
 GUM_API gboolean gum_kernel_write (GumAddress address, const guint8 * bytes,
@@ -34222,7 +35427,7 @@ G_END_DECLS
 
 #endif
 /*
- * Copyright (C) 2015 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2015-2021 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  *
  * Licence: wxWindows Library Licence, Version 3.1
  */
@@ -34233,15 +35438,15 @@ G_END_DECLS
 
 G_BEGIN_DECLS
 
-G_GNUC_INTERNAL gpointer gum_memset (gpointer dst, gint c, gsize n);
-G_GNUC_INTERNAL gpointer gum_memcpy (gpointer dst, gconstpointer src, gsize n);
-G_GNUC_INTERNAL gpointer gum_memmove (gpointer dst, gconstpointer src, gsize n);
+GUM_API gpointer gum_memset (gpointer dst, gint c, gsize n);
+GUM_API gpointer gum_memcpy (gpointer dst, gconstpointer src, gsize n);
+GUM_API gpointer gum_memmove (gpointer dst, gconstpointer src, gsize n);
 
 G_END_DECLS
 
 #endif
 /*
- * Copyright (C) 2010-2018 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2010-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  *
  * Licence: wxWindows Library Licence, Version 3.1
  */
@@ -34253,8 +35458,8 @@ G_END_DECLS
 G_BEGIN_DECLS
 
 #define GUM_TYPE_MEMORY_ACCESS_MONITOR (gum_memory_access_monitor_get_type ())
-G_DECLARE_FINAL_TYPE (GumMemoryAccessMonitor, gum_memory_access_monitor, GUM,
-    MEMORY_ACCESS_MONITOR, GObject)
+GUM_DECLARE_FINAL_TYPE (GumMemoryAccessMonitor, gum_memory_access_monitor, GUM,
+                        MEMORY_ACCESS_MONITOR, GObject)
 
 typedef struct _GumMemoryAccessDetails GumMemoryAccessDetails;
 
@@ -34287,7 +35492,7 @@ G_END_DECLS
 
 #endif
 /*
- * Copyright (C) 2013-2018 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2013-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  *
  * Licence: wxWindows Library Licence, Version 3.1
  */
@@ -34299,7 +35504,7 @@ G_END_DECLS
 G_BEGIN_DECLS
 
 #define GUM_TYPE_MEMORY_MAP (gum_memory_map_get_type ())
-G_DECLARE_FINAL_TYPE (GumMemoryMap, gum_memory_map, GUM, MEMORY_MAP, GObject)
+GUM_DECLARE_FINAL_TYPE (GumMemoryMap, gum_memory_map, GUM, MEMORY_MAP, GObject)
 
 GUM_API GumMemoryMap * gum_memory_map_new (GumPageProtection prot);
 
@@ -34449,7 +35654,7 @@ G_END_DECLS
 
 #endif
 /*
- * Copyright (C) 2016 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2016-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  *
  * Licence: wxWindows Library Licence, Version 3.1
  */
@@ -34461,8 +35666,8 @@ G_END_DECLS
 G_BEGIN_DECLS
 
 #define GUM_TYPE_MODULE_API_RESOLVER (gum_module_api_resolver_get_type ())
-G_DECLARE_FINAL_TYPE (GumModuleApiResolver, gum_module_api_resolver, GUM,
-    MODULE_API_RESOLVER, GObject)
+GUM_DECLARE_FINAL_TYPE (GumModuleApiResolver, gum_module_api_resolver, GUM,
+                        MODULE_API_RESOLVER, GObject)
 
 GUM_API GumApiResolver * gum_module_api_resolver_new (void);
 
@@ -34470,7 +35675,7 @@ G_END_DECLS
 
 #endif
 /*
- * Copyright (C) 2015-2017 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2015-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  *
  * Licence: wxWindows Library Licence, Version 3.1
  */
@@ -34482,7 +35687,7 @@ G_END_DECLS
 G_BEGIN_DECLS
 
 #define GUM_TYPE_MODULE_MAP (gum_module_map_get_type ())
-G_DECLARE_FINAL_TYPE (GumModuleMap, gum_module_map, GUM, MODULE_MAP, GObject)
+GUM_DECLARE_FINAL_TYPE (GumModuleMap, gum_module_map, GUM, MODULE_MAP, GObject)
 
 typedef gboolean (* GumModuleMapFilterFunc) (const GumModuleDetails * details,
     gpointer user_data);
@@ -34552,7 +35757,7 @@ G_END_DECLS
 
 #endif
 /*
- * Copyright (C) 2009-2018 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2009-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  * Copyright (C)      2010 Karl Trygve Kalleberg <karltk@boblycat.org>
  *
  * Licence: wxWindows Library Licence, Version 3.1
@@ -49343,7 +50548,7 @@ typedef struct cs_mos65xx_op {
 	union {
 		mos65xx_reg reg;	///< register value for REG operand
 		uint16_t imm;		///< immediate value for IMM operand
-		uint32_t mem;		///< base/index/scale/disp value for MEM operand
+		uint32_t mem;		///< address for MEM operand
 	};
 } cs_mos65xx_op;
 
@@ -50051,7 +51256,7 @@ cs_err CAPSTONE_API cs_regs_access(csh handle, const cs_insn *insn,
 
 #endif
 /*
- * Copyright (C) 2009-2019 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2009-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  *
  * Licence: wxWindows Library Licence, Version 3.1
  */
@@ -50064,12 +51269,13 @@ cs_err CAPSTONE_API cs_regs_access(csh handle, const cs_insn *insn,
 G_BEGIN_DECLS
 
 typedef struct _GumX86Writer GumX86Writer;
-typedef guint GumCpuReg;
-typedef guint GumPtrTarget;
+typedef guint GumX86Reg;
+typedef guint GumX86PtrTarget;
 
 struct _GumX86Writer
 {
   volatile gint ref_count;
+  gboolean flush_on_destroy;
 
   GumCpuType target_cpu;
   GumAbiType target_abi;
@@ -50082,70 +51288,70 @@ struct _GumX86Writer
   GumMetalArray label_refs;
 };
 
-enum _GumCpuReg
+enum _GumX86Reg
 {
-  /* 32 bit */
-  GUM_REG_EAX = 0,
-  GUM_REG_ECX,
-  GUM_REG_EDX,
-  GUM_REG_EBX,
-  GUM_REG_ESP,
-  GUM_REG_EBP,
-  GUM_REG_ESI,
-  GUM_REG_EDI,
+  /* 32-bit */
+  GUM_X86_EAX = 0,
+  GUM_X86_ECX,
+  GUM_X86_EDX,
+  GUM_X86_EBX,
+  GUM_X86_ESP,
+  GUM_X86_EBP,
+  GUM_X86_ESI,
+  GUM_X86_EDI,
 
-  GUM_REG_R8D,
-  GUM_REG_R9D,
-  GUM_REG_R10D,
-  GUM_REG_R11D,
-  GUM_REG_R12D,
-  GUM_REG_R13D,
-  GUM_REG_R14D,
-  GUM_REG_R15D,
+  GUM_X86_R8D,
+  GUM_X86_R9D,
+  GUM_X86_R10D,
+  GUM_X86_R11D,
+  GUM_X86_R12D,
+  GUM_X86_R13D,
+  GUM_X86_R14D,
+  GUM_X86_R15D,
 
-  GUM_REG_EIP,
+  GUM_X86_EIP,
 
-  /* 64 bit */
-  GUM_REG_RAX,
-  GUM_REG_RCX,
-  GUM_REG_RDX,
-  GUM_REG_RBX,
-  GUM_REG_RSP,
-  GUM_REG_RBP,
-  GUM_REG_RSI,
-  GUM_REG_RDI,
+  /* 64-bit */
+  GUM_X86_RAX,
+  GUM_X86_RCX,
+  GUM_X86_RDX,
+  GUM_X86_RBX,
+  GUM_X86_RSP,
+  GUM_X86_RBP,
+  GUM_X86_RSI,
+  GUM_X86_RDI,
 
-  GUM_REG_R8,
-  GUM_REG_R9,
-  GUM_REG_R10,
-  GUM_REG_R11,
-  GUM_REG_R12,
-  GUM_REG_R13,
-  GUM_REG_R14,
-  GUM_REG_R15,
+  GUM_X86_R8,
+  GUM_X86_R9,
+  GUM_X86_R10,
+  GUM_X86_R11,
+  GUM_X86_R12,
+  GUM_X86_R13,
+  GUM_X86_R14,
+  GUM_X86_R15,
 
-  GUM_REG_RIP,
+  GUM_X86_RIP,
 
   /* Meta */
-  GUM_REG_XAX,
-  GUM_REG_XCX,
-  GUM_REG_XDX,
-  GUM_REG_XBX,
-  GUM_REG_XSP,
-  GUM_REG_XBP,
-  GUM_REG_XSI,
-  GUM_REG_XDI,
+  GUM_X86_XAX,
+  GUM_X86_XCX,
+  GUM_X86_XDX,
+  GUM_X86_XBX,
+  GUM_X86_XSP,
+  GUM_X86_XBP,
+  GUM_X86_XSI,
+  GUM_X86_XDI,
 
-  GUM_REG_XIP,
+  GUM_X86_XIP,
 
-  GUM_REG_NONE
+  GUM_X86_NONE
 };
 
-enum _GumPtrTarget
+enum _GumX86PtrTarget
 {
-  GUM_PTR_BYTE,
-  GUM_PTR_DWORD,
-  GUM_PTR_QWORD
+  GUM_X86_PTR_BYTE,
+  GUM_X86_PTR_DWORD,
+  GUM_X86_PTR_QWORD
 };
 
 GUM_API GumX86Writer * gum_x86_writer_new (gpointer code_address);
@@ -50168,7 +51374,7 @@ GUM_API guint gum_x86_writer_offset (GumX86Writer * self);
 
 GUM_API gboolean gum_x86_writer_flush (GumX86Writer * self);
 
-GUM_API GumCpuReg gum_x86_writer_get_cpu_register_for_nth_argument (
+GUM_API GumX86Reg gum_x86_writer_get_cpu_register_for_nth_argument (
     GumX86Writer * self, guint n);
 
 GUM_API gboolean gum_x86_writer_put_label (GumX86Writer * self,
@@ -50189,36 +51395,36 @@ GUM_API gboolean gum_x86_writer_put_call_address_with_aligned_arguments_array (
     GumX86Writer * self, GumCallingConvention conv, GumAddress func,
     guint n_args, const GumArgument * args);
 GUM_API gboolean gum_x86_writer_put_call_reg_with_arguments (
-    GumX86Writer * self, GumCallingConvention conv, GumCpuReg reg,
+    GumX86Writer * self, GumCallingConvention conv, GumX86Reg reg,
     guint n_args, ...);
 GUM_API gboolean gum_x86_writer_put_call_reg_with_arguments_array (
-    GumX86Writer * self, GumCallingConvention conv, GumCpuReg reg,
+    GumX86Writer * self, GumCallingConvention conv, GumX86Reg reg,
     guint n_args, const GumArgument * args);
 GUM_API gboolean gum_x86_writer_put_call_reg_with_aligned_arguments (
-    GumX86Writer * self, GumCallingConvention conv, GumCpuReg reg,
+    GumX86Writer * self, GumCallingConvention conv, GumX86Reg reg,
     guint n_args, ...);
 GUM_API gboolean gum_x86_writer_put_call_reg_with_aligned_arguments_array (
-    GumX86Writer * self, GumCallingConvention conv, GumCpuReg reg,
+    GumX86Writer * self, GumCallingConvention conv, GumX86Reg reg,
     guint n_args, const GumArgument * args);
 GUM_API gboolean gum_x86_writer_put_call_reg_offset_ptr_with_arguments (
-    GumX86Writer * self, GumCallingConvention conv, GumCpuReg reg,
+    GumX86Writer * self, GumCallingConvention conv, GumX86Reg reg,
     gssize offset, guint n_args, ...);
 GUM_API gboolean gum_x86_writer_put_call_reg_offset_ptr_with_arguments_array (
-    GumX86Writer * self, GumCallingConvention conv, GumCpuReg reg,
+    GumX86Writer * self, GumCallingConvention conv, GumX86Reg reg,
     gssize offset, guint n_args, const GumArgument * args);
 GUM_API gboolean gum_x86_writer_put_call_reg_offset_ptr_with_aligned_arguments (
-    GumX86Writer * self, GumCallingConvention conv, GumCpuReg reg,
+    GumX86Writer * self, GumCallingConvention conv, GumX86Reg reg,
     gssize offset, guint n_args, ...);
 GUM_API gboolean
     gum_x86_writer_put_call_reg_offset_ptr_with_aligned_arguments_array (
-    GumX86Writer * self, GumCallingConvention conv, GumCpuReg reg,
+    GumX86Writer * self, GumCallingConvention conv, GumX86Reg reg,
     gssize offset, guint n_args, const GumArgument * args);
 GUM_API gboolean gum_x86_writer_put_call_address (GumX86Writer * self,
     GumAddress address);
 GUM_API gboolean gum_x86_writer_put_call_reg (GumX86Writer * self,
-    GumCpuReg reg);
+    GumX86Reg reg);
 GUM_API gboolean gum_x86_writer_put_call_reg_offset_ptr (GumX86Writer * self,
-    GumCpuReg reg, gssize offset);
+    GumX86Reg reg, gssize offset);
 GUM_API gboolean gum_x86_writer_put_call_indirect (GumX86Writer * self,
     GumAddress addr);
 GUM_API gboolean gum_x86_writer_put_call_indirect_label (GumX86Writer * self,
@@ -50236,11 +51442,11 @@ GUM_API void gum_x86_writer_put_jmp_short_label (GumX86Writer * self,
 GUM_API void gum_x86_writer_put_jmp_near_label (GumX86Writer * self,
     gconstpointer label_id);
 GUM_API gboolean gum_x86_writer_put_jmp_reg (GumX86Writer * self,
-    GumCpuReg reg);
+    GumX86Reg reg);
 GUM_API gboolean gum_x86_writer_put_jmp_reg_ptr (GumX86Writer * self,
-    GumCpuReg reg);
+    GumX86Reg reg);
 GUM_API gboolean gum_x86_writer_put_jmp_reg_offset_ptr (GumX86Writer * self,
-    GumCpuReg reg, gssize offset);
+    GumX86Reg reg, gssize offset);
 GUM_API gboolean gum_x86_writer_put_jmp_near_ptr (GumX86Writer * self,
     GumAddress address);
 GUM_API gboolean gum_x86_writer_put_jcc_short (GumX86Writer * self,
@@ -50253,82 +51459,82 @@ GUM_API void gum_x86_writer_put_jcc_near_label (GumX86Writer * self,
     x86_insn instruction_id, gconstpointer label_id, GumBranchHint hint);
 
 GUM_API gboolean gum_x86_writer_put_add_reg_imm (GumX86Writer * self,
-    GumCpuReg reg, gssize imm_value);
+    GumX86Reg reg, gssize imm_value);
 GUM_API gboolean gum_x86_writer_put_add_reg_reg (GumX86Writer * self,
-    GumCpuReg dst_reg, GumCpuReg src_reg);
+    GumX86Reg dst_reg, GumX86Reg src_reg);
 GUM_API gboolean gum_x86_writer_put_add_reg_near_ptr (GumX86Writer * self,
-    GumCpuReg dst_reg, GumAddress src_address);
+    GumX86Reg dst_reg, GumAddress src_address);
 GUM_API gboolean gum_x86_writer_put_sub_reg_imm (GumX86Writer * self,
-    GumCpuReg reg, gssize imm_value);
+    GumX86Reg reg, gssize imm_value);
 GUM_API gboolean gum_x86_writer_put_sub_reg_reg (GumX86Writer * self,
-    GumCpuReg dst_reg, GumCpuReg src_reg);
+    GumX86Reg dst_reg, GumX86Reg src_reg);
 GUM_API gboolean gum_x86_writer_put_sub_reg_near_ptr (GumX86Writer * self,
-    GumCpuReg dst_reg, GumAddress src_address);
+    GumX86Reg dst_reg, GumAddress src_address);
 GUM_API gboolean gum_x86_writer_put_inc_reg (GumX86Writer * self,
-    GumCpuReg reg);
+    GumX86Reg reg);
 GUM_API gboolean gum_x86_writer_put_dec_reg (GumX86Writer * self,
-    GumCpuReg reg);
+    GumX86Reg reg);
 GUM_API gboolean gum_x86_writer_put_inc_reg_ptr (GumX86Writer * self,
-    GumPtrTarget target, GumCpuReg reg);
+    GumX86PtrTarget target, GumX86Reg reg);
 GUM_API gboolean gum_x86_writer_put_dec_reg_ptr (GumX86Writer * self,
-    GumPtrTarget target, GumCpuReg reg);
+    GumX86PtrTarget target, GumX86Reg reg);
 GUM_API gboolean gum_x86_writer_put_lock_xadd_reg_ptr_reg (GumX86Writer * self,
-    GumCpuReg dst_reg, GumCpuReg src_reg);
+    GumX86Reg dst_reg, GumX86Reg src_reg);
 GUM_API gboolean gum_x86_writer_put_lock_cmpxchg_reg_ptr_reg (
-    GumX86Writer * self, GumCpuReg dst_reg, GumCpuReg src_reg);
+    GumX86Writer * self, GumX86Reg dst_reg, GumX86Reg src_reg);
 GUM_API gboolean gum_x86_writer_put_lock_inc_imm32_ptr (GumX86Writer * self,
     gpointer target);
 GUM_API gboolean gum_x86_writer_put_lock_dec_imm32_ptr (GumX86Writer * self,
     gpointer target);
 
 GUM_API gboolean gum_x86_writer_put_and_reg_reg (GumX86Writer * self,
-    GumCpuReg dst_reg, GumCpuReg src_reg);
+    GumX86Reg dst_reg, GumX86Reg src_reg);
 GUM_API gboolean gum_x86_writer_put_and_reg_u32 (GumX86Writer * self,
-    GumCpuReg reg, guint32 imm_value);
+    GumX86Reg reg, guint32 imm_value);
 GUM_API gboolean gum_x86_writer_put_shl_reg_u8 (GumX86Writer * self,
-    GumCpuReg reg, guint8 imm_value);
+    GumX86Reg reg, guint8 imm_value);
 GUM_API gboolean gum_x86_writer_put_shr_reg_u8 (GumX86Writer * self,
-    GumCpuReg reg, guint8 imm_value);
+    GumX86Reg reg, guint8 imm_value);
 GUM_API gboolean gum_x86_writer_put_xor_reg_reg (GumX86Writer * self,
-    GumCpuReg dst_reg, GumCpuReg src_reg);
+    GumX86Reg dst_reg, GumX86Reg src_reg);
 
 GUM_API gboolean gum_x86_writer_put_mov_reg_reg (GumX86Writer * self,
-    GumCpuReg dst_reg, GumCpuReg src_reg);
+    GumX86Reg dst_reg, GumX86Reg src_reg);
 GUM_API gboolean gum_x86_writer_put_mov_reg_u32 (GumX86Writer * self,
-    GumCpuReg dst_reg, guint32 imm_value);
+    GumX86Reg dst_reg, guint32 imm_value);
 GUM_API gboolean gum_x86_writer_put_mov_reg_u64 (GumX86Writer * self,
-    GumCpuReg dst_reg, guint64 imm_value);
+    GumX86Reg dst_reg, guint64 imm_value);
 GUM_API void gum_x86_writer_put_mov_reg_address (GumX86Writer * self,
-    GumCpuReg dst_reg, GumAddress address);
+    GumX86Reg dst_reg, GumAddress address);
 GUM_API void gum_x86_writer_put_mov_reg_ptr_u32 (GumX86Writer * self,
-    GumCpuReg dst_reg, guint32 imm_value);
+    GumX86Reg dst_reg, guint32 imm_value);
 GUM_API gboolean gum_x86_writer_put_mov_reg_offset_ptr_u32 (GumX86Writer * self,
-    GumCpuReg dst_reg, gssize dst_offset, guint32 imm_value);
+    GumX86Reg dst_reg, gssize dst_offset, guint32 imm_value);
 GUM_API void gum_x86_writer_put_mov_reg_ptr_reg (GumX86Writer * self,
-    GumCpuReg dst_reg, GumCpuReg src_reg);
+    GumX86Reg dst_reg, GumX86Reg src_reg);
 GUM_API gboolean gum_x86_writer_put_mov_reg_offset_ptr_reg (GumX86Writer * self,
-    GumCpuReg dst_reg, gssize dst_offset, GumCpuReg src_reg);
+    GumX86Reg dst_reg, gssize dst_offset, GumX86Reg src_reg);
 GUM_API void gum_x86_writer_put_mov_reg_reg_ptr (GumX86Writer * self,
-    GumCpuReg dst_reg, GumCpuReg src_reg);
+    GumX86Reg dst_reg, GumX86Reg src_reg);
 GUM_API gboolean gum_x86_writer_put_mov_reg_reg_offset_ptr (GumX86Writer * self,
-    GumCpuReg dst_reg, GumCpuReg src_reg, gssize src_offset);
+    GumX86Reg dst_reg, GumX86Reg src_reg, gssize src_offset);
 GUM_API gboolean gum_x86_writer_put_mov_reg_base_index_scale_offset_ptr (
-    GumX86Writer * self, GumCpuReg dst_reg, GumCpuReg base_reg,
-    GumCpuReg index_reg, guint8 scale, gssize offset);
+    GumX86Writer * self, GumX86Reg dst_reg, GumX86Reg base_reg,
+    GumX86Reg index_reg, guint8 scale, gssize offset);
 
 GUM_API gboolean gum_x86_writer_put_mov_reg_near_ptr (GumX86Writer * self,
-    GumCpuReg dst_reg, GumAddress src_address);
+    GumX86Reg dst_reg, GumAddress src_address);
 GUM_API gboolean gum_x86_writer_put_mov_near_ptr_reg (GumX86Writer * self,
-    GumAddress dst_address, GumCpuReg src_reg);
+    GumAddress dst_address, GumX86Reg src_reg);
 
 GUM_API gboolean gum_x86_writer_put_mov_fs_u32_ptr_reg (GumX86Writer * self,
-    guint32 fs_offset, GumCpuReg src_reg);
+    guint32 fs_offset, GumX86Reg src_reg);
 GUM_API gboolean gum_x86_writer_put_mov_reg_fs_u32_ptr (GumX86Writer * self,
-    GumCpuReg dst_reg, guint32 fs_offset);
+    GumX86Reg dst_reg, guint32 fs_offset);
 GUM_API gboolean gum_x86_writer_put_mov_gs_u32_ptr_reg (GumX86Writer * self,
-    guint32 fs_offset, GumCpuReg src_reg);
+    guint32 fs_offset, GumX86Reg src_reg);
 GUM_API gboolean gum_x86_writer_put_mov_reg_gs_u32_ptr (GumX86Writer * self,
-    GumCpuReg dst_reg, guint32 fs_offset);
+    GumX86Reg dst_reg, guint32 fs_offset);
 
 GUM_API void gum_x86_writer_put_movq_xmm0_esp_offset_ptr (GumX86Writer * self,
     gint8 offset);
@@ -50340,38 +51546,40 @@ GUM_API void gum_x86_writer_put_movdqu_eax_offset_ptr_xmm0 (GumX86Writer * self,
     gint8 offset);
 
 GUM_API gboolean gum_x86_writer_put_lea_reg_reg_offset (GumX86Writer * self,
-    GumCpuReg dst_reg, GumCpuReg src_reg, gssize src_offset);
+    GumX86Reg dst_reg, GumX86Reg src_reg, gssize src_offset);
 
 GUM_API gboolean gum_x86_writer_put_xchg_reg_reg_ptr (GumX86Writer * self,
-    GumCpuReg left_reg, GumCpuReg right_reg);
+    GumX86Reg left_reg, GumX86Reg right_reg);
 
 GUM_API void gum_x86_writer_put_push_u32 (GumX86Writer * self,
     guint32 imm_value);
 GUM_API gboolean gum_x86_writer_put_push_near_ptr (GumX86Writer * self,
     GumAddress address);
 GUM_API gboolean gum_x86_writer_put_push_reg (GumX86Writer * self,
-    GumCpuReg reg);
+    GumX86Reg reg);
 GUM_API gboolean gum_x86_writer_put_pop_reg (GumX86Writer * self,
-    GumCpuReg reg);
+    GumX86Reg reg);
 GUM_API void gum_x86_writer_put_push_imm_ptr (GumX86Writer * self,
     gconstpointer imm_ptr);
 GUM_API void gum_x86_writer_put_pushax (GumX86Writer * self);
 GUM_API void gum_x86_writer_put_popax (GumX86Writer * self);
 GUM_API void gum_x86_writer_put_pushfx (GumX86Writer * self);
 GUM_API void gum_x86_writer_put_popfx (GumX86Writer * self);
+GUM_API void gum_x86_writer_put_sahf (GumX86Writer * self);
+GUM_API void gum_x86_writer_put_lahf (GumX86Writer * self);
 
 GUM_API gboolean gum_x86_writer_put_test_reg_reg (GumX86Writer * self,
-    GumCpuReg reg_a, GumCpuReg reg_b);
+    GumX86Reg reg_a, GumX86Reg reg_b);
 GUM_API gboolean gum_x86_writer_put_test_reg_u32 (GumX86Writer * self,
-    GumCpuReg reg, guint32 imm_value);
+    GumX86Reg reg, guint32 imm_value);
 GUM_API gboolean gum_x86_writer_put_cmp_reg_i32 (GumX86Writer * self,
-    GumCpuReg reg, gint32 imm_value);
+    GumX86Reg reg, gint32 imm_value);
 GUM_API gboolean gum_x86_writer_put_cmp_reg_offset_ptr_reg (GumX86Writer * self,
-    GumCpuReg reg_a, gssize offset, GumCpuReg reg_b);
+    GumX86Reg reg_a, gssize offset, GumX86Reg reg_b);
 GUM_API void gum_x86_writer_put_cmp_imm_ptr_imm_u32 (GumX86Writer * self,
     gconstpointer imm_ptr, guint32 imm_value);
 GUM_API gboolean gum_x86_writer_put_cmp_reg_reg (GumX86Writer * self,
-    GumCpuReg reg_a, GumCpuReg reg_b);
+    GumX86Reg reg_a, GumX86Reg reg_b);
 GUM_API void gum_x86_writer_put_clc (GumX86Writer * self);
 GUM_API void gum_x86_writer_put_stc (GumX86Writer * self);
 GUM_API void gum_x86_writer_put_cld (GumX86Writer * self);
@@ -50386,6 +51594,11 @@ GUM_API void gum_x86_writer_put_breakpoint (GumX86Writer * self);
 GUM_API void gum_x86_writer_put_padding (GumX86Writer * self, guint n);
 GUM_API void gum_x86_writer_put_nop_padding (GumX86Writer * self, guint n);
 
+GUM_API gboolean gum_x86_writer_put_fxsave_reg_ptr (GumX86Writer * self,
+    GumX86Reg reg);
+GUM_API gboolean gum_x86_writer_put_fxrstor_reg_ptr (GumX86Writer * self,
+    GumX86Reg reg);
+
 GUM_API void gum_x86_writer_put_u8 (GumX86Writer * self, guint8 value);
 GUM_API void gum_x86_writer_put_s8 (GumX86Writer * self, gint8 value);
 GUM_API void gum_x86_writer_put_bytes (GumX86Writer * self, const guint8 * data,
@@ -50395,7 +51608,7 @@ G_END_DECLS
 
 #endif
 /*
- * Copyright (C) 2010-2020 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2010-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  *
  * Licence: wxWindows Library Licence, Version 3.1
  */
@@ -50413,8 +51626,10 @@ typedef struct _GumArmWriter GumArmWriter;
 struct _GumArmWriter
 {
   volatile gint ref_count;
+  gboolean flush_on_destroy;
 
   GumOS target_os;
+  GumCpuFeatures cpu_features;
 
   guint32 * base;
   guint32 * code;
@@ -50451,6 +51666,11 @@ GUM_API void gum_arm_writer_put_call_address_with_arguments (
 GUM_API void gum_arm_writer_put_call_address_with_arguments_array (
     GumArmWriter * self, GumAddress func, guint n_args,
     const GumArgument * args);
+GUM_API void gum_arm_writer_put_call_reg (GumArmWriter * self, arm_reg reg);
+GUM_API void gum_arm_writer_put_call_reg_with_arguments (GumArmWriter * self,
+    arm_reg reg, guint n_args, ...);
+GUM_API void gum_arm_writer_put_call_reg_with_arguments_array (
+    GumArmWriter * self, arm_reg reg, guint n_args, const GumArgument * args);
 
 GUM_API void gum_arm_writer_put_branch_address (GumArmWriter * self,
     GumAddress address);
@@ -50472,18 +51692,23 @@ GUM_API gboolean gum_arm_writer_put_blx_imm (GumArmWriter * self,
 GUM_API void gum_arm_writer_put_bl_label (GumArmWriter * self,
     gconstpointer label_id);
 GUM_API void gum_arm_writer_put_bx_reg (GumArmWriter * self, arm_reg reg);
+GUM_API void gum_arm_writer_put_bl_reg (GumArmWriter * self, arm_reg reg);
 GUM_API void gum_arm_writer_put_blx_reg (GumArmWriter * self, arm_reg reg);
 GUM_API void gum_arm_writer_put_ret (GumArmWriter * self);
 
-GUM_API void gum_arm_writer_put_push_registers (GumArmWriter * self, guint n,
-    ...);
-GUM_API void gum_arm_writer_put_pop_registers (GumArmWriter * self, guint n,
-    ...);
+GUM_API void gum_arm_writer_put_push_regs (GumArmWriter * self, guint n, ...);
+GUM_API void gum_arm_writer_put_pop_regs (GumArmWriter * self, guint n, ...);
+GUM_API gboolean gum_arm_writer_put_vpush_range (GumArmWriter * self,
+    arm_reg first_reg, arm_reg last_reg);
+GUM_API gboolean gum_arm_writer_put_vpop_range (GumArmWriter * self,
+    arm_reg first_reg, arm_reg last_reg);
 
 GUM_API gboolean gum_arm_writer_put_ldr_reg_address (GumArmWriter * self,
     arm_reg reg, GumAddress address);
 GUM_API gboolean gum_arm_writer_put_ldr_reg_u32 (GumArmWriter * self,
     arm_reg reg, guint32 val);
+GUM_API gboolean gum_arm_writer_put_ldr_reg_reg (GumArmWriter * self,
+    arm_reg dst_reg, arm_reg src_reg);
 GUM_API gboolean gum_arm_writer_put_ldr_reg_reg_offset (GumArmWriter * self,
     arm_reg dst_reg, arm_reg src_reg, gssize src_offset);
 GUM_API gboolean gum_arm_writer_put_ldr_cond_reg_reg_offset (
@@ -50491,9 +51716,10 @@ GUM_API gboolean gum_arm_writer_put_ldr_cond_reg_reg_offset (
     gssize src_offset);
 GUM_API void gum_arm_writer_put_ldmia_reg_mask (GumArmWriter * self,
     arm_reg reg, guint16 mask);
-GUM_API gboolean gum_arm_writer_put_str_reg_reg_offset (
-    GumArmWriter * self, arm_reg src_reg, arm_reg dst_reg,
-    gssize dst_offset);
+GUM_API gboolean gum_arm_writer_put_str_reg_reg (GumArmWriter * self,
+    arm_reg src_reg, arm_reg dst_reg);
+GUM_API gboolean gum_arm_writer_put_str_reg_reg_offset (GumArmWriter * self,
+    arm_reg src_reg, arm_reg dst_reg, gssize dst_offset);
 GUM_API gboolean gum_arm_writer_put_str_cond_reg_reg_offset (
     GumArmWriter * self, arm_cc cc, arm_reg src_reg,
     arm_reg dst_reg, gssize dst_offset);
@@ -50543,7 +51769,7 @@ G_END_DECLS
 
 #endif
 /*
- * Copyright (C) 2010-2019 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2010-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  *
  * Licence: wxWindows Library Licence, Version 3.1
  */
@@ -50561,6 +51787,7 @@ typedef struct _GumThumbWriter GumThumbWriter;
 struct _GumThumbWriter
 {
   volatile gint ref_count;
+  gboolean flush_on_destroy;
 
   GumOS target_os;
 
@@ -50649,6 +51876,10 @@ GUM_API gboolean gum_thumb_writer_put_pop_regs (GumThumbWriter * self,
     guint n_regs, arm_reg first_reg, ...);
 GUM_API gboolean gum_thumb_writer_put_pop_regs_array (GumThumbWriter * self,
     guint n_regs, const arm_reg * regs);
+GUM_API gboolean gum_thumb_writer_put_vpush_range (GumThumbWriter * self,
+    arm_reg first_reg, arm_reg last_reg);
+GUM_API gboolean gum_thumb_writer_put_vpop_range (GumThumbWriter * self,
+    arm_reg first_reg, arm_reg last_reg);
 GUM_API gboolean gum_thumb_writer_put_ldr_reg_address (GumThumbWriter * self,
     arm_reg reg, GumAddress address);
 GUM_API gboolean gum_thumb_writer_put_ldr_reg_u32 (GumThumbWriter * self,
@@ -50723,7 +51954,7 @@ G_END_DECLS
 
 #endif
 /*
- * Copyright (C) 2014-2020 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2014-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  * Copyright (C)      2017 Antonio Ken Iannillo <ak.iannillo@gmail.com>
  *
  * Licence: wxWindows Library Licence, Version 3.1
@@ -50744,6 +51975,7 @@ typedef guint GumArm64IndexMode;
 struct _GumArm64Writer
 {
   volatile gint ref_count;
+  gboolean flush_on_destroy;
 
   GumOS target_os;
   GumPtrauthSupport ptrauth_support;
@@ -50821,10 +52053,18 @@ GUM_API gboolean gum_arm64_writer_put_blr_reg (GumArm64Writer * self,
 GUM_API gboolean gum_arm64_writer_put_blr_reg_no_auth (GumArm64Writer * self,
     arm64_reg reg);
 GUM_API void gum_arm64_writer_put_ret (GumArm64Writer * self);
+GUM_API gboolean gum_arm64_writer_put_cbz_reg_imm (GumArm64Writer * self,
+    arm64_reg reg, GumAddress target);
+GUM_API gboolean gum_arm64_writer_put_cbnz_reg_imm (GumArm64Writer * self,
+    arm64_reg reg, GumAddress target);
 GUM_API void gum_arm64_writer_put_cbz_reg_label (GumArm64Writer * self,
     arm64_reg reg, gconstpointer label_id);
 GUM_API void gum_arm64_writer_put_cbnz_reg_label (GumArm64Writer * self,
     arm64_reg reg, gconstpointer label_id);
+GUM_API gboolean gum_arm64_writer_put_tbz_reg_imm_imm (GumArm64Writer * self,
+    arm64_reg reg, guint bit, GumAddress target);
+GUM_API gboolean gum_arm64_writer_put_tbnz_reg_imm_imm (GumArm64Writer * self,
+    arm64_reg reg, guint bit, GumAddress target);
 GUM_API void gum_arm64_writer_put_tbz_reg_imm_label (GumArm64Writer * self,
     arm64_reg reg, guint bit, gconstpointer label_id);
 GUM_API void gum_arm64_writer_put_tbnz_reg_imm_label (GumArm64Writer * self,
@@ -50841,21 +52081,37 @@ GUM_API void gum_arm64_writer_put_pop_all_q_registers (GumArm64Writer * self);
 
 GUM_API gboolean gum_arm64_writer_put_ldr_reg_address (GumArm64Writer * self,
     arm64_reg reg, GumAddress address);
+GUM_API gboolean gum_arm64_writer_put_ldr_reg_u32 (GumArm64Writer * self,
+    arm64_reg reg, guint32 val);
 GUM_API gboolean gum_arm64_writer_put_ldr_reg_u64 (GumArm64Writer * self,
     arm64_reg reg, guint64 val);
+GUM_API gboolean gum_arm64_writer_put_ldr_reg_u32_ptr (GumArm64Writer * self,
+    arm64_reg reg, GumAddress src_address);
+GUM_API gboolean gum_arm64_writer_put_ldr_reg_u64_ptr (GumArm64Writer * self,
+    arm64_reg reg, GumAddress src_address);
 GUM_API guint gum_arm64_writer_put_ldr_reg_ref (GumArm64Writer * self,
     arm64_reg reg);
 GUM_API void gum_arm64_writer_put_ldr_reg_value (GumArm64Writer * self,
     guint ref, GumAddress value);
+GUM_API gboolean gum_arm64_writer_put_ldr_reg_reg (GumArm64Writer * self,
+    arm64_reg dst_reg, arm64_reg src_reg);
 GUM_API gboolean gum_arm64_writer_put_ldr_reg_reg_offset (GumArm64Writer * self,
     arm64_reg dst_reg, arm64_reg src_reg, gsize src_offset);
+GUM_API gboolean gum_arm64_writer_put_ldr_reg_reg_offset_mode (
+    GumArm64Writer * self, arm64_reg dst_reg, arm64_reg src_reg,
+    gssize src_offset, GumArm64IndexMode mode);
 GUM_API gboolean gum_arm64_writer_put_ldrsw_reg_reg_offset (
     GumArm64Writer * self, arm64_reg dst_reg, arm64_reg src_reg,
     gsize src_offset);
 GUM_API gboolean gum_arm64_writer_put_adrp_reg_address (GumArm64Writer * self,
     arm64_reg reg, GumAddress address);
+GUM_API gboolean gum_arm64_writer_put_str_reg_reg (GumArm64Writer * self,
+    arm64_reg src_reg, arm64_reg dst_reg);
 GUM_API gboolean gum_arm64_writer_put_str_reg_reg_offset (GumArm64Writer * self,
     arm64_reg src_reg, arm64_reg dst_reg, gsize dst_offset);
+GUM_API gboolean gum_arm64_writer_put_str_reg_reg_offset_mode (
+    GumArm64Writer * self, arm64_reg src_reg, arm64_reg dst_reg,
+    gssize dst_offset, GumArm64IndexMode mode);
 GUM_API gboolean gum_arm64_writer_put_ldp_reg_reg_reg_offset (
     GumArm64Writer * self, arm64_reg reg_a, arm64_reg reg_b, arm64_reg reg_src,
     gssize src_offset, GumArm64IndexMode mode);
@@ -50864,6 +52120,10 @@ GUM_API gboolean gum_arm64_writer_put_stp_reg_reg_reg_offset (
     gssize dst_offset, GumArm64IndexMode mode);
 GUM_API gboolean gum_arm64_writer_put_mov_reg_reg (GumArm64Writer * self,
     arm64_reg dst_reg, arm64_reg src_reg);
+GUM_API void gum_arm64_writer_put_mov_reg_nzcv (GumArm64Writer * self,
+    arm64_reg reg);
+GUM_API void gum_arm64_writer_put_mov_nzcv_reg (GumArm64Writer * self,
+    arm64_reg reg);
 GUM_API gboolean gum_arm64_writer_put_uxtw_reg_reg (GumArm64Writer * self,
     arm64_reg dst_reg, arm64_reg src_reg);
 GUM_API gboolean gum_arm64_writer_put_add_reg_reg_imm (GumArm64Writer * self,
@@ -50875,7 +52135,7 @@ GUM_API gboolean gum_arm64_writer_put_sub_reg_reg_imm (GumArm64Writer * self,
 GUM_API gboolean gum_arm64_writer_put_sub_reg_reg_reg (GumArm64Writer * self,
     arm64_reg dst_reg, arm64_reg left_reg, arm64_reg right_reg);
 GUM_API gboolean gum_arm64_writer_put_and_reg_reg_imm (GumArm64Writer * self,
-    arm64_reg dst_reg, arm64_reg left_reg, gsize right_value);
+    arm64_reg dst_reg, arm64_reg left_reg, guint64 right_value);
 GUM_API gboolean gum_arm64_writer_put_tst_reg_imm (GumArm64Writer * self,
     arm64_reg reg, guint64 imm_value);
 GUM_API gboolean gum_arm64_writer_put_cmp_reg_reg (GumArm64Writer * self,
@@ -50899,7 +52159,7 @@ G_END_DECLS
 
 #endif
 /*
- * Copyright (C) 2014-2019 Ole André Vadla Ravnås <oleavr@nowsecure.com>
+ * Copyright (C) 2014-2022 Ole André Vadla Ravnås <oleavr@nowsecure.com>
  * Copyright (C)      2019 Jon Wilson <jonwilson@zepler.net>
  *
  * Licence: wxWindows Library Licence, Version 3.1
@@ -50918,6 +52178,7 @@ typedef struct _GumMipsWriter GumMipsWriter;
 struct _GumMipsWriter
 {
   volatile gint ref_count;
+  gboolean flush_on_destroy;
 
   guint32 * base;
   guint32 * code;
@@ -51025,26 +52286,40 @@ G_END_DECLS
 G_BEGIN_DECLS
 
 #define GUM_TYPE_STALKER (gum_stalker_get_type ())
-G_DECLARE_FINAL_TYPE (GumStalker, gum_stalker, GUM, STALKER, GObject)
+GUM_DECLARE_FINAL_TYPE (GumStalker, gum_stalker, GUM, STALKER, GObject)
 
 #define GUM_TYPE_STALKER_TRANSFORMER (gum_stalker_transformer_get_type ())
-G_DECLARE_INTERFACE (GumStalkerTransformer, gum_stalker_transformer, GUM,
-    STALKER_TRANSFORMER, GObject)
+GUM_DECLARE_INTERFACE (GumStalkerTransformer, gum_stalker_transformer, GUM,
+                       STALKER_TRANSFORMER, GObject)
 
 #define GUM_TYPE_DEFAULT_STALKER_TRANSFORMER \
     (gum_default_stalker_transformer_get_type ())
-G_DECLARE_FINAL_TYPE (GumDefaultStalkerTransformer,
-    gum_default_stalker_transformer, GUM, DEFAULT_STALKER_TRANSFORMER,
-    GObject)
+GUM_DECLARE_FINAL_TYPE (GumDefaultStalkerTransformer,
+                        gum_default_stalker_transformer,
+                        GUM, DEFAULT_STALKER_TRANSFORMER,
+                        GObject)
 
 #define GUM_TYPE_CALLBACK_STALKER_TRANSFORMER \
     (gum_callback_stalker_transformer_get_type ())
-G_DECLARE_FINAL_TYPE (GumCallbackStalkerTransformer,
-    gum_callback_stalker_transformer, GUM, CALLBACK_STALKER_TRANSFORMER,
-    GObject)
+GUM_DECLARE_FINAL_TYPE (GumCallbackStalkerTransformer,
+                        gum_callback_stalker_transformer,
+                        GUM, CALLBACK_STALKER_TRANSFORMER,
+                        GObject)
+
+#define GUM_TYPE_STALKER_OBSERVER (gum_stalker_observer_get_type ())
+GUM_DECLARE_INTERFACE (GumStalkerObserver, gum_stalker_observer, GUM,
+                       STALKER_OBSERVER, GObject)
 
 typedef struct _GumStalkerIterator GumStalkerIterator;
 typedef struct _GumStalkerOutput GumStalkerOutput;
+typedef struct _GumBackpatch GumBackpatch;
+typedef struct _GumBackpatchInstruction GumBackpatchInstruction;
+typedef void (* GumStalkerIncrementFunc) (GumStalkerObserver * self);
+typedef void (* GumStalkerNotifyBackpatchFunc) (GumStalkerObserver * self,
+    const GumBackpatch * backpatch, gsize size);
+typedef void (* GumStalkerSwitchCallbackFunc) (GumStalkerObserver * self,
+    gpointer from_address, gpointer start_address, gpointer from_insn,
+    gpointer * target);
 typedef union _GumStalkerWriter GumStalkerWriter;
 typedef void (* GumStalkerTransformerCallback) (GumStalkerIterator * iterator,
     GumStalkerOutput * output, gpointer user_data);
@@ -51052,8 +52327,11 @@ typedef void (* GumStalkerCallout) (GumCpuContext * cpu_context,
     gpointer user_data);
 
 typedef guint GumProbeId;
-typedef struct _GumCallSite GumCallSite;
-typedef void (* GumCallProbeCallback) (GumCallSite * site, gpointer user_data);
+typedef struct _GumCallDetails GumCallDetails;
+typedef void (* GumCallProbeCallback) (GumCallDetails * details,
+    gpointer user_data);
+
+#ifndef GUM_DIET
 
 struct _GumStalkerTransformerInterface
 {
@@ -51062,6 +52340,63 @@ struct _GumStalkerTransformerInterface
   void (* transform_block) (GumStalkerTransformer * self,
       GumStalkerIterator * iterator, GumStalkerOutput * output);
 };
+
+struct _GumStalkerObserverInterface
+{
+  GTypeInterface parent;
+
+  /* Common */
+  GumStalkerIncrementFunc increment_total;
+
+  GumStalkerIncrementFunc increment_call_imm;
+  GumStalkerIncrementFunc increment_call_reg;
+
+  /* x86 only */
+  GumStalkerIncrementFunc increment_call_mem;
+
+  /* Arm64 only */
+  GumStalkerIncrementFunc increment_excluded_call_reg;
+
+  /* x86 only */
+  GumStalkerIncrementFunc increment_ret_slow_path;
+
+  /* Arm64 only */
+  GumStalkerIncrementFunc increment_ret;
+
+  /* Common */
+  GumStalkerIncrementFunc increment_post_call_invoke;
+  GumStalkerIncrementFunc increment_excluded_call_imm;
+
+  /* Common */
+  GumStalkerIncrementFunc increment_jmp_imm;
+  GumStalkerIncrementFunc increment_jmp_reg;
+
+  /* x86 only */
+  GumStalkerIncrementFunc increment_jmp_mem;
+  GumStalkerIncrementFunc increment_jmp_cond_imm;
+  GumStalkerIncrementFunc increment_jmp_cond_mem;
+  GumStalkerIncrementFunc increment_jmp_cond_reg;
+  GumStalkerIncrementFunc increment_jmp_cond_jcxz;
+
+  /* Arm64 only */
+  GumStalkerIncrementFunc increment_jmp_cond_cc;
+  GumStalkerIncrementFunc increment_jmp_cond_cbz;
+  GumStalkerIncrementFunc increment_jmp_cond_cbnz;
+  GumStalkerIncrementFunc increment_jmp_cond_tbz;
+  GumStalkerIncrementFunc increment_jmp_cond_tbnz;
+
+  /* Common */
+  GumStalkerIncrementFunc increment_jmp_continuation;
+
+  /* x86 only */
+  GumStalkerIncrementFunc increment_sysenter_slow_path;
+
+  GumStalkerNotifyBackpatchFunc notify_backpatch;
+
+  GumStalkerSwitchCallbackFunc switch_callback;
+};
+
+#endif
 
 union _GumStalkerWriter
 {
@@ -51079,14 +52414,17 @@ struct _GumStalkerOutput
   GumInstructionEncoding encoding;
 };
 
-struct _GumCallSite
+struct _GumCallDetails
 {
-  gpointer block_address;
+  gpointer target_address;
+  gpointer return_address;
   gpointer stack_data;
   GumCpuContext * cpu_context;
 };
 
 GUM_API gboolean gum_stalker_is_supported (void);
+
+GUM_API void gum_stalker_activate_experimental_unwind_support (void);
 
 GUM_API GumStalker * gum_stalker_new (void);
 
@@ -51113,16 +52451,29 @@ GUM_API void gum_stalker_unfollow (GumStalker * self, GumThreadId thread_id);
 GUM_API void gum_stalker_activate (GumStalker * self, gconstpointer target);
 GUM_API void gum_stalker_deactivate (GumStalker * self);
 
+GUM_API void gum_stalker_set_observer (GumStalker * self,
+    GumStalkerObserver * observer);
+
+GUM_API void gum_stalker_prefetch (GumStalker * self, gconstpointer address,
+    gint recycle_count);
+GUM_API void gum_stalker_prefetch_backpatch (GumStalker * self,
+    const GumBackpatch * notification);
+GUM_API void gum_stalker_recompile (GumStalker * self, gconstpointer address);
+
+GUM_API gpointer gum_stalker_backpatch_get_from (
+    const GumBackpatch * backpatch);
+GUM_API gpointer gum_stalker_backpatch_get_to (
+    const GumBackpatch * backpatch);
+
+GUM_API void gum_stalker_invalidate (GumStalker * self, gconstpointer address);
+GUM_API void gum_stalker_invalidate_for_thread (GumStalker * self,
+    GumThreadId thread_id, gconstpointer address);
+
 GUM_API GumProbeId gum_stalker_add_call_probe (GumStalker * self,
     gpointer target_address, GumCallProbeCallback callback, gpointer data,
     GDestroyNotify notify);
 GUM_API void gum_stalker_remove_call_probe (GumStalker * self,
     GumProbeId id);
-
-#define gum_call_site_get_nth_argument(s, n) \
-    gum_cpu_context_get_nth_argument ((s)->cpu_context, n)
-#define gum_call_site_replace_nth_argument(s, n, v) \
-    gum_cpu_context_replace_nth_argument ((s)->cpu_context, n, v)
 
 GUM_API GumStalkerTransformer * gum_stalker_transformer_make_default (void);
 GUM_API GumStalkerTransformer * gum_stalker_transformer_make_from_callback (
@@ -51139,8 +52490,51 @@ GUM_API void gum_stalker_iterator_keep (GumStalkerIterator * self);
 GUM_API void gum_stalker_iterator_put_callout (GumStalkerIterator * self,
     GumStalkerCallout callout, gpointer data, GDestroyNotify data_destroy);
 
-GUM_API void gum_stalker_set_counters_enabled (gboolean enabled);
-GUM_API void gum_stalker_dump_counters (void);
+#define GUM_DECLARE_OBSERVER_INCREMENT(name) \
+    GUM_API void gum_stalker_observer_increment_##name ( \
+        GumStalkerObserver * observer);
+
+GUM_DECLARE_OBSERVER_INCREMENT (total)
+
+GUM_DECLARE_OBSERVER_INCREMENT (call_imm)
+GUM_DECLARE_OBSERVER_INCREMENT (call_reg)
+
+GUM_DECLARE_OBSERVER_INCREMENT (call_mem)
+
+GUM_DECLARE_OBSERVER_INCREMENT (excluded_call_reg)
+
+GUM_DECLARE_OBSERVER_INCREMENT (ret_slow_path)
+
+GUM_DECLARE_OBSERVER_INCREMENT (ret)
+
+GUM_DECLARE_OBSERVER_INCREMENT (post_call_invoke)
+GUM_DECLARE_OBSERVER_INCREMENT (excluded_call_imm)
+
+GUM_DECLARE_OBSERVER_INCREMENT (jmp_imm)
+GUM_DECLARE_OBSERVER_INCREMENT (jmp_reg)
+
+GUM_DECLARE_OBSERVER_INCREMENT (jmp_mem)
+GUM_DECLARE_OBSERVER_INCREMENT (jmp_cond_imm)
+GUM_DECLARE_OBSERVER_INCREMENT (jmp_cond_mem)
+GUM_DECLARE_OBSERVER_INCREMENT (jmp_cond_reg)
+GUM_DECLARE_OBSERVER_INCREMENT (jmp_cond_jcxz)
+
+GUM_DECLARE_OBSERVER_INCREMENT (jmp_cond_cc)
+GUM_DECLARE_OBSERVER_INCREMENT (jmp_cond_cbz)
+GUM_DECLARE_OBSERVER_INCREMENT (jmp_cond_cbnz)
+GUM_DECLARE_OBSERVER_INCREMENT (jmp_cond_tbz)
+GUM_DECLARE_OBSERVER_INCREMENT (jmp_cond_tbnz)
+
+GUM_DECLARE_OBSERVER_INCREMENT (jmp_continuation)
+
+GUM_DECLARE_OBSERVER_INCREMENT (sysenter_slow_path)
+
+GUM_API void gum_stalker_observer_notify_backpatch (
+    GumStalkerObserver * observer, const GumBackpatch * backpatch, gsize size);
+
+GUM_API void gum_stalker_observer_switch_callback (
+    GumStalkerObserver * observer, gpointer from_address,
+    gpointer start_address, gpointer from_insn, gpointer * target);
 
 G_END_DECLS
 

@@ -27,4 +27,7 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 enable_testing(true)
 
 add_subdirectory(vendor)
-add_subdirectory(test)
+
+if(MOCXX_SELF_TEST)
+    add_subdirectory(test)
+endif()

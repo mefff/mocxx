@@ -1,2 +1,4 @@
 add_subdirectory(frida)
-add_subdirectory(catch)
+if(MOCXX_SELF_TEST)
+    add_subdirectory(catch)
+endif()
