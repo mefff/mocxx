@@ -474,7 +474,8 @@ public:
       /*      target */ targetPtr,
       /* replacement */
       details::TargetToVoidPtr(&ProxyType::Invoke),
-      /*        data */ targetPtr);
+      /*        data */ targetPtr,
+                        nullptr);
     gum_interceptor_end_transaction(mInterceptor);
 
     return true;
